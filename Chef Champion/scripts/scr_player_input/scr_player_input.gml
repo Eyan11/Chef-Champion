@@ -45,6 +45,22 @@ function jump_input() {
 	else {
 		_is_jumping = keyboard_check(vk_space);
 	}
-	
+
 	return _is_jumping;
+}
+
+function roll_input() {
+	var _is_rolling;
+	
+	//collects roll input from controller
+	if(gamepad_is_connected(0)) {
+		_is_rolling = gamepad_button_check(0, gp_face2); //B button
+		
+	}
+	//collects roll input from keybpard
+	else {
+		_is_rolling = keyboard_check(vk_shift);
+	}
+	
+	return _is_rolling;
 }

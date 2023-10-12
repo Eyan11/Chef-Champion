@@ -1,3 +1,10 @@
 
-//script to move, jump, and collide
-player_movement(self);
+
+player_movement_calculations(self);
+
+player_roll(self);
+
+player_jump(self);
+
+player_collision_and_move(self);
+

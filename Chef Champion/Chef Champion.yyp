@@ -36,13 +36,15 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.106",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"scr_player_movement","path":"scripts/scr_player_movement/scr_player_movement.yy",},},
+    {"id":{"name":"spr_player_pastry_roll","path":"sprites/spr_player_pastry_roll/spr_player_pastry_roll.yy",},},
     {"id":{"name":"obj_player_pastry","path":"objects/obj_player_pastry/obj_player_pastry.yy",},},
     {"id":{"name":"scr_player_input","path":"scripts/scr_player_input/scr_player_input.yy",},},
     {"id":{"name":"spr_player_pastry","path":"sprites/spr_player_pastry/spr_player_pastry.yy",},},
+    {"id":{"name":"scr_player_health","path":"scripts/scr_player_health/scr_player_health.yy",},},
     {"id":{"name":"scr_collision_layers","path":"scripts/scr_collision_layers/scr_collision_layers.yy",},},
     {"id":{"name":"spr_temp_tiles","path":"sprites/spr_temp_tiles/spr_temp_tiles.yy",},},
     {"id":{"name":"ts_temp_tiles","path":"tilesets/ts_temp_tiles/ts_temp_tiles.yy",},},
