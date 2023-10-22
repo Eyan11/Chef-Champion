@@ -15,10 +15,10 @@ function player_movement_calculations(_player) {
 
 	//define grounded variable
 	if(place_meeting(_player.x, _player.y + 0.2, collision_layer())) {
-		_player.is_grounded = 1;
+		_player.is_grounded = true;
 	}
 	else 
-		_player.is_grounded = 0;
+		_player.is_grounded = false;
 }
 
 
@@ -32,7 +32,7 @@ function player_roll(_player) {
 	
 	
 	//roll start step
-	if(roll_input() && _player.is_rolling == 0 && _player.is_grounded == 1 && _player.roll_cooldown_countdown < 0) {
+	if(roll_input() && !_player.is_rolling && _player.is_grounded && _player.roll_cooldown_countdown < 0) {
 		_player.roll_countdown = _player.roll_time;
 		
 		//roll in the direction player is facing
@@ -41,14 +41,14 @@ function player_roll(_player) {
 		//increase gravity so it's not "floaty"
 		_player.grav *= 4;
 	
-		_player.is_invincible = 1;
+		_player.is_invincible = false;
 		_player.sprite_index = spr_player_pastry_roll;
-		_player.is_rolling = 1;
+		_player.is_rolling = true;
 	}
 
 
 	//roll step
-	if(_player.is_rolling == 1) {
+	if(_player.is_rolling) {
 		//overide horizontal speed, now it won't take previous player input
 		_player.hor_speed = _player.roll_direction * _player.roll_speed;
 	
@@ -57,9 +57,9 @@ function player_roll(_player) {
 			//return gravity to normal
 			_player.grav /= 4;
 			_player.roll_cooldown_countdown = _player.roll_cooldown_time;
-			_player.is_invincible = 0;
+			_player.is_invincible = false;
 			_player.sprite_index = spr_player_pastry;
-			_player.is_rolling = 0;
+			_player.is_rolling = false;
 		}
 	}
 }
@@ -75,7 +75,7 @@ function player_jump(_player) {
 	
 	
 	//minimum jump height and jump start step
-	if(_player.coyote_countdown > 0 && jump_input() && _player.is_rolling == 0) {
+	if(_player.coyote_countdown > 0 && jump_input() && !_player.is_rolling) {
 		_player.vert_speed = _player.jump_speed;
 		_player.variable_jump_countdown = _player.variable_jump_time;
 		_player.coyote_countdown = 0;
@@ -109,8 +109,11 @@ function player_collision_and_move(_player) {
 		_player.hor_speed = 0;
 	}
 	
-	//move player horizontally
-	_player.x += _player.hor_speed;
+	//move player horizontally, reducing horizontal speed when frosted
+	if(_player.is_frosted)
+		_player.x += _player.hor_speed * _player.frosted_multiplier;
+	else
+		_player.x += _player.hor_speed;
 
 
 	//if about to collide in vertical direction
@@ -133,8 +136,11 @@ function player_collision_and_move(_player) {
 		_player.vert_speed = 0;
 	}
 
-	//move player vertically
-	_player.y += _player.vert_speed;
+	//move player vertically, reducing vertical speed when frosted
+	if(_player.is_frosted)
+		_player.y += _player.vert_speed * _player.frosted_multiplier;
+	else
+		_player.y += _player.vert_speed;
 }
 
 
@@ -155,7 +161,7 @@ function player_collision_and_move(_player) {
 
 
 
-
+// not in use right now will delete once Movement is 100% complete
 ////////////////////////////////////////////////////////////
 function player_movement(_player){
 
@@ -171,14 +177,14 @@ _player.roll_cooldown_countdown--;
 
 //define grounded variable
 if(place_meeting(_player.x, _player.y + 0.2, collision_layer())) {
-	_player.is_grounded = 1;
+	_player.is_grounded = true;
 }
 else 
-	_player.is_grounded = 0;
+	_player.is_grounded = false;
 
 
 //roll start step
-if(roll_input() && _player.is_rolling == 0 && _player.is_grounded == 1 && _player.roll_cooldown_countdown < 0) {
+if(roll_input() && !_player.is_rolling && _player.is_grounded && _player.roll_cooldown_countdown < 0) {
 	_player.roll_countdown = _player.roll_time;
 	//sign of the direction they face
 	_player.roll_direction = sign(_player.image_xscale);
@@ -187,11 +193,11 @@ if(roll_input() && _player.is_rolling == 0 && _player.is_grounded == 1 && _playe
 	_player.grav *= 4;
 	
 	_player.sprite_index = spr_player_pastry_roll;
-	_player.is_rolling = 1;
+	_player.is_rolling = true;
 }
 
 //roll step
-if(_player.is_rolling == 1) {
+if(_player.is_rolling) {
 	//overeide horizontal speed, now it won't take previous player input
 	_player.hor_speed = _player.roll_direction * _player.roll_speed;
 	
@@ -203,13 +209,13 @@ if(_player.is_rolling == 1) {
 		_player.grav /= 4;
 		_player.roll_cooldown_countdown = _player.roll_cooldown_time;
 		_player.sprite_index = spr_player_pastry;
-		_player.is_rolling = 0;
+		_player.is_rolling = false;
 	}
 }
 
 
 //minimum jump height and jump start step
-if(_player.coyote_countdown > 0 && jump_input() && _player.is_rolling == 0) {
+if(_player.coyote_countdown > 0 && jump_input() && !_player.is_rolling) {
 	_player.vert_speed = _player.jump_speed;
 	_player.variable_jump_countdown = _player.variable_jump_time;
 	_player.coyote_countdown = 0;

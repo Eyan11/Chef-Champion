@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_pastry",
-  "eventList": [],
+  "name": "obj_grease_pool",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "Obstacles",
+    "path": "folders/Objects/Obstacles.yy",
   },
-  "parentObjectId": {
-    "name": "obj_player_parent",
-    "path": "objects/obj_player_parent/obj_player_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_pastry",
-    "path": "sprites/spr_player_pastry/spr_player_pastry.yy",
+    "name": "spr_grease_pool",
+    "path": "sprites/spr_grease_pool/spr_grease_pool.yy",
   },
   "spriteMaskId": null,
   "visible": true,
