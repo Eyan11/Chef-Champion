@@ -1,4 +1,5 @@
-
+/// @function					hor_move_input();
+/// @description				returns a value between -1 and 1 for horizontal movement
 function hor_move_input() {
 	var _hor_movement = 0;
 	
@@ -15,6 +16,10 @@ function hor_move_input() {
 	return _hor_movement;
 }
 
+
+
+/// @function					vert_move_input();
+/// @description				returns a value between -1 and 1 for vertical movement
 function vert_move_input() {
 	var _vert_movement = 0;
 	
@@ -33,13 +38,15 @@ function vert_move_input() {
 }
 
 
+
+/// @function					jump_input();
+/// @description				returns true when pressing A or space
 function jump_input() {
 	var _is_jumping; //bool
 	
 	//collects jump input from controller
 	if(gamepad_is_connected(0)) {
 		_is_jumping = gamepad_button_check(0, gp_face1); //A button
-		
 	}
 	//collects jump input from keybpard
 	else {
@@ -49,6 +56,10 @@ function jump_input() {
 	return _is_jumping;
 }
 
+
+
+/// @function					roll_input();
+/// @description				returns true when pressing B or Shift
 function roll_input() {
 	var _is_rolling;
 	
@@ -63,4 +74,23 @@ function roll_input() {
 	}
 	
 	return _is_rolling;
+}
+
+
+
+/// @function					special_input();
+/// @description				returns true when pressing Y or C
+function special_input() {
+	var _is_special_attacking;
+	
+	//collects special input from controller
+	if(gamepad_is_connected(0)) {
+		_is_special_attacking = gamepad_button_check(0, gp_face4); //Y button
+	}
+	//collects special input from keybpard
+	else {
+		_is_special_attacking = keyboard_check(ord("C"));
+	}
+	
+	return _is_special_attacking;
 }

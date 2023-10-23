@@ -36,6 +36,7 @@ function take_damage(_player, _damage){
 		_player.current_health -= _damage;
 		
 	//REMOVE: for testing remove later
+	show_debug_message("Player Health: ");
 	show_debug_message(_player.current_health);
 }
 
@@ -53,6 +54,7 @@ function gain_health(_player, _health_boost) {
 		_player.current_health += _health_boost;
 		
 	//REMOVE: for testing remove later
+	show_debug_message("Player Health: ");
 	show_debug_message(_player.current_health);
 }
 
