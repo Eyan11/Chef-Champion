@@ -3,9 +3,12 @@
 function hor_move_input() {
 	var _hor_movement = 0;
 	
-	//collects horizontal input from controller
+	//collects horizontal input from controller, with deadzone of .35
 	if(gamepad_is_connected(0)) {
-		_hor_movement = gamepad_axis_value(0, gp_axislh);
+		if(abs(gamepad_axis_value(0, gp_axislh)) < 0.35)
+			_hor_movement = 0
+		else
+			_hor_movement = gamepad_axis_value(0, gp_axislh);
 	}
 	//collects horizontal input from keyboard
 	else {
@@ -23,9 +26,12 @@ function hor_move_input() {
 function vert_move_input() {
 	var _vert_movement = 0;
 	
-	//collects vertical input from controller
+	//collects vertical input from controller, with deadzone of .35
 	if(gamepad_is_connected(0)) {
-		_vert_movement = gamepad_axis_value(0, gp_axislv);
+		if(abs(gamepad_axis_value(0, gp_axislv)) < 0.35)
+			_vert_movement = 0;
+		else
+			_vert_movement = gamepad_axis_value(0, gp_axislv);
 		
 	}
 	//collects vertical input from keyboard
@@ -33,8 +39,29 @@ function vert_move_input() {
 		_vert_movement = max(keyboard_check(vk_up), keyboard_check(ord("W"))) //up arrow and "w" key
 					   - max(keyboard_check(vk_down), keyboard_check(ord("S"))); //down arrow and "s" key
 	}
-
+	
 	return _vert_movement;	
+}
+
+
+
+function move_direction_angle() {
+	
+	var _direction;
+		
+	//making these variables to avoid a debugger warning
+	_vert_input = vert_move_input();
+	_hor_input = hor_move_input();
+	
+	//calculates direction for controller
+	if(gamepad_is_connected(0))
+		_direction = point_direction(_hor_input, -1 * _vert_input, 0, 0)
+	//calculates directin for keyboard
+	else
+		_direction = point_direction(_hor_input, _vert_input, 0, 0)
+	
+	//0 is left (or no input), 90 is up, 180 is right, 270 is down
+	return _direction;
 }
 
 
