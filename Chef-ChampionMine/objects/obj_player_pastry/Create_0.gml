@@ -1,0 +1,2 @@
+
+reset_health(self)
