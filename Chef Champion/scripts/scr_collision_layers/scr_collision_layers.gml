@@ -6,6 +6,7 @@
 /// @description				Returns the layer of objects that the player collides with
 function collision_layer() {
 	
-	return layer_tilemap_get_id("Temp_Tiles");
+	//TODO: add all platforms for all chefs
+	return [layer_tilemap_get_id("Temp_Tiles"), obj_eclair_platform];
 	
 }
