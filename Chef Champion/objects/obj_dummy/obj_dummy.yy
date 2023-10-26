@@ -31,8 +31,8 @@
   ],
   "solid": true,
   "spriteId": {
-    "name": "spr_dummy",
-    "path": "sprites/spr_dummy/spr_dummy.yy",
+    "name": "spr_dummy_1",
+    "path": "sprites/spr_dummy_1/spr_dummy_1.yy",
   },
   "spriteMaskId": null,
   "visible": true,
