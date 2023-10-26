@@ -18,8 +18,8 @@ function player_respawn(_player) {
 	var _chef;
 	if(obj_player_manager.current_chef == 0)
 		_chef = obj_player_pastry;
-	//TODO: add all chefs
 	
+	//TODO: add all chefs
 	instance_create_layer(get_checkpoint().x, get_checkpoint().y + 1, "Instances", _chef);
 }
 

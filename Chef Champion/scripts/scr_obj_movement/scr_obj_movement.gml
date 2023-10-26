@@ -40,6 +40,7 @@ function object_hor_collide_and_move(_obj, _hor_speed) {
 			if(!place_meeting(_obj.x + _hor_speed, _obj.y, collision_layer()))
 				_obj.x += _hor_speed;
 		}
+		
 		//if obj can't move any close to collider, stop moving
 		_hor_speed = 0;
 	}
