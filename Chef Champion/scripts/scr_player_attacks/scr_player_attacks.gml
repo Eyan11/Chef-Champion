@@ -2,6 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_normal_attack(_projectile_spawner, _player) {
 	if(norm_attack_input() && _player.can_shoot) {
+		if(_player.image_xscale < 0) {
+			instance_create_layer(_player.x - 20, _player.y, "Instances", obj_shoot_animation)	
+		}
+		else {
+			instance_create_layer(_player.x + 20, _player.y, "Instances", obj_shoot_animation)
+		}
 		instance_create_layer(_projectile_spawner.x,_projectile_spawner.y,"Instances", obj_temp_bullet)
 		_player.can_shoot = false
 		_player.alarm[4] = room_speed * .33 //3 projectiles a second
