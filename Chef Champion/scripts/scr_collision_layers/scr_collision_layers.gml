@@ -7,6 +7,6 @@
 function collision_layer() {
 	
 	//TODO: add all platforms for all chefs
-	return [layer_tilemap_get_id("Temp_Tiles"), obj_eclair_platform];
+	return [layer_tilemap_get_id("tile_level"), obj_eclair_platform, obj_border];
 	
 }

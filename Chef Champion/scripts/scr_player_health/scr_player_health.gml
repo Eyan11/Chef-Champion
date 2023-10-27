@@ -104,3 +104,21 @@ function greased(_player) {
 	
 }
 
+
+
+function sear(_player){
+	if(!_player.is_seared) {
+		sear_count = 0;
+		_player.alarm[3] = 60;
+		_player.is_seared = true;
+		
+		
+	}
+	else
+	{
+		_player.sear_count++;
+		
+	}
+}
+	
+
