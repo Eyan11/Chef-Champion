@@ -4,6 +4,3 @@ sear(other);
 
 
 
-audio_play_sound(sfx_goop_maybe, 10, false)
-
-
