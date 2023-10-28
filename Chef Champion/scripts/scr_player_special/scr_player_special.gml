@@ -53,10 +53,6 @@ function jump_special(_player, _special_obj) {
 		obj_jump_special_parent.alarm[0] = 1;
 	
 	var _obj;
-	//can't jump special until they are grounded again
-	_player.can_jump_special = false;
-	_player.jump_special_cooldown_countdown = _player.jump_special_cooldown;
-	spend_special_meter(_player, _player.jump_special_cost);
 	
 	//make player jump
 	_player.vert_speed = jump_speed;

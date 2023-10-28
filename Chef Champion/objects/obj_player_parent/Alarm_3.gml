@@ -1,5 +1,5 @@
-/// @description sear effect
-// You can write your code in this edit    
+/// @description Apply and track sear damage
+
 
 if(sear_count >= sear_time ) {
 	take_damage(self, sear_damage);
@@ -8,11 +8,6 @@ if(sear_count >= sear_time ) {
 	sear_count = 0;
 }
 else {
-	
-	
-	
 	is_seared = false;
 }
  
-
-

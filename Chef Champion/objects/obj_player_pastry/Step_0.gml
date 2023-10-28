@@ -3,11 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
-//reduce cooldown timer
-cake_cooldown_countdown--;
-
 //ground special
-if(special_input() && is_grounded && !is_rolling && (current_special_meter >= cake_cost) && (cake_cooldown_countdown < 0)) {
+if(special_input() && is_grounded && !is_rolling && (current_special_meter >= cake_cost) && (special_cooldown_countdown < 0)) {
 	
 	spend_special_meter(self, cake_cost);
 	
@@ -21,5 +18,5 @@ if(special_input() && is_grounded && !is_rolling && (current_special_meter >= ca
 	}
 	
 	//reset cooldown timer
-	cake_cooldown_countdown = cake_cooldown;
+	special_cooldown_countdown = special_cooldown;
 }

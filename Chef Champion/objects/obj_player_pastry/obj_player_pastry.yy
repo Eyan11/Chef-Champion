@@ -33,8 +33,6 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"80","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_spawn_height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_height * 6","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_spawn_width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_width * 3","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_cooldown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"60","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_cooldown_countdown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
   "spriteId": {

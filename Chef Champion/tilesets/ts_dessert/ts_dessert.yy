@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet2",
+  "name": "ts_dessert",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "spr_floor_top",
-    "path": "sprites/spr_floor_top/spr_floor_top.yy",
+    "name": "spr_dessert_tiles",
+    "path": "sprites/spr_dessert_tiles/spr_dessert_tiles.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

@@ -25,7 +25,7 @@ else
 
 //special countdowns
 special_meter_regen_countdown--;
-jump_special_cooldown_countdown--;
+special_cooldown_countdown--;
 
 //regen after cooldown
 if(special_meter_regen_countdown < 0)
@@ -33,9 +33,13 @@ if(special_meter_regen_countdown < 0)
 	
 //jump special
 if(special_input() && can_jump_special && !is_grounded && !is_rolling && 
-	(jump_special_cost <= current_special_meter) && (jump_special_cooldown_countdown < 0)) {
+	(jump_special_cost <= current_special_meter) && (special_cooldown_countdown < 0)) {
 	
+	spend_special_meter(self, jump_special_cost);
 	jump_special(self, obj_special_eclair)
+	special_cooldown_countdown = special_cooldown;
+	//can't jump special until they are grounded again
+	can_jump_special = false;
 }
 
 //reset jump special (because you can only use jump special once while in the air)
