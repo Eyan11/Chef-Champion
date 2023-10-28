@@ -8,10 +8,8 @@ if(place_meeting(self.x + (0.1*hor_dir), self.y + (0.1*vert_dir), collision_laye
 	
 	if(can_become_platform) {
 		var _platform;
-		show_debug_message("Spawn platform");
-		//WARNING: this needs to be updated if the name of the collision layers change
 		//WARNING: the object needs to be updated when different characters are in the game
 		_platform = instance_create_layer(self.x, self.y, "Instances", obj_eclair_platform);
 	}
-	instance_destroy(self);
+	self.alarm[0] = 1;
 }

@@ -46,12 +46,16 @@ function regenerate_special_meter(_player) {
 function jump_special(_player, _special_obj) {
 	//TODO: check if too close to wall to see if you can spawn a eclair platform or not
 	
-	//if a platform already exists, destroy it
+	//if a platform already exists, destroy it immediately
 	if(instance_exists(obj_eclair_platform))
 		obj_eclair_platform.alarm[0] = 1;
+	if(instance_exists(obj_jump_special_parent))
+		obj_jump_special_parent.alarm[0] = 1;
 	
 	var _obj;
+	//can't jump special until they are grounded again
 	_player.can_jump_special = false;
+	_player.jump_special_cooldown_countdown = _player.jump_special_cooldown;
 	spend_special_meter(_player, _player.jump_special_cost);
 	
 	//make player jump
