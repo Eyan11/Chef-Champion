@@ -13,12 +13,14 @@ function player_movement_calculations(_player) {
 		_player.image_xscale = sign(_player.hor_speed);
 
 
-	//define grounded variable
-	if(place_meeting(_player.x, _player.y + 0.2, collision_layer())) {
+	//define grounded variable and reset coyote time
+	if(place_meeting(_player.x, _player.y + abs(_player.vert_speed), collision_layer())) {
 		_player.is_grounded = true;
+		_player.coyote_countdown = _player.coyote_time;
 	}
 	else 
 		_player.is_grounded = false;
+		
 }
 
 
@@ -42,7 +44,7 @@ function player_roll(_player) {
 		_player.grav *= 4;
 	
 		_player.is_invincible = false;
-		_player.sprite_index = spr_player_pastry_roll;
+		_player.sprite_index = spr_pastry_roll;
 		_player.is_rolling = true;
 	}
 
@@ -58,7 +60,7 @@ function player_roll(_player) {
 			_player.grav /= 4;
 			_player.roll_cooldown_countdown = _player.roll_cooldown_time;
 			_player.is_invincible = false;
-			_player.sprite_index = spr_player_pastry;
+			_player.sprite_index = spr_pastry_idle;
 			_player.is_rolling = false;
 		}
 	}
@@ -118,11 +120,11 @@ function player_collision_and_move(_player) {
 
 	//if about to collide in vertical direction
 	if(place_meeting(_player.x, _player.y + _player.vert_speed, collision_layer())) {
-		
+		/*
 		//if about to hit ground, reset coyote timer
 		if(_player.vert_speed > 0)
 			_player.coyote_countdown = _player.coyote_time;
-	
+		*/
 		//while moving vertically, reduce speed until 0
 		while(abs(_player.vert_speed) > 0.1) {
 			

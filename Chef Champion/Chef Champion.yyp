@@ -69,6 +69,7 @@
     {"id":{"name":"scr_object_collisions","path":"scripts/scr_object_collisions/scr_object_collisions.yy",},},
     {"id":{"name":"spr_grease_pool","path":"sprites/spr_grease_pool/spr_grease_pool.yy",},},
     {"id":{"name":"scr_player_input","path":"scripts/scr_player_input/scr_player_input.yy",},},
+    {"id":{"name":"spr_pastry_idle","path":"sprites/spr_pastry_idle/spr_pastry_idle.yy",},},
     {"id":{"name":"spr_player_pastry","path":"sprites/spr_player_pastry/spr_player_pastry.yy",},},
     {"id":{"name":"spr_ground_fill","path":"sprites/spr_ground_fill/spr_ground_fill.yy",},},
     {"id":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},},

@@ -48,6 +48,7 @@
     {"name":"scr_object_collisions","order":5,"path":"scripts/scr_object_collisions/scr_object_collisions.yy",},
     {"name":"scr_player_input","order":1,"path":"scripts/scr_player_input/scr_player_input.yy",},
     {"name":"spr_ground_fill","order":2,"path":"sprites/spr_ground_fill/spr_ground_fill.yy",},
+    {"name":"spr_pastry_idle","order":2,"path":"sprites/spr_pastry_idle/spr_pastry_idle.yy",},
     {"name":"obj_player_parent","order":1,"path":"objects/obj_player_parent/obj_player_parent.yy",},
     {"name":"spr_special_eclair","order":1,"path":"sprites/spr_special_eclair/spr_special_eclair.yy",},
     {"name":"obj_jumppoint","order":1,"path":"objects/obj_jumppoint/obj_jumppoint.yy",},
