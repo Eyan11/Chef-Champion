@@ -34,5 +34,5 @@
     "path": "sprites/spr_grill_weapon/spr_grill_weapon.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

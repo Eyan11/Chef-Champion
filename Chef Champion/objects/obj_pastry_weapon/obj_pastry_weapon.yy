@@ -34,5 +34,5 @@
     "path": "sprites/spr_pastry_weapon/spr_pastry_weapon.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

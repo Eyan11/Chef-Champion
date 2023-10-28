@@ -32,5 +32,5 @@
     "path": "sprites/spr_fry_weapon/spr_fry_weapon.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
