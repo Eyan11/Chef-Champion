@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//trying to make changes for a sec
+
 if (hp <= 0) {
 
 	instance_destroy(self) //destroy
