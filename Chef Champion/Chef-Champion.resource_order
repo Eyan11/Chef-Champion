@@ -1,0 +1,7 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"spr_jumppoint","order":1,"path":"sprites/spr_jumppoint/spr_jumppoint.yy",},
+    {"name":"spr_temp_bullet","order":1,"path":"sprites/spr_temp_bullet/spr_temp_bullet.yy",},
+  ],
+}
