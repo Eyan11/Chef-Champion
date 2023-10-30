@@ -56,7 +56,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"scr_player_respawn","path":"scripts/scr_player_respawn/scr_player_respawn.yy",},},
@@ -89,6 +89,7 @@
     {"id":{"name":"scr_player_health","path":"scripts/scr_player_health/scr_player_health.yy",},},
     {"id":{"name":"obj_eclair_platform","path":"objects/obj_eclair_platform/obj_eclair_platform.yy",},},
     {"id":{"name":"spr_special_cake","path":"sprites/spr_special_cake/spr_special_cake.yy",},},
+    {"id":{"name":"obj_special_eclair","path":"objects/obj_special_eclair/obj_special_eclair.yy",},},
     {"id":{"name":"obj_jumppoint","path":"objects/obj_jumppoint/obj_jumppoint.yy",},},
     {"id":{"name":"scr_collision_layers","path":"scripts/scr_collision_layers/scr_collision_layers.yy",},},
     {"id":{"name":"obj_shoot_animation","path":"objects/obj_shoot_animation/obj_shoot_animation.yy",},},
@@ -109,7 +110,6 @@
     {"roomId":{"name":"Level_dessert","path":"rooms/Level_dessert/Level_dessert.yy",},},
     {"roomId":{"name":"Testing_Room","path":"rooms/Testing_Room/Testing_Room.yy",},},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

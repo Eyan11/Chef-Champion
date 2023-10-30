@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_border",
+  "name": "obj_special_eclair",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Special Attacks",
+    "path": "folders/Objects/Special Attacks.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_jump_special_parent",
+    "path": "objects/obj_jump_special_parent/obj_jump_special_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -25,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_border",
-    "path": "sprites/spr_border/spr_border.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
