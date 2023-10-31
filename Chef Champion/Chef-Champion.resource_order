@@ -4,5 +4,6 @@
     {"name":"spr_jumppoint","order":1,"path":"sprites/spr_jumppoint/spr_jumppoint.yy",},
     {"name":"obj_special_eclair","order":1,"path":"objects/obj_special_eclair/obj_special_eclair.yy",},
     {"name":"spr_temp_bullet","order":1,"path":"sprites/spr_temp_bullet/spr_temp_bullet.yy",},
+    {"name":"obj_UI_manager","order":1,"path":"objects/obj_UI_manager/obj_UI_manager.yy",},
   ],
 }

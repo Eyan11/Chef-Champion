@@ -56,7 +56,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"scr_player_respawn","path":"scripts/scr_player_respawn/scr_player_respawn.yy",},},
@@ -78,6 +78,7 @@
     {"id":{"name":"scr_player_input","path":"scripts/scr_player_input/scr_player_input.yy",},},
     {"id":{"name":"spr_pastry_idle","path":"sprites/spr_pastry_idle/spr_pastry_idle.yy",},},
     {"id":{"name":"obj_temp_bullet","path":"objects/obj_temp_bullet/obj_temp_bullet.yy",},},
+    {"id":{"name":"spr_health_special_bar","path":"sprites/spr_health_special_bar/spr_health_special_bar.yy",},},
     {"id":{"name":"spr_dessert_tiles","path":"sprites/spr_dessert_tiles/spr_dessert_tiles.yy",},},
     {"id":{"name":"sfx_goop_maybe","path":"sounds/sfx_goop_maybe/sfx_goop_maybe.yy",},},
     {"id":{"name":"spr_player_pastry","path":"sprites/spr_player_pastry/spr_player_pastry.yy",},},
@@ -99,6 +100,7 @@
     {"id":{"name":"spr_temp_bullet","path":"sprites/spr_temp_bullet/spr_temp_bullet.yy",},},
     {"id":{"name":"spr_pastry_roll","path":"sprites/spr_pastry_roll/spr_pastry_roll.yy",},},
     {"id":{"name":"spr_pastry_weapon","path":"sprites/spr_pastry_weapon/spr_pastry_weapon.yy",},},
+    {"id":{"name":"obj_UI_manager","path":"objects/obj_UI_manager/obj_UI_manager.yy",},},
     {"id":{"name":"ts_temp_tiles","path":"tilesets/ts_temp_tiles/ts_temp_tiles.yy",},},
     {"id":{"name":"obj_jump_special_parent","path":"objects/obj_jump_special_parent/obj_jump_special_parent.yy",},},
     {"id":{"name":"spr_placeholder_01","path":"sprites/spr_placeholder_01/spr_placeholder_01.yy",},},
@@ -110,6 +112,7 @@
     {"roomId":{"name":"Level_dessert","path":"rooms/Level_dessert/Level_dessert.yy",},},
     {"roomId":{"name":"Testing_Room","path":"rooms/Testing_Room/Testing_Room.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
