@@ -1,9 +1,23 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Enemy","order":1,"path":"folders/Objects/Enemy.yy",},
+    {"name":"Enemies","order":1,"path":"folders/Sprites/Enemies.yy",},
+    {"name":"GummyBear","order":1,"path":"folders/Sprites/Enemies/GummyBear.yy",},
+    {"name":"marshmallow_man","order":2,"path":"folders/Sprites/Enemies/marshmallow_man.yy",},
+  ],
   "ResourceOrderSettings": [
+    {"name":"spr_gummyBear_death","order":1,"path":"sprites/spr_gummyBear_death/spr_gummyBear_death.yy",},
     {"name":"spr_jumppoint","order":1,"path":"sprites/spr_jumppoint/spr_jumppoint.yy",},
+    {"name":"spr_shockwave","order":4,"path":"sprites/spr_shockwave/spr_shockwave.yy",},
+    {"name":"spr_marshmallow_idle","order":2,"path":"sprites/spr_marshmallow_idle/spr_marshmallow_idle.yy",},
+    {"name":"spr_marshmallow_dead","order":1,"path":"sprites/spr_marshmallow_dead/spr_marshmallow_dead.yy",},
+    {"name":"spr_marshmallow_prepareAttack","order":3,"path":"sprites/spr_marshmallow_prepareAttack/spr_marshmallow_prepareAttack.yy",},
+    {"name":"obj_marshmallow","order":1,"path":"objects/obj_marshmallow/obj_marshmallow.yy",},
     {"name":"obj_special_eclair","order":1,"path":"objects/obj_special_eclair/obj_special_eclair.yy",},
+    {"name":"spr_gummyBear_hop","order":2,"path":"sprites/spr_gummyBear_hop/spr_gummyBear_hop.yy",},
     {"name":"spr_temp_bullet","order":1,"path":"sprites/spr_temp_bullet/spr_temp_bullet.yy",},
+    {"name":"obj_shockwave","order":2,"path":"objects/obj_shockwave/obj_shockwave.yy",},
     {"name":"obj_UI_manager","order":1,"path":"objects/obj_UI_manager/obj_UI_manager.yy",},
+    {"name":"spr_gummyBear_idle","order":3,"path":"sprites/spr_gummyBear_idle/spr_gummyBear_idle.yy",},
   ],
 }
