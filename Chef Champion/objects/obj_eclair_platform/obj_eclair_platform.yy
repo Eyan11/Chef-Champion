@@ -32,7 +32,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_collidable","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
   ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_eclair",
+    "path": "sprites/spr_eclair/spr_eclair.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

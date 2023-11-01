@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_griddle",
+  "name": "obj_initial_checkpoint",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Obstacles",
-    "path": "folders/Objects/Obstacles.yy",
+    "name": "Respawn",
+    "path": "folders/Objects/Respawn.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,11 +25,13 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_reached","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+  ],
   "solid": false,
   "spriteId": {
-    "name": "spr_griddle",
-    "path": "sprites/spr_griddle/spr_griddle.yy",
+    "name": "spr_checkpoint_reached",
+    "path": "sprites/spr_checkpoint_reached/spr_checkpoint_reached.yy",
   },
   "spriteMaskId": null,
   "visible": true,

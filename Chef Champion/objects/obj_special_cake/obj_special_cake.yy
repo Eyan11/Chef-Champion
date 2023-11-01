@@ -33,8 +33,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_special_cake",
-    "path": "sprites/spr_special_cake/spr_special_cake.yy",
+    "name": "spr_cake",
+    "path": "sprites/spr_cake/spr_cake.yy",
   },
   "spriteMaskId": null,
   "visible": true,
