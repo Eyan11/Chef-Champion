@@ -41,6 +41,9 @@
     "name": "spr_pastry_idle",
     "path": "sprites/spr_pastry_idle/spr_pastry_idle.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_player_collision_box",
+    "path": "sprites/spr_player_collision_box/spr_player_collision_box.yy",
+  },
   "visible": true,
 }

@@ -81,6 +81,7 @@ function player_jump(_player) {
 		_player.vert_speed = _player.jump_speed;
 		_player.variable_jump_countdown = _player.variable_jump_time;
 		_player.coyote_countdown = 0;
+		_player.jump_is_starting = true;
 	}
 
 

@@ -4,7 +4,7 @@ object_hor_collide_and_move(self, move_speed * hor_dir);
 object_vert_collide_and_move(self, move_speed * vert_dir);
 
 //if colliding, delete object, and place platform instead
-if(place_meeting(self.x + (0.1*hor_dir), self.y + (0.1*vert_dir), collision_layer())) {
+if(place_meeting(self.x + (move_speed * hor_dir), self.y + (move_speed * vert_dir), collision_layer())) {
 	
 	if(can_become_platform) {
 		var _platform;
