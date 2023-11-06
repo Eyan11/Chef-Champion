@@ -2,10 +2,12 @@
   "FolderOrderSettings": [
     {"name":"Enemy","order":1,"path":"folders/Objects/Enemy.yy",},
     {"name":"TestDummy","order":2,"path":"folders/Objects/Managers/TestDummy.yy",},
+    {"name":"Player","order":1,"path":"folders/Sounds/Player.yy",},
     {"name":"Enemies","order":1,"path":"folders/Sprites/Enemies.yy",},
     {"name":"GummyBear","order":1,"path":"folders/Sprites/Enemies/GummyBear.yy",},
     {"name":"marshmallow_man","order":2,"path":"folders/Sprites/Enemies/marshmallow_man.yy",},
-    {"name":"Player","order":1,"path":"folders/Sounds/Player.yy",},
+    {"name":"Currencies","order":1,"path":"folders/Sprites/Temporary/Currencies.yy",},
+    {"name":"Collectables","order":3,"path":"folders/Objects/Collectables.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"ethans_room","order":2,"path":"rooms/ethans_room/ethans_room.yy",},

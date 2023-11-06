@@ -44,6 +44,7 @@ function spend_recipes(_player, _cost) {
 /// @description		Increases player's recipes by specified amount
 function add_recipes(_player, _amount) {
 	_player.current_recipes += _amount;
+	show_debug_message(_player.current_recipes);
 }
 
 
