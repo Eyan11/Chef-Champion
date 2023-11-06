@@ -3,8 +3,13 @@
 /// @description				Destroys player and starts respawn
 function player_death(_player) {
 	
-	//TODO: reduce experience level, reduce recipes, death anim, death sound
+	//TODO: death anim
 	instance_destroy(_player);
+	audio_play_sound(snd_player_death, 1, false);
+	
+	//reduces xp and recipes on death
+	death_xp_loss(_player);
+	death_recipe_loss(_player);
 	
 	player_respawn(_player);
 }
@@ -20,7 +25,7 @@ function player_respawn(_player) {
 		_chef = obj_player_pastry;
 	
 	//TODO: add all chefs
-	instance_create_layer(get_checkpoint().x, get_checkpoint().y + 1, "Instances", _chef);
+	instance_create_layer(get_checkpoint().x, get_checkpoint().y - 10, "Instances", _chef);
 }
 
 

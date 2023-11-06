@@ -53,13 +53,14 @@ function jump_special(_player, _special_obj, _special_spawn_offset) {
 	
 	//if player is too close to wall, adjust eclair spawn to prevent it clipping inside wall
 	if(place_meeting(_player.x + (_player.image_xscale * _special_spawn_offset), _player.y, collision_layer())) {
-		_special_spawn_offset = _player.sprite_width/2;
+		_special_spawn_offset = (-1 * _player.image_xscale) * (_player.sprite_width/2);
 	}
 	
 	var _obj;
 	
-	//make player jump
+	//make player jump and play special sound
 	_player.vert_speed = jump_speed;
+	audio_play_sound(snd_player_jump_special, 5, false);
 	
 	//0 is left (or no input), 90 is up, 180 is right, 270 is down
 	var _direction = move_direction_angle();

@@ -1,7 +1,5 @@
 
 //movement
-
-
 player_movement_calculations(self);
 
 player_roll(self);
@@ -11,8 +9,8 @@ player_jump(self);
 player_collision_and_move(self);
 
 
-
-//animations
+//TODO: Change sprite depending on current character
+//animations and sounds
 //roll
 if(is_rolling)
 	self.sprite_index = spr_pastry_roll;
@@ -20,6 +18,7 @@ if(is_rolling)
 //start jump
 else if(jump_is_starting) {
 	self.sprite_index = spr_pastry_jump;
+	audio_play_sound(snd_player_jump, 5, false);
 
 	if(image_index >= image_number - image_speed) {
 		self.sprite_index = spr_pastry_air;	
@@ -34,6 +33,7 @@ else if(!is_grounded && !jump_is_starting)
 //landing
 else if((is_grounded && self.sprite_index == spr_pastry_air) || jump_is_ending) {
 	self.sprite_index = spr_pastry_land;
+	audio_play_sound(snd_player_land, 5, false);
 	jump_is_ending = true;
 	
 	if(image_index >= image_number - image_speed)
@@ -41,8 +41,11 @@ else if((is_grounded && self.sprite_index == spr_pastry_air) || jump_is_ending) 
 }
 
 //walking
-else if(abs(hor_speed) > 0)
+else if(abs(hor_speed) > 0) {
 	self.sprite_index = spr_pastry_move;
+	if(!audio_is_playing(snd_player_walk))
+		audio_play_sound(snd_player_walk, 5, false);
+}
 
 //idle
 else

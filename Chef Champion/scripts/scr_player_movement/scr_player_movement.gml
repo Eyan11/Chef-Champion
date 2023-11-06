@@ -89,6 +89,12 @@ function player_jump(_player) {
 	if(_player.variable_jump_countdown > 0 && jump_input()) {
 		_player.vert_speed = _player.jump_speed;
 	}
+	
+	//TODO: add movement level has to be greater than 5
+	//float jump
+	if(jump_input() && (_player.vert_speed >= _player.float_jump_speed) && !_player.is_rolling) {
+			_player.vert_speed = _player.float_jump_speed;
+	}
 }
 
 

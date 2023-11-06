@@ -20,3 +20,5 @@ if(special_input() && is_grounded && !is_rolling && (current_special_meter >= ca
 	//reset cooldown timer
 	special_cooldown_countdown = special_cooldown;
 }
+
+
