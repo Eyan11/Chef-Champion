@@ -33,10 +33,13 @@ function get_recipes(_player) {
 /// @function			spend_recipes(_player, _cost)		
 /// @description		Reduces player's recipes by specified cost
 function spend_recipes(_player, _cost) {
-	if(_player.current_recipes <= _cost)
-		_player.current_recipes = 0;
-	else
+	if(_player.current_recipes > _cost)
 		_player.current_recipes -= _cost;
+	else
+		_player.current_recipes = 0;
+		
+	show_debug_message("Current Recipes: ");
+	show_debug_message(_player.current_recipes);
 }
 
 
@@ -45,13 +48,15 @@ function spend_recipes(_player, _cost) {
 function add_recipes(_player, _amount) {
 	_player.current_recipes += _amount;
 	show_debug_message(_player.current_recipes);
+	
+	show_debug_message("Current Recipes: ");
+	show_debug_message(_player.current_recipes);
 }
 
 
 
 /// @function			death_recipe_loss(_player)		
-/// @description		Reduces player's recipes by 10% of current recipes with a cap at 5
+/// @description		Reduces player's recipes by 5% of current recipes with a cap at 5
 function death_recipe_loss(_player) {
-	reduce_xp(_player, floor(_player.level_up_threshold * 0.03));
-	spend_recipes(_player, min(ceil(_player.current_recipes * 0.1), 5));
+	spend_recipes(_player, min(ceil(_player.current_recipes * 0.05), 5));
 }

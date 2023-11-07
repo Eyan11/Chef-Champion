@@ -38,7 +38,7 @@ function add_xp(_player, _xp) {
 /// @description				Decreases player xp by specified amount
 function reduce_xp(_player, _xp) {
 	if(_player.current_xp > _xp)
-		_player.current_xp -= _xp
+		_player.current_xp -= _xp;
 	else
 		_player.current_xp = 0;
 		
