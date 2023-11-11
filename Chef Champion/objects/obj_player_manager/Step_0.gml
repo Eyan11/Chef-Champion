@@ -3,15 +3,11 @@
 
 /*
 if(keyboard_check_pressed((ord("T"))))
-	take_damage(obj_player_parent, 20);
+	survival_attribute_upgrade(obj_player_pastry);
 
-if(keyboard_check_pressed((ord("G")))) {
-	spend_recipes(obj_player_parent, 1);
-	reduce_xp(obj_player_parent, 1);
-}
+if(keyboard_check_pressed((ord("Y"))))
+	combat_attribute_upgrade(obj_player_pastry);
+
+if(keyboard_check_pressed((ord("U"))))
+	special_attribute_upgrade(obj_player_pastry);
 */
-
-
-
-
-

@@ -54,6 +54,12 @@ function level_up(_player) {
 	if(_player.current_level < 50) {
 		reduce_xp(_player, _player.level_up_threshold)
 		_player.current_level++;
+		
+		//level up stats
+		_player.max_health += 1;
+		gain_health(_player, 1);
+		_player.additional_weapon_damage += 1;
+		_player.max_special_meter += 1;
 	}
 	//gain attribute token if under max upgrade level (45 total attribute upgrades)
 	if(_player.current_level < 45) {

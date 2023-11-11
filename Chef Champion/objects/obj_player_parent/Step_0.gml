@@ -1,43 +1,44 @@
 
 //movement
-player_movement_calculations(self);
-
-player_roll(self);
-
-player_jump(self);
+if(!is_dead) {
+	player_movement_calculations(self);
+	player_roll(self);
+	player_jump(self);
+}
 
 player_collision_and_move(self);
 
 
 //TODO: Change sprite depending on current character
 //animations and sounds
-//roll
-if(is_rolling)
-	self.sprite_index = spr_pastry_roll;
-	
-//start jump
-else if(jump_is_starting) {
-	self.sprite_index = spr_pastry_jump;
-	audio_play_sound(snd_player_jump, 5, false);
 
-	if(image_index >= image_number - image_speed) {
-		self.sprite_index = spr_pastry_air;	
-		jump_is_starting = false;
-	}	
+//death
+if(is_dead) {
+	self.sprite_index = spr_pastry_death;
+	if(!audio_is_playing(snd_player_death))
+		audio_play_sound(snd_player_death, 5, false);
 }
 
-//in air
-else if(!is_grounded && !jump_is_starting)
-	self.sprite_index = spr_pastry_air;	
+//roll
+else if(is_rolling) {
+	self.sprite_index = spr_pastry_roll;
+	if(!audio_is_playing(snd_player_roll))
+		audio_play_sound(snd_player_roll, 5, false);
+}
+	
+//start jump and in air
+else if(!is_grounded) {
+	self.sprite_index = spr_pastry_jump;
+	if(!audio_is_playing(snd_player_jump) && vert_speed <= jump_speed)
+		audio_play_sound(snd_player_jump, 5, false);
+}
 
 //landing
-else if((is_grounded && self.sprite_index == spr_pastry_air) || jump_is_ending) {
+else if((self.sprite_index == spr_pastry_jump)) {
+	//Extra: add landing anim, right now it's only playing for 1 step
 	self.sprite_index = spr_pastry_land;
-	audio_play_sound(snd_player_land, 5, false);
-	jump_is_ending = true;
-	
-	if(image_index >= image_number - image_speed)
-		jump_is_ending = false;
+	if(!audio_is_playing(snd_player_land))
+		audio_play_sound(snd_player_land, 5, false);
 }
 
 //walking
