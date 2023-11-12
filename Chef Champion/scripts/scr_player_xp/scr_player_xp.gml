@@ -6,11 +6,13 @@ function get_xp(_player) {
 }
 
 
+
 /// @function					get_level(_player)
 /// @description				Returns the player's current level
 function get_level(_player) {
 	return _player.current_level;
 }
+
 
 
 /// @function					death_xp_loss(_player)
@@ -25,7 +27,8 @@ function death_xp_loss(_player) {
 function add_xp(_player, _xp) {
 	_player.current_xp += _xp;
 	
-	if(_player.current_xp >= _player.level_up_threshold) {
+	//Incase xp is large enough for multiple level ups
+	while(_player.current_xp >= _player.level_up_threshold) {
 		level_up(_player);
 	}
 	

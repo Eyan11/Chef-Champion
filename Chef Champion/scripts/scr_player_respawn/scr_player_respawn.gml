@@ -13,7 +13,7 @@ function player_death(_player) {
 	death_recipe_loss(_player);
 	
 	//WARNING: MAKE SURE PLAYER MANAGER OBJ IS IN ROOM
-	//Alarm destroys player obh and calls respawn function
+	//Alarm destroys player obj and calls respawn function
 	obj_player_manager.alarm[0] = 180; //3 seconds
 }
 

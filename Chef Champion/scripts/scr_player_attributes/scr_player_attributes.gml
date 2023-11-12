@@ -55,3 +55,23 @@ function special_attribute_upgrade(_player) {
 }
 
 
+/// @function					get_survival_attribute_level(_player)
+/// @description				Returns the players survival attribute level
+function get_survival_attribute_level(_player) {
+	
+	return _player.survival_attribute_level;
+}
+
+/// @function					get_combat_attribute_level(_player)
+/// @description				Returns the players combat attribute level
+function get_combat_attribute_level(_player) {
+	
+	return _player.combat_attribute_level;
+}
+
+/// @function					get_special_attribute_level(_player)
+/// @description				Returns the players special attribute level
+function get_special_attribute_level(_player) {
+	
+	return _player.special_attribute_level;
+}

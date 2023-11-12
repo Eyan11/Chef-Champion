@@ -79,7 +79,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sear_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"10","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"special_cooldown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"60","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"special_cooldown_countdown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_recipes","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_recipes","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"25","varType":1,},
   ],
   "solid": false,
   "spriteId": null,
