@@ -13,3 +13,54 @@ function player_normal_attack(_projectile_spawner, _player) {
 		_player.alarm[4] = room_speed * .33 //3 projectiles a second
 	}
 }
+
+//starts grill weapon attack, basically checks for attack cooldown
+function player_normal_attack_grill_start(_melee_object, _player) {
+	
+	var mo = _melee_object
+	var p = _player
+	
+	if(norm_attack_input() && _player.can_attack) {
+		player_normal_attack_grill_hitbox(mo, p)
+	}
+	
+}
+
+//will spawn the grill weapon hitboxes
+function player_normal_attack_grill_hitbox(_melee_object, _player) {
+	
+	//make 2 hitboxes
+	if(_player.image_xscale < 0) {
+		with (instance_create_layer(_player.x - 40, _player.y, "Instances", obj_grill_hitbox)) {
+			image_xscale = -1
+		}
+	}
+	else {
+		instance_create_layer(_player.x + 40, _player.y, "Instances", obj_grill_hitbox)
+	}
+	_player.alarm[5] = room_speed * .15 //time between both hitboxes
+	
+	
+	_player.can_attack = false
+	_player.alarm[4] = room_speed * .50 // 2 swings a second
+		
+}
+
+function player_normal_attack_fry(_melee_object, _player) {
+	
+	if(norm_attack_input() && _player.can_attack) {
+		if(_player.image_xscale < 0) {
+			with (instance_create_layer(_player.x - 90, _player.y, "Instances", obj_fry_hitbox)) {
+				image_xscale = -2
+			}
+		}
+		else {
+			with(instance_create_layer(_player.x + 90, _player.y, "Instances", obj_fry_hitbox)) {
+				image_xscale = 2
+			}
+		}
+	
+		_player.can_attack = false
+		_player.alarm[4] = room_speed * .65 //little more than 1 swing a second
+	}
+}
