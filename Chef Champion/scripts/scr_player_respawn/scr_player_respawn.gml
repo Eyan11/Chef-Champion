@@ -7,8 +7,8 @@ function player_death(_player) {
 	audio_play_sound(snd_player_death, 1, false);
 	
 	//reduces xp and recipes on death
-	death_xp_loss(_player);
-	death_recipe_loss(_player);
+	//death_xp_loss(_player);
+	//death_recipe_loss(_player);
 	
 	instance_destroy(_player);
 	player_respawn(_player);

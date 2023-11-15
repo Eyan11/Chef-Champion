@@ -1,16 +1,17 @@
+event_inherited()
 // Movement and states
 speed = 2;
 target_x = x;
 target_y = y;
 state = "idle";
 hop_timer = 0;
-hop_duration = 30; // Time it takes for the hop to complete
+hop_duration = 20; // Time it takes for the hop to complete
 gravity = 0.2;   // Controls the rate of fall
 vertical_speed = 0;  // Controls the speed of the upward jump and descent
 
 
 // Health
-health = 3;
+health = 100;
 
 // Debuffs
 burn = false;
@@ -18,9 +19,9 @@ frosted = false;
 grease = false;
 
 // Attack Variables
-attack_distance = 64;
-attack_cooldown = 60;
+attack_distance = 50;
+attack_cooldown = 50;
 attack_timer = 0;
 
 
-
+//tilemapLayer = layer_tilemap_get_id("Dessert_Tile_Set")
