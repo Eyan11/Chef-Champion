@@ -7,7 +7,6 @@
     {"name":"gummy bear","order":6,"path":"folders/Objects/Enemy/gummy bear.yy",},
     {"name":"marshmallow man","order":8,"path":"folders/Objects/Enemy/marshmallow man.yy",},
     {"name":"TestDummy","order":2,"path":"folders/Objects/Managers/TestDummy.yy",},
-    {"name":"Enemy","order":1,"path":"folders/Scripts/Enemy.yy",},
     {"name":"Enemy","order":2,"path":"folders/Sounds/Enemy.yy",},
     {"name":"Player","order":1,"path":"folders/Sounds/Player.yy",},
     {"name":"Enemies","order":1,"path":"folders/Sprites/Enemies.yy",},
