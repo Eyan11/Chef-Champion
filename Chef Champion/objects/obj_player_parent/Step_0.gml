@@ -1,6 +1,4 @@
- audio_listener_position(x,y,0)//spatial sound connector
- 
- 
+
 //movement
 if(!is_dead) {
 	player_movement_calculations(self);
@@ -75,11 +73,5 @@ if(special_input() && can_jump_special && !is_grounded && !is_rolling &&
 }
 
 //reset jump special (because you can only use jump special once while in the air)
-if(is_grounded) {
+if(is_grounded)
 	can_jump_special = true;
-}
-
-if(y >= 1900) {
-		current_health = 0;
-		player_death(self);
-	}
