@@ -1,7 +1,6 @@
-event_inherited()
 // ** AI Logic for Movement and Attack **
 
-if (state == "idle"){
+if (state == "idle") {
 
     // ** Back and Forth Movement Logic **
 
@@ -31,7 +30,8 @@ else if (state == "prepareAttack") {
     shockwave_timer--;
     if (shockwave_timer <= 0) {
         state = "attack";
-		var shockwave = instance_create_layer(obj_marshmallow.x - 200, obj_marshmallow.y - 90, "Instances", obj_shockwave);
+		
+        var shockwave = instance_create_layer(x, y, "Instances", obj_shockwave);
         attack_timer = attack_cooldown;
         hspeed = 0; // Stop movement during the attack
     }
@@ -40,19 +40,14 @@ else if (state == "attack") {
     attack_timer--;
 
     // Check for collision with the player during the attack
-    // Assuming the shockwave appears centered around the marshmallow man
-    if (instance_exists(obj_shockwave)) {
-        // Define the shockwave's collision area relative to the marshmallow man
-        var shockwave_left = x - obj_shockwave.sprite_width / 2;
-        var shockwave_right = x + obj_shockwave.sprite_width / 2;
-        var shockwave_top = y - obj_shockwave.sprite_height / 2;
-        var shockwave_bottom = y + obj_shockwave.sprite_height / 2;
-        
-        // Check if the player is within the shockwave's collision area
-        if (collision_rectangle(shockwave_left, shockwave_top, shockwave_right, shockwave_bottom, obj_player_parent, false, true)) {
-            take_damage(obj_player_parent, 1);
-        }
-	}
+    if (instance_exists(obj_shockwave) && collision_rectangle(obj_shockwave.x - obj_shockwave.sprite_width/2, obj_shockwave.y - 
+	obj_shockwave.sprite_height/2, obj_shockwave.x + 
+	obj_shockwave.sprite_width/2, obj_shockwave.y + 
+	obj_shockwave.sprite_height/2, obj_player_parent, false, true)) {
+       // obj_player_parent.playerhealth--;  // Reduce the player's health
+	   take_damage(obj_player_parent, 5)
+		
+    }
 
     if (attack_timer <= 0) {
         state = "idle";
@@ -68,24 +63,14 @@ switch (state) {
         break;
     case "prepareAttack":
         sprite_index = spr_marshmallow_prepareAttack;
-		if audio_is_playing(sfx_marshmallow){
-		}
-		else {
-		audio_play_sound(sfx_marshmallow,5,false)
-		}
-		break;
+        break;
     case "attack":
         sprite_index = spr_marshmallow_attack;
-		
         break;
     case "death":
+	
         sprite_index = spr_marshmallow_dead;
-		if audio_is_playing(sfx_death) {
-		}
-		else {
-		audio_play_sound(sfx_death,5,false)
-		}
-		break;
+        break;
 }
 
 // ** Debuff Mechanics **
