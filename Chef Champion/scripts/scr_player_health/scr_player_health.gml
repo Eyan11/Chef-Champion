@@ -68,7 +68,11 @@ function frosted(_player) {
 
 function slowed(_player) {
 	_player.is_slowed = true;
+<<<<<<< Updated upstream
 	_player.alarm[5] = _player.slowed_time * 60;
+=======
+	_player.alarm[6] = _player.slowed_time * 60;
+>>>>>>> Stashed changes
 }
 
 

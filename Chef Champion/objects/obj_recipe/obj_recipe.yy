@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "obj_recipe",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_recipe",
-    "path": "sprites/spr_recipe/spr_recipe.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Placeholders",
-    "path": "folders/Sprites/Placeholders.yy",
+    "path": "folders/Sprites/Player/Placeholders.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
