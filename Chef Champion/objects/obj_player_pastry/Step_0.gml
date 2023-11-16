@@ -1,4 +1,4 @@
-/// @description adds special attacks
+ /// @description adds special attacks
 
 // Inherit the parent event
 event_inherited();
@@ -21,5 +21,7 @@ if(special_attribute_level >= 5 && special_input() && is_grounded && !is_rolling
 	//reset cooldown timer
 	special_cooldown_countdown = special_cooldown;
 }
+
+
 
 

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Marshmallo Man",
-    "path": "folders/Objects/Enemy/Marshmallo Man.yy",
+    "name": "Enemy",
+    "path": "folders/Objects/Enemy.yy",
   },
   "parentObjectId": null,
   "persistent": false,
