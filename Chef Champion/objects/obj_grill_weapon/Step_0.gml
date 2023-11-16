@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-_projectile_direction = obj_player_pastry.image_xscale
-
 self.x = obj_player_pastry.x
 self.y = obj_player_pastry.y
 
@@ -14,20 +12,21 @@ if(norm_attack_input()) {
 		}
 		else {
 			if(chargeSound) {
-				audio_play_sound(snd_charged, 10, 0)
+				audio_play_sound(snd_charged, 10, 0)	
 				chargeSound = false
 			}
 		}
 	}
 	else {
-		player_normal_attack_pastry(self, obj_player_pastry)
+		player_normal_attack_grill_start(self, obj_player_pastry)	
 	}
-	
 	
 	
 }
 else if(keyboard_check_released(ord("F"))) {
-	player_normal_attack_pastry(self, obj_player_pastry)
+	player_normal_attack_grill_start(self, obj_player_pastry)
 }
 
-//player_normal_attack(self, obj_player_pastry)
+//player_normal_attack_grill_start(self, obj_player_pastry)
+
+

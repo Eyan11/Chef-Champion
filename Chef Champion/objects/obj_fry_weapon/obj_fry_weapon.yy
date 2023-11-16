@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pastry_weapon",
+  "name": "obj_fry_weapon",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
@@ -26,13 +26,12 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"_projectile_direction","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"chargeSound","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_pastry_weapon",
-    "path": "sprites/spr_pastry_weapon/spr_pastry_weapon.yy",
+    "name": "spr_fry_weapon",
+    "path": "sprites/spr_fry_weapon/spr_fry_weapon.yy",
   },
   "spriteMaskId": null,
   "visible": false,

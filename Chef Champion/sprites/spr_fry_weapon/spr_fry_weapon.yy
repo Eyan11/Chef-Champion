@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_pastry_weapon",
+  "name": "spr_fry_weapon",
   "bbox_bottom": 7,
   "bbox_left": 0,
   "bbox_right": 7,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_pastry_weapon",
+    "name": "spr_fry_weapon",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0bcbfa01-dacd-479f-a9d0-3fdad5e3a0a2","path":"sprites/spr_pastry_weapon/spr_pastry_weapon.yy",},},},"Disabled":false,"id":"f9bd1b8f-3903-4609-b435-db78136f8ea8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0bcbfa01-dacd-479f-a9d0-3fdad5e3a0a2","path":"sprites/spr_fry_weapon/spr_fry_weapon.yy",},},},"Disabled":false,"id":"95c6a924-5882-4f6c-a27b-f1538ce9239c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
