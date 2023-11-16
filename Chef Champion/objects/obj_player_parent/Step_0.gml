@@ -1,4 +1,6 @@
-
+ audio_listener_position(x,y,0)//spatial sound connector
+ 
+ 
 //movement
 player_movement_calculations(self);
 
@@ -19,6 +21,17 @@ if(special_meter_regen_countdown < 0)
 if(special_input() && can_jump_special && !is_grounded && !is_rolling && (jump_special_cost <= current_special_meter))
 	jump_special(self, obj_special_eclair)
 
+<<<<<<< Updated upstream
 //because you can only use jump special once while in the air
 if(is_grounded)
+=======
+//reset jump special (because you can only use jump special once while in the air)
+if(is_grounded) {
+>>>>>>> Stashed changes
 	can_jump_special = true;
+}
+
+if(y >= 1900) {
+		current_health = 0;
+		player_death(self);
+	}
