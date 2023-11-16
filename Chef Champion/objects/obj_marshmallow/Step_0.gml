@@ -68,16 +68,24 @@ switch (state) {
         break;
     case "prepareAttack":
         sprite_index = spr_marshmallow_prepareAttack;
+		if audio_is_playing(sfx_marshmallow){
+		}
+		else {
 		audio_play_sound(sfx_marshmallow,5,false)
-        break;
+		}
+		break;
     case "attack":
         sprite_index = spr_marshmallow_attack;
 		
         break;
     case "death":
         sprite_index = spr_marshmallow_dead;
+		if audio_is_playing(sfx_death) {
+		}
+		else {
 		audio_play_sound(sfx_death,5,false)
-        break;
+		}
+		break;
 }
 
 // ** Debuff Mechanics **
