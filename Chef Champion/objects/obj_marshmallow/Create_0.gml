@@ -1,5 +1,6 @@
+event_inherited()
 state = "idle";
-health = 10; // Or any value you want to start with
+health = 300; // Or any value you want to start with
 attack_distance = 100; // Adjust as per requirement
 attack_timer = 0;
 attack_cooldown = 120; // Cooldown of 2 seconds 

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_shockwave",
-  "bbox_bottom": 101,
-  "bbox_left": 11,
-  "bbox_right": 80,
+  "bbox_bottom": 310,
+  "bbox_left": 47,
+  "bbox_right": 376,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 106,
+  "height": 500,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2e3d808c-35fe-44fe-a82a-238cf97d7658","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 93,
+  "width": 439,
 }
