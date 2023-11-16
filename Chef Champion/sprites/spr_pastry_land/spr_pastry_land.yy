@@ -13,7 +13,6 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-<<<<<<< HEAD:Chef Champion/sprites/spr_pastry_land/spr_pastry_land.yy
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bd64fd22-bc3e-434d-8683-875d251b8a49",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"653db343-6170-44b6-ba62-8195ff89b2d8",},
   ],
@@ -23,16 +22,6 @@
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cc666cef-27b9-43f6-ab45-1b267240ba97","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
-=======
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d07c35e8-c13f-4e7a-9483-0dd99798ef08",},
-  ],
-  "gridX": 0,
-  "gridY": 0,
-  "height": 256,
-  "HTile": false,
-  "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"66db071c-57d0-4b4c-ac76-f9aed0e6ce6d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
->>>>>>> parent of 7c5b059 (obstacles and more):Chef Champion/sprites/spr_floor_top/spr_floor_top.yy
   ],
   "nineSlice": null,
   "origin": 4,
@@ -66,12 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-<<<<<<< HEAD:Chef Champion/sprites/spr_pastry_land/spr_pastry_land.yy
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bd64fd22-bc3e-434d-8683-875d251b8a49","path":"sprites/spr_pastry_land/spr_pastry_land.yy",},},},"Disabled":false,"id":"3344adf4-cb36-4b3c-bcc0-93c2afb5e296","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"653db343-6170-44b6-ba62-8195ff89b2d8","path":"sprites/spr_pastry_land/spr_pastry_land.yy",},},},"Disabled":false,"id":"8a218450-a9b6-4f5d-afbf-0968f35ffd07","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-=======
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d07c35e8-c13f-4e7a-9483-0dd99798ef08","path":"sprites/spr_floor_top/spr_floor_top.yy",},},},"Disabled":false,"id":"49ebdf32-b14f-454b-81e7-1516b507457e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
->>>>>>> parent of 7c5b059 (obstacles and more):Chef Champion/sprites/spr_floor_top/spr_floor_top.yy
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -87,9 +72,5 @@
   },
   "type": 0,
   "VTile": false,
-<<<<<<< HEAD:Chef Champion/sprites/spr_pastry_land/spr_pastry_land.yy
   "width": 50,
-=======
-  "width": 256,
->>>>>>> parent of 7c5b059 (obstacles and more):Chef Champion/sprites/spr_floor_top/spr_floor_top.yy
 }

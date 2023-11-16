@@ -17,13 +17,9 @@ if(special_attribute_level >= 5 && special_input() && is_grounded && !is_rolling
 	else {
 		instance_create_layer(self.x, self.y - cake_spawn_height, "Instances", obj_special_cake);
 	}
-<<<<<<< HEAD
 	
 	//reset cooldown timer
 	special_cooldown_countdown = special_cooldown;
 }
 
 
-=======
-}
->>>>>>> parent of 7c5b059 (obstacles and more)

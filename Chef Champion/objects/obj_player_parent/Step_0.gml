@@ -62,7 +62,6 @@ if(special_meter_regen_countdown < 0)
 	regenerate_special_meter(self);
 	
 //jump special
-<<<<<<< HEAD
 if(special_input() && can_jump_special && !is_grounded && !is_rolling && 
 	(jump_special_cost <= current_special_meter) && (special_cooldown_countdown < 0)) {
 	
@@ -74,11 +73,5 @@ if(special_input() && can_jump_special && !is_grounded && !is_rolling &&
 }
 
 //reset jump special (because you can only use jump special once while in the air)
-=======
-if(special_input() && can_jump_special && !is_grounded && !is_rolling && (jump_special_cost <= current_special_meter))
-	jump_special(self, obj_special_eclair)
-
-//because you can only use jump special once while in the air
->>>>>>> parent of 7c5b059 (obstacles and more)
 if(is_grounded)
 	can_jump_special = true;
