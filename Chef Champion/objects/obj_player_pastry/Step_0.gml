@@ -1,4 +1,4 @@
-/// @description adds special attacks
+ /// @description adds special attacks
 
 // Inherit the parent event
 event_inherited();
@@ -17,4 +17,18 @@ if(special_input() && is_grounded && (current_special_meter >= cake_cost)) {
 	else {
 		instance_create_layer(self.x, self.y - cake_spawn_height, "Instances", obj_special_cake);
 	}
+<<<<<<< Updated upstream
 }
+=======
+	
+	//reset cooldown timer
+	special_cooldown_countdown = special_cooldown;
+}
+
+
+
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes

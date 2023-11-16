@@ -121,3 +121,22 @@ function special_input() {
 	
 	return _is_special_attacking;
 }
+<<<<<<< Updated upstream
+=======
+
+function norm_attack_input() {
+	var _is_norm_attacking;
+	
+	//collects normal attack input from controller
+	if(gamepad_is_connected(0)) {
+		_is_norm_attacking = gamepad_button_check(0, gp_face3); //X button
+	}
+	//collects normal attack input from keybpard
+	else {
+		_is_norm_attacking = keyboard_check(ord("F"));
+	}
+	
+	
+	return _is_norm_attacking;
+}
+>>>>>>> Stashed changes

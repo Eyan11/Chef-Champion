@@ -112,8 +112,18 @@ function player_collision_and_move(_player) {
 	//move player horizontally, reducing horizontal speed when frosted
 	if(_player.is_frosted)
 		_player.x += _player.hor_speed * _player.frosted_multiplier;
+	
+	else if(_player.is_slowed) //slowed effect for slowing pool 
+		_player.x += _player.hor_speed * .4;
+	
 	else
 		_player.x += _player.hor_speed;
+		
+		
+		
+
+
+		
 
 
 	//if about to collide in vertical direction
@@ -139,8 +149,13 @@ function player_collision_and_move(_player) {
 	//move player vertically, reducing vertical speed when frosted
 	if(_player.is_frosted)
 		_player.y += _player.vert_speed * _player.frosted_multiplier;
+	
+		else if(_player.is_slowed)
+		_player.y += _player.vert_speed * .5;
+		
 	else
 		_player.y += _player.vert_speed;
+		
 }
 
 

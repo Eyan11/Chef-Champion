@@ -41,7 +41,6 @@ function take_damage(_player, _damage){
 }
 
 
-
 /// @function					gain_health(_player, _health_boost);
 /// @description				Increases player health
 function gain_health(_player, _health_boost) {
@@ -65,9 +64,13 @@ function gain_health(_player, _health_boost) {
 function frosted(_player) {
 	_player.is_frosted = true;
 	
-	_player.alarm[0] = _player.frosted_time * 60; //60 steps per second
+	_player.alarm[0] = _player.frosted_time * 60; //60 steps per seconds
 }
 
+function slowed(_player) {
+	_player.is_slowed = true;
+	_player.alarm[5] = _player.slowed_time * 60;
+}
 
 
 /// @function					burn(_player);

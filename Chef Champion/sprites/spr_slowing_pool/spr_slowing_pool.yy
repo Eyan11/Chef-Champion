@@ -1,0 +1,89 @@
+{
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+<<<<<<<< Updated upstream:Chef Champion/sprites/spr_slowing_pool/spr_slowing_pool.yy
+  "name": "spr_slowing_pool",
+  "bbox_bottom": 127,
+  "bbox_left": 0,
+  "bbox_right": 127,
+========
+  "name": "spr_shockwave",
+  "bbox_bottom": 101,
+  "bbox_left": 11,
+  "bbox_right": 80,
+>>>>>>>> Stashed changes:Chef Champion/sprites/spr_shockwave/spr_shockwave.yy
+  "bbox_top": 0,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "collisionTolerance": 0,
+  "DynamicTexturePage": false,
+  "edgeFiltering": false,
+  "For3D": false,
+  "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"57491952-0da6-4d95-8bbd-6eac71268230",},
+  ],
+  "gridX": 0,
+  "gridY": 0,
+<<<<<<<< Updated upstream:Chef Champion/sprites/spr_slowing_pool/spr_slowing_pool.yy
+  "height": 128,
+========
+  "height": 106,
+>>>>>>>> Stashed changes:Chef Champion/sprites/spr_shockwave/spr_shockwave.yy
+  "HTile": false,
+  "layers": [
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3f783ad7-b70e-4e2f-b749-98dca6f21f4c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+  ],
+  "nineSlice": null,
+  "origin": 0,
+  "parent": {
+    "name": "movement",
+    "path": "folders/Sprites/obstacles/movement.yy",
+  },
+  "preMultiplyAlpha": false,
+  "sequence": {
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_slowing_pool",
+    "autoRecord": true,
+    "backdropHeight": 768,
+    "backdropImageOpacity": 0.5,
+    "backdropImagePath": "",
+    "backdropWidth": 1366,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
+    "eventStubScript": null,
+    "eventToFunction": {},
+    "length": 1.0,
+    "lockOrigin": false,
+    "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
+    "playback": 1,
+    "playbackSpeed": 30.0,
+    "playbackSpeedType": 0,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "timeUnits": 1,
+    "tracks": [
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"57491952-0da6-4d95-8bbd-6eac71268230","path":"sprites/spr_slowing_pool/spr_slowing_pool.yy",},},},"Disabled":false,"id":"c132ffde-4a15-4952-b8a1-295d266fbcdb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+          ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+    ],
+    "visibleRange": null,
+    "volume": 1.0,
+    "xorigin": 0,
+    "yorigin": 0,
+  },
+  "swatchColours": null,
+  "swfPrecision": 2.525,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "type": 0,
+  "VTile": false,
+<<<<<<<< Updated upstream:Chef Champion/sprites/spr_slowing_pool/spr_slowing_pool.yy
+  "width": 128,
+========
+  "width": 93,
+>>>>>>>> Stashed changes:Chef Champion/sprites/spr_shockwave/spr_shockwave.yy
+}

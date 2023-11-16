@@ -4,6 +4,10 @@
   "name": "obj_player_pastry",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+<<<<<<< Updated upstream
+=======
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":2,"isDnD":false,},
+>>>>>>> Stashed changes
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -33,6 +37,24 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"80","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_spawn_height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_height * 6","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cake_spawn_width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_width * 3","varType":0,},
+<<<<<<< Updated upstream
+=======
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"can_shoot","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_level","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_xp","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"level_up_threshold","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"500","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_attribute_tokens","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"survival_attribute_level","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"combat_attribute_level","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"special_attribute_level","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"run_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"4.5","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"max_health","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"additional_weapon_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"crit_percent","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.05","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"max_special_meter","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"jump_special_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"20","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"ground_special_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"80","varType":0,},
+>>>>>>> Stashed changes
   ],
   "solid": false,
   "spriteId": {
