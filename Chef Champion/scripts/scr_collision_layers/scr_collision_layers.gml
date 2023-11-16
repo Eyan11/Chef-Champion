@@ -7,13 +7,17 @@
 function collision_layer() {
 	
 	//TODO: add all platforms for all chefs
+<<<<<<< Updated upstream
+	return [layer_tilemap_get_id("tile_level"), obj_eclair_platform, obj_border];
+=======
 	//collide with jump special platforms when above them
 	if(instance_exists(obj_eclair_platform) && obj_eclair_platform.is_collidable)
-			return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border, obj_eclair_platform];
+			return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border, obj_eclair_platform, obj_grill, obj_platform_move_parent];
 	//if below a platform, pass through it
 	else
-		return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border];
+		return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border,obj_platform_move_parent,obj_grill];
 	
 	//return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border];
+>>>>>>> Stashed changes
 	
 }
