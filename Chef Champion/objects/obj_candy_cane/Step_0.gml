@@ -1,4 +1,4 @@
-event_inherited()
+ event_inherited()
 // ** Step Event for Candy Cane Enemy **
 
 var certified_range = 100; // adjust this value as needed
@@ -42,7 +42,11 @@ if (visible) {
             break;
 
         case "attackPrep":
+		if audio_is_playing(sfx_candyCane) {
+		}
+		else {
 		audio_play_sound(sfx_candyCane,10,false)
+		}
             attack_timer--;
             if (attack_timer <= 0) {
                 state = "attack";

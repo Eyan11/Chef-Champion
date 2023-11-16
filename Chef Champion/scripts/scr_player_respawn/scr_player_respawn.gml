@@ -45,4 +45,3 @@ function get_checkpoint() {
 	return obj_player_manager.last_checkpoint;
 }
 
-
