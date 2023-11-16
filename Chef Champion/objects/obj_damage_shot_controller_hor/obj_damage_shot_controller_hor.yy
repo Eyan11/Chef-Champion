@@ -9,13 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-<<<<<<<< Updated upstream:Chef Champion/objects/obj_damage_shot_controller_hor/obj_damage_shot_controller_hor.yy
     "name": "damage shot",
     "path": "folders/Objects/Obstacles/damage shot.yy",
-========
-    "name": "Enemy",
-    "path": "folders/Objects/Enemy.yy",
->>>>>>>> Stashed changes:Chef Champion/objects/obj_shockwave/obj_shockwave.yy
   },
   "parentObjectId": null,
   "persistent": false,

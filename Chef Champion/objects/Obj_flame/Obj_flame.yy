@@ -4,24 +4,15 @@
   "name": "Obj_flame",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-<<<<<<<< Updated upstream:Chef Champion/objects/Obj_flame/Obj_flame.yy
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
-========
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
->>>>>>>> Stashed changes:Chef Champion/objects/obj_marshmallow/obj_marshmallow.yy
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-<<<<<<<< Updated upstream:Chef Champion/objects/Obj_flame/Obj_flame.yy
     "name": "Obstacles",
     "path": "folders/Objects/Obstacles.yy",
-========
-    "name": "Enemy",
-    "path": "folders/Objects/Enemy.yy",
->>>>>>>> Stashed changes:Chef Champion/objects/obj_marshmallow/obj_marshmallow.yy
   },
   "parentObjectId": null,
   "persistent": false,

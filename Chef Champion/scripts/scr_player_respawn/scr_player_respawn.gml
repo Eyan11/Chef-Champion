@@ -2,11 +2,19 @@
 /// @function					player_death(_player);
 /// @description				Destroys player and starts respawn
 function player_death(_player) {
+	//leave funciton if already dead
+	if(_player.is_dead)
+		return;
 	
-	//TODO: reduce experience level, reduce recipes, death anim, death sound
-	instance_destroy(_player);
+	_player.is_dead = true;
 	
-	player_respawn(_player);
+	//reduces xp and recipes on death
+	death_xp_loss(_player);
+	death_recipe_loss(_player);
+	
+	//WARNING: MAKE SURE PLAYER MANAGER OBJ IS IN ROOM
+	//Alarm destroys player obj and calls respawn function
+	obj_player_manager.alarm[0] = 180; //3 seconds
 }
 
 
@@ -14,13 +22,9 @@ function player_death(_player) {
 /// @function					player_respawn(_player);
 /// @description				Respawns player at last checkpoint
 function player_respawn(_player) {
-	
-	var _chef;
-	if(obj_player_manager.current_chef == 0)
-		_chef = obj_player_pastry;
-	
-	//TODO: add all chefs
-	instance_create_layer(get_checkpoint().x, get_checkpoint().y + 1, "Instances", _chef);
+
+	instance_create_layer(get_checkpoint().x, get_checkpoint().y - 10, "Instances", _player);
+	_player.is_dead = false;
 }
 
 

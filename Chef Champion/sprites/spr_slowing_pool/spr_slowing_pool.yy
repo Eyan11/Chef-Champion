@@ -1,17 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-<<<<<<<< Updated upstream:Chef Champion/sprites/spr_slowing_pool/spr_slowing_pool.yy
   "name": "spr_slowing_pool",
   "bbox_bottom": 127,
   "bbox_left": 0,
   "bbox_right": 127,
-========
-  "name": "spr_shockwave",
-  "bbox_bottom": 101,
-  "bbox_left": 11,
-  "bbox_right": 80,
->>>>>>>> Stashed changes:Chef Champion/sprites/spr_shockwave/spr_shockwave.yy
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -24,11 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-<<<<<<<< Updated upstream:Chef Champion/sprites/spr_slowing_pool/spr_slowing_pool.yy
   "height": 128,
-========
-  "height": 106,
->>>>>>>> Stashed changes:Chef Champion/sprites/spr_shockwave/spr_shockwave.yy
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3f783ad7-b70e-4e2f-b749-98dca6f21f4c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -81,9 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-<<<<<<<< Updated upstream:Chef Champion/sprites/spr_slowing_pool/spr_slowing_pool.yy
   "width": 128,
-========
-  "width": 93,
->>>>>>>> Stashed changes:Chef Champion/sprites/spr_shockwave/spr_shockwave.yy
 }

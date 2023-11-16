@@ -27,12 +27,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-<<<<<<<< Updated upstream:Chef Champion/objects/obj_platform_move_parent/obj_platform_move_parent.yy
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"horspeed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"distance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":0,},
-========
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"_projectile_direction","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
->>>>>>>> Stashed changes:Chef Champion/objects/obj_pastry_weapon/obj_pastry_weapon.yy
   ],
   "solid": false,
   "spriteId": null,

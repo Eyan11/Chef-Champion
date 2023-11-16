@@ -121,8 +121,6 @@ function special_input() {
 	
 	return _is_special_attacking;
 }
-<<<<<<< Updated upstream
-=======
 
 function norm_attack_input() {
 	var _is_norm_attacking;
@@ -139,4 +137,3 @@ function norm_attack_input() {
 	
 	return _is_norm_attacking;
 }
->>>>>>> Stashed changes

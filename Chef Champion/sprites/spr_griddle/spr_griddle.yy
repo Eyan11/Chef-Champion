@@ -4,18 +4,8 @@
   "name": "spr_griddle",
   "bbox_bottom": 127,
   "bbox_left": 0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "bbox_right": 63,
-  "bbox_top": 62,
-=======
   "bbox_right": 127,
   "bbox_top": 0,
->>>>>>> Stashed changes
-=======
-  "bbox_right": 127,
-  "bbox_top": 0,
->>>>>>> Stashed changes
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -23,12 +13,6 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e6002920-a86d-49a7-9db5-363d33a18cd0",},
-=======
-=======
->>>>>>> Stashed changes
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"649ff678-6cd1-411b-b0ed-d7ce9745f37a",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f1528cd-dca0-445b-b704-9f57933794c1",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"643e7c69-cc33-41c6-bc4d-2467fa76191b",},
@@ -45,28 +29,16 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66a92cb8-f35f-48ec-9472-e31fc9994695",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6ce3efb-c966-4736-bd26-7540371a208d",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9a71b08f-9b9a-4978-ab43-cef3c16aa6da",},
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 128,
   "HTile": false,
   "layers": [
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"73b4a866-980b-4d71-9edf-7783b348b987","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
-=======
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f0882fe2-8d8a-4e72-ad67-1f668e91640a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
->>>>>>> Stashed changes
-=======
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f0882fe2-8d8a-4e72-ad67-1f668e91640a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
->>>>>>> Stashed changes
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 4,
   "parent": {
     "name": "obstacles",
     "path": "folders/Sprites/obstacles.yy",
@@ -97,12 +69,6 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e6002920-a86d-49a7-9db5-363d33a18cd0","path":"sprites/spr_griddle/spr_griddle.yy",},},},"Disabled":false,"id":"0c1b3682-006a-4781-964f-dcf82d2f40fa","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-=======
-=======
->>>>>>> Stashed changes
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"649ff678-6cd1-411b-b0ed-d7ce9745f37a","path":"sprites/spr_griddle/spr_griddle.yy",},},},"Disabled":false,"id":"7d6fc849-9096-4a07-8baa-0b986b20fdcd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3f1528cd-dca0-445b-b704-9f57933794c1","path":"sprites/spr_griddle/spr_griddle.yy",},},},"Disabled":false,"id":"661da603-5b26-42ca-b60f-1b3040340a93","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"643e7c69-cc33-41c6-bc4d-2467fa76191b","path":"sprites/spr_griddle/spr_griddle.yy",},},},"Disabled":false,"id":"5b695ce8-82e3-4a48-86b1-c84d80c7f30b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
@@ -119,26 +85,12 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"66a92cb8-f35f-48ec-9472-e31fc9994695","path":"sprites/spr_griddle/spr_griddle.yy",},},},"Disabled":false,"id":"b40abcb4-9504-473f-9beb-ce3ca548c3db","IsCreationKey":false,"Key":13.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f6ce3efb-c966-4736-bd26-7540371a208d","path":"sprites/spr_griddle/spr_griddle.yy",},},},"Disabled":false,"id":"1adc681e-d0fe-4dad-843e-28dec3a3c7b3","IsCreationKey":false,"Key":14.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9a71b08f-9b9a-4978-ab43-cef3c16aa6da","path":"sprites/spr_griddle/spr_griddle.yy",},},},"Disabled":false,"id":"e7255be4-a4b6-4586-ad04-4a28a76f0494","IsCreationKey":false,"Key":15.0,"Length":1.0,"Stretch":false,},
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    "xorigin": 0,
-    "yorigin": 0,
-=======
     "xorigin": 64,
     "yorigin": 64,
->>>>>>> Stashed changes
-=======
-    "xorigin": 64,
-    "yorigin": 64,
->>>>>>> Stashed changes
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

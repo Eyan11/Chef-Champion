@@ -22,13 +22,12 @@ function get_health(_player){
 function take_damage(_player, _damage){
 	
 	//don't take damage when invincible
-	if(_player.is_invincible)
+	if(_player.is_invincible || _player.is_dead)
 		return;
 	
 	//player is dead
 	if(_damage >= _player.current_health) {
 		_player.current_health = 0;
-		//TODO: death and respawn
 		player_death(_player);
 	}
 	//still alive

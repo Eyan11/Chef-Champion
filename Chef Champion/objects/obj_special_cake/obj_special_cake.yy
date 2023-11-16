@@ -4,6 +4,8 @@
   "name": "obj_special_cake",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -33,8 +35,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_special_cake",
-    "path": "sprites/spr_special_cake/spr_special_cake.yy",
+    "name": "spr_cake",
+    "path": "sprites/spr_cake/spr_cake.yy",
   },
   "spriteMaskId": null,
   "visible": true,

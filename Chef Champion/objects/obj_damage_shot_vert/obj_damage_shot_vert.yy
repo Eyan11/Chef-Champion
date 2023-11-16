@@ -10,13 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-<<<<<<<< Updated upstream:Chef Champion/objects/obj_damage_shot_vert/obj_damage_shot_vert.yy
     "name": "damage shot",
     "path": "folders/Objects/Obstacles/damage shot.yy",
-========
-    "name": "Enemy",
-    "path": "folders/Objects/Enemy.yy",
->>>>>>>> Stashed changes:Chef Champion/objects/obj_gummyBear/obj_gummyBear.yy
   },
   "parentObjectId": null,
   "persistent": false,
