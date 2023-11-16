@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_floor_top",
+  "name": "spr_dessert_tiles",
   "bbox_bottom": 255,
   "bbox_left": 0,
   "bbox_right": 255,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5616b53f-da83-4ca1-a153-a54eb12cab64",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d07c35e8-c13f-4e7a-9483-0dd99798ef08",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 512,
+  "height": 256,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"50241962-a727-44a3-b8f6-a0aca4cabf2b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"66db071c-57d0-4b4c-ac76-f9aed0e6ce6d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_floor_top",
+    "name": "spr_dessert_tiles",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,11 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-<<<<<<< Updated upstream:Chef Champion/sprites/spr_floor_top/spr_floor_top.yy
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d07c35e8-c13f-4e7a-9483-0dd99798ef08","path":"sprites/spr_floor_top/spr_floor_top.yy",},},},"Disabled":false,"id":"49ebdf32-b14f-454b-81e7-1516b507457e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-=======
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5616b53f-da83-4ca1-a153-a54eb12cab64","path":"sprites/spr_dessert_tiles/spr_dessert_tiles.yy",},},},"Disabled":false,"id":"1d5010d6-821e-4b80-af69-321bccb3ead8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
->>>>>>> Stashed changes:Chef Champion/sprites/spr_dessert_tiles/spr_dessert_tiles.yy
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d07c35e8-c13f-4e7a-9483-0dd99798ef08","path":"sprites/spr_dessert_tiles/spr_dessert_tiles.yy",},},},"Disabled":false,"id":"49ebdf32-b14f-454b-81e7-1516b507457e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -74,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 512,
+  "width": 256,
 }

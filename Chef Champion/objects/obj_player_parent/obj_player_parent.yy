@@ -3,20 +3,14 @@
   "resourceVersion": "1.0",
   "name": "obj_player_parent",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_jumppoint","path":"objects/obj_jumppoint/obj_jumppoint.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":3,"eventType":2,"isDnD":false,},
-<<<<<<< Updated upstream
-=======
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":5,"eventType":2,"isDnD":false,},
->>>>>>> Stashed changes
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -42,13 +36,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hor_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"vert_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"grav","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.25","varType":0,},
-<<<<<<< Updated upstream
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"run_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"4.5","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"jump_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-7","varType":0,},
-=======
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"jump_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-8","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"float_jump_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"2.5","varType":0,},
->>>>>>> Stashed changes
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"roll_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"8","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"coyote_countdown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"variable_jump_countdown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
@@ -61,11 +50,12 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"roll_direction","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_rolling","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_grounded","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"jump_is_ending","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_invincible","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_dead","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_frosted","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_greased","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_burning","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"max_health","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_health","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"frosted_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"6","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"frosted_multiplier","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.5","varType":0,},
@@ -76,7 +66,6 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"greased_damage_counter","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"greased_timer","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"greased_timer_threshold","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"30","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"max_special_meter","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_special_meter","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"special_meter_regen_cooldown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"special_meter_regen_rate","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"10","varType":0,},
@@ -88,17 +77,15 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sear_count","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_seared","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sear_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"10","varType":0,},
-<<<<<<< Updated upstream
-=======
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"special_cooldown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"60","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"special_cooldown_countdown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_recipes","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"25","varType":1,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_slowed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"slowed_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":0,},
->>>>>>> Stashed changes
   ],
   "solid": false,
   "spriteId": null,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_player_collision_box",
+    "path": "sprites/spr_player_collision_box/spr_player_collision_box.yy",
+  },
   "visible": true,
 }
