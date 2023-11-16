@@ -137,3 +137,20 @@ function norm_attack_input() {
 	
 	return _is_norm_attacking;
 }
+
+//function charge_attack_input() {
+	
+//	var _is_charging
+	
+//	//collects charge attack input from controller
+//	if(gamepad_is_connected(0)) {
+//		_is_charging = gamepad_button_check_pressed(0, gp_face3); //X button
+//	}
+//	//keyboard input
+//	else {
+//		_is_charging = keyboard_check_pressed(ord("F"))	
+//	}
+	
+//	return _is_charging
+	
+//}

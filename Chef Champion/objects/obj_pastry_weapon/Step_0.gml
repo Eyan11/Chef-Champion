@@ -6,4 +6,28 @@ _projectile_direction = obj_player_pastry.image_xscale
 self.x = obj_player_pastry.x
 self.y = obj_player_pastry.y
 
-player_normal_attack(self, obj_player_pastry)
+if(norm_attack_input()) {
+	
+	if(obj_player_pastry.combat_attribute_level >= 5) {
+		if(obj_player_pastry.current_charge < obj_player_pastry.max_charge) {
+			obj_player_pastry.current_charge++
+		}
+		else {
+			if(chargeSound) {
+				audio_play_sound(snd_charged, 10, 0)
+				chargeSound = false
+			}
+		}
+	}
+	else {
+		player_normal_attack_pastry(self, obj_player_pastry)
+	}
+	
+	
+	
+}
+else if(keyboard_check_released(ord("F"))) {
+	player_normal_attack_pastry(self, obj_player_pastry)
+}
+
+//player_normal_attack(self, obj_player_pastry)
