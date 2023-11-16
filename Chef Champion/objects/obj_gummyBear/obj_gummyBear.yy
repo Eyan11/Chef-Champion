@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Objects/Enemy.yy",
+    "name": "Gummy Bear",
+    "path": "folders/Objects/Enemy/Gummy Bear.yy",
   },
   "parentObjectId": null,
   "persistent": false,

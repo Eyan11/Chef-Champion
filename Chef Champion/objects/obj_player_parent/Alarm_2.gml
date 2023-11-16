@@ -1,4 +1,4 @@
- /// @description Apply and track GREASE effect
+/// @description Apply and track GREASE effect
 
 if(greased_timer > greased_timer_threshold) {
 	greased_damage_counter++;
