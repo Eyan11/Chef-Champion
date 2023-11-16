@@ -5,7 +5,11 @@
   "bbox_bottom": 63,
   "bbox_left": 0,
   "bbox_right": 63,
+<<<<<<< HEAD
   "bbox_top": 37,
+=======
+  "bbox_top": 31,
+>>>>>>> parent of 7c5b059 (obstacles and more)
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +17,22 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
+<<<<<<< HEAD
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c89c462d-74d6-4275-8258-53b29cbaf021",},
+=======
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6cc35ed3-36ae-4e70-b404-ccbfd71f694e",},
+>>>>>>> parent of 7c5b059 (obstacles and more)
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
+<<<<<<< HEAD
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"24eda61c-559d-4841-bdd1-4d8e37ee5fc1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+=======
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4a765ca9-064c-4a89-a1a3-9c97774758af","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+>>>>>>> parent of 7c5b059 (obstacles and more)
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +66,11 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
+<<<<<<< HEAD
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c89c462d-74d6-4275-8258-53b29cbaf021","path":"sprites/spr_jumppoint/spr_jumppoint.yy",},},},"Disabled":false,"id":"f99a7d80-cece-46c4-bfbe-ebc6d9b06b29","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+=======
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6cc35ed3-36ae-4e70-b404-ccbfd71f694e","path":"sprites/spr_jumppoint/spr_jumppoint.yy",},},},"Disabled":false,"id":"a36ad433-977e-4cfa-8919-52de16b035b1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+>>>>>>> parent of 7c5b059 (obstacles and more)
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
