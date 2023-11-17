@@ -1,3 +1,4 @@
+event_inherited()
 // Movement and states
 speed = 2;
 target_x = x;

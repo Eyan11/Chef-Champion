@@ -16,7 +16,10 @@
     "name": "Marshmallo Man",
     "path": "folders/Objects/Enemy/Marshmallo Man.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parent_enemy",
+    "path": "objects/obj_parent_enemy/obj_parent_enemy.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
