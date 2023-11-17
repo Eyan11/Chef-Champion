@@ -34,10 +34,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"despawn_countdown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"despawn_time","varType":0,},
   ],
   "solid": false,
-  "spriteId": {
-    "name": "spr_cake",
-    "path": "sprites/spr_cake/spr_cake.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

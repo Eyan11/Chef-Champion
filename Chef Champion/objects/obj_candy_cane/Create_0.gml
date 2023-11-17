@@ -5,7 +5,8 @@ event_inherited()
 state = "idle"; // The initial state of the Candy Cane
 
 // Health
-health = 250; // Assuming the Candy Cane takes 8-10 hits to destroy
+max_health = 250;
+current_health = max_health
 
 // Visibility and Attack Variables
 visible = false; // The Candy Cane starts off invisible
