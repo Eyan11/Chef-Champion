@@ -6,7 +6,7 @@
   "applyKerning": 0,
   "ascender": 23,
   "ascenderOffset": 0,
-  "bold": true,
+  "bold": false,
   "canGenerateBitmap": true,
   "charset": 0,
   "first": 0,
@@ -120,8 +120,8 @@
   "lineHeight": 27,
   "maintainGms1Font": false,
   "parent": {
-    "name": "UI FONT",
-    "path": "folders/Fonts/UI FONT.yy",
+    "name": "Fonts",
+    "path": "folders/Fonts.yy",
   },
   "pointRounding": 0,
   "ranges": [
