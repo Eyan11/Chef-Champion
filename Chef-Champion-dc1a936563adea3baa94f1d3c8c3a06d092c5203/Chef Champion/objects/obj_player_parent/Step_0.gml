@@ -7,6 +7,11 @@ if(!is_dead) {
 	player_roll(self);
 	player_jump(self);
 }
+else {
+	//stop moving when dead (except for gravity)
+	self.hor_speed = 0;
+	self.vert_speed += self.grav;
+}
 
 player_collision_and_move(self);
 

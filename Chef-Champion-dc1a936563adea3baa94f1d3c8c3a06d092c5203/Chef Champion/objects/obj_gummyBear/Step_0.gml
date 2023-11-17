@@ -1,4 +1,3 @@
-event_inherited()
 // ** AI Logic for Movement and Attack **
 if (state == "idle") {
     if (distance_to_object(obj_player_parent) <= attack_distance && attack_timer <= 0) {

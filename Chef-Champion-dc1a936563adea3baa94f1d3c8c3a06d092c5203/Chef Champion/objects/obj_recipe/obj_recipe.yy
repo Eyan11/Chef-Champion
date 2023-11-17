@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_recipe",
+    "path": "sprites/spr_recipe/spr_recipe.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
