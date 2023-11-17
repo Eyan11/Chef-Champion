@@ -9,6 +9,7 @@
     {"name":"Marshmallo Man","order":4,"path":"folders/Objects/Enemy/Marshmallo Man.yy",},
     {"name":"TestDummy","order":2,"path":"folders/Objects/Managers/TestDummy.yy",},
     {"name":"damage shot","order":7,"path":"folders/Objects/Obstacles/damage shot.yy",},
+    {"name":"Enemy","order":4,"path":"folders/Scripts/Enemy.yy",},
     {"name":"Enemy","order":5,"path":"folders/Sounds/Enemy.yy",},
     {"name":"Player","order":1,"path":"folders/Sounds/Player.yy",},
     {"name":"Obstacles","order":1,"path":"folders/Sounds/SFX/Obstacles.yy",},
@@ -25,7 +26,6 @@
     {"name":"Currencies","order":1,"path":"folders/Sprites/Temporary/Currencies.yy",},
     {"name":"damaging shot","order":7,"path":"folders/Sprites/Temporary/Obstacles/damaging shot.yy",},
     {"name":"UI","order":4,"path":"folders/Sprites/UI.yy",},
-    {"name":"Enemy","order":4,"path":"folders/Scripts/Enemy.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"ethans_room","order":2,"path":"rooms/ethans_room/ethans_room.yy",},

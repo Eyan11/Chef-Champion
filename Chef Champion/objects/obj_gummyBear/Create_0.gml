@@ -10,7 +10,8 @@ vertical_speed = 0;  // Controls the speed of the upward jump and descent
 
 
 // Health
-health = 3;
+max_health = 100;
+current_health = max_health
 
 // Debuffs
 burn = false;
