@@ -7,6 +7,8 @@ Credits:
 
 Ghost Breath - qubodup Licensed under CC0 - https://opengameart.org/content/ghost-breath
 
+CC0 Food Icons - Antum Deluge Licensed under CC0 - https://opengameart.org/content/cc0-food-icons
+
 Cloth Flapping on a Clothesline Thickly - Sound Effect from Pixabay - https://pixabay.com/sound-effects/search/cloth%20flapping%20on%20a%20clothesline%20thickly/ - modified by Eyan Martucci
 
 Long, Medium Swoosh - Sound Effect from Pixabay - https://pixabay.com/sound-effects/search/long%2c%20medium%20swish/ - modified by Eyan Martucci

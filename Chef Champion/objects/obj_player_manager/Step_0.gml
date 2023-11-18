@@ -3,11 +3,12 @@
 
 /*
 if(keyboard_check_pressed((ord("T"))))
-	survival_attribute_upgrade(obj_player_pastry);
+	buy_dish(obj_damage_dish, 1);
 
 if(keyboard_check_pressed((ord("Y"))))
-	combat_attribute_upgrade(obj_player_pastry);
+	buy_dish(obj_health_dish, 1);
 
 if(keyboard_check_pressed((ord("U"))))
-	special_attribute_upgrade(obj_player_pastry);
+	buy_dish(obj_speed_dish, 1);
 */
+

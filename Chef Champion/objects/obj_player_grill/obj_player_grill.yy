@@ -1,15 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_recipe",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player_parent","path":"objects/obj_player_parent/obj_player_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-  ],
+  "name": "obj_player_grill",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Collectables",
-    "path": "folders/Objects/Collectables.yy",
+    "name": "Player",
+    "path": "folders/Objects/Player.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,9 +26,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_recipe",
-    "path": "sprites/spr_recipe/spr_recipe.yy",
+    "name": "spr_player_pastry",
+    "path": "sprites/spr_player_pastry/spr_player_pastry.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_player_collision_box",
+    "path": "sprites/spr_player_collision_box/spr_player_collision_box.yy",
+  },
   "visible": true,
 }
