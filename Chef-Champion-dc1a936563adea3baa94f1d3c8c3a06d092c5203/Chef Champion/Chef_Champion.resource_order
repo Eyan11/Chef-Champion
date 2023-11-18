@@ -22,11 +22,11 @@
     {"name":"obstacles","order":7,"path":"folders/Sprites/obstacles.yy",},
     {"name":"Player","order":2,"path":"folders/Sprites/Player.yy",},
     {"name":"Placeholders","order":7,"path":"folders/Sprites/Player/Placeholders.yy",},
+    {"name":"Special Attacks","order":8,"path":"folders/Sprites/Special Attacks.yy",},
     {"name":"Temporary","order":3,"path":"folders/Sprites/Temporary.yy",},
     {"name":"Currencies","order":1,"path":"folders/Sprites/Temporary/Currencies.yy",},
     {"name":"damaging shot","order":7,"path":"folders/Sprites/Temporary/Obstacles/damaging shot.yy",},
     {"name":"UI","order":4,"path":"folders/Sprites/UI.yy",},
-    {"name":"Special Attacks","order":8,"path":"folders/Sprites/Special Attacks.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"ethans_room","order":2,"path":"rooms/ethans_room/ethans_room.yy",},

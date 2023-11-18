@@ -7,8 +7,8 @@ if (state == "idle") {
         vertical_speed = -5;
         
         // Attack the player when conditions are met
-        //obj_player.playerhealth--; // Assuming 1 is the amount of damage inflicted
-		take_damage(obj_player_parent, 1);
+        //obj_player.playerhealth -= 20; // Assuming 20 is the amount of damage inflicted
+		take_damage(obj_player_parent, 20);
     }
 	else if (point_distance(x, y, target_x, target_y) < 5) {
         target_x = x + random_range(-100, 100);  // Random movement when idle
