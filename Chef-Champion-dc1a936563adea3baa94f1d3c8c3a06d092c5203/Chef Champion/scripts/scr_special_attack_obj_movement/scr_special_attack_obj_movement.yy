@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_obj_movement",
+  "name": "scr_special_attack_obj_movement",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

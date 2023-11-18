@@ -119,30 +119,41 @@ function player_collision_and_move(_player) {
 		_player.hor_speed = 0;
 	}
 	
+	
+	//if moving into a moving platform
+	if(place_meeting(_player.x, _player.y + _player.vert_speed, obj_platform_move_parent)) {
+		
+		//if a moving platform exists in the room, assign the closest one to _platform
+		var _platform = instance_nearest(_player.x, _player.y, obj_platform_move_parent);
+		
+		//if closest platform is also collidable, add the platforms speed to the player speed
+		if(_platform.is_collidable) {
+			_player.hor_speed += _platform.hspeed;
+			_player.on_moving_platform = true;
+		}
+		else
+			_player.on_moving_platform = false;
+				
+	}
+
+	
+	
 	//move player horizontally, reducing horizontal speed when frosted
 	if(_player.is_frosted)
 		_player.x += _player.hor_speed * _player.frosted_multiplier;
 	
-	else if(_player.is_slowed) //slowed effect for slowing pool 
+	else if(_player.is_slowed) //slowed effect for slowing pool
 		_player.x += _player.hor_speed * .4;
 	
 	else
 		_player.x += _player.hor_speed;
 		
 		
-		
-
-
-		
 
 
 	//if about to collide in vertical direction
 	if(place_meeting(_player.x, _player.y + _player.vert_speed, collision_layer())) {
-		/*
-		//if about to hit ground, reset coyote timer
-		if(_player.vert_speed > 0)
-			_player.coyote_countdown = _player.coyote_time;
-		*/
+
 		//while moving vertically, reduce speed until 0
 		while(abs(_player.vert_speed) > 0.1) {
 			
@@ -160,12 +171,10 @@ function player_collision_and_move(_player) {
 	if(_player.is_frosted)
 		_player.y += _player.vert_speed * _player.frosted_multiplier;
 	
-		else if(_player.is_slowed)
+	else if(_player.is_slowed)
 		_player.y += _player.vert_speed * .5;
 		
 	else
 		_player.y += _player.vert_speed;
-		
 }
-
 

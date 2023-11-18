@@ -184,5 +184,10 @@ function jump_special(_player, _special_obj, _special_spawn_offset) {
 		_obj.hor_dir = -(sqrt(2)/2);
 		_obj.vert_dir = (sqrt(2)/2);
 	}
+	
+	//give the jump special a damage value
+	_obj.damage = _player.jump_special_damage;
 }
+
+
 

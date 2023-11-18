@@ -48,8 +48,13 @@ else if((self.sprite_index == spr_pastry_jump)) {
 		audio_play_sound(snd_player_land, 5, false);
 }
 
+//idle on moving platform 
+else if(on_moving_platform && (hor_speed == instance_nearest(x, y, obj_platform_move_parent).hspeed))
+	self.sprite_index = spr_pastry_idle;
+
 //walking
 else if(abs(hor_speed) > 0) {
+	
 	self.sprite_index = spr_pastry_move;
 	if(!audio_is_playing(snd_player_walk))
 		audio_play_sound(snd_player_walk, 5, false);
@@ -84,7 +89,7 @@ if(is_grounded) {
 	can_jump_special = true;
 }
 
-if(y >= 1900) {
-		current_health = 0;
-		player_death(self);
-	}
+//kill player if he leaves bottom of map
+if(self.y >= 1900) {
+	take_damage(self, 99999);
+}

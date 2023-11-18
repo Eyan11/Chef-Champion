@@ -3,28 +3,22 @@
 //acceleration
 fall_speed += grav;
 
+//move downwards
 object_vert_collide_and_move(self, fall_speed);
 
-//if colliding with ground and not already playing impact audio
-if(place_meeting(self.x, self.y + self.sprite_height/2, collision_layer()) 
-	&& !audio_is_playing(snd_cake_impact)) {
+//if colliding with ground and still on falling anim
+if(place_meeting(self.x, self.bbox_bottom, special_attack_collision_layer()) 
+	&& self.sprite_index == spr_cake_fall) {
 		
-	self.is_damage_frame = true;
-		
+	//play exploding sprite and audio
+	self.sprite_index = spr_cake_explode;
 	audio_stop_sound(snd_cake_fall);
 	audio_play_sound(snd_cake_impact, 5, false);
-	alarm[0] = 30; // destroy in 0.5 seconds
 }
-else {
-	self.is_damage_frame = false;
-}
-	
-/*
-despawn_time--;
 
-if(despawn_time == 0)
-	instance_destroy(self);
-*/
-
-
+//deal damage on the frame the cake explodes
+if(image_index == 15)
+	self.is_exploding = true;
+else
+	self.is_exploding = false;
 

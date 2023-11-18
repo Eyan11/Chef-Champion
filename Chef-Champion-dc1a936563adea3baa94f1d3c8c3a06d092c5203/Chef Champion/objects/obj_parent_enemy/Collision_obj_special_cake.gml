@@ -1,12 +1,15 @@
 /// @description Ground Special Damage (TEMPORARY)
 
-if(other.is_damage_frame) {
+if(other.is_exploding) {
 	
-	if(health <= obj_player_pastry.ground_special_damage)
+	if(health <= other.damage)
 		health = 0;
 	else
-		health -= obj_player_pastry.ground_special_damage;
+		health -= other.damage;
 
-	other.is_damage_frame = false;
+	other.is_exploding = false;
 }
 
+//REMOVE: for testing
+show_debug_message("Enemy Health: ");
+show_debug_message(health);

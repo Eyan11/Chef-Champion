@@ -5,8 +5,8 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_parent_enemy","path":"objects/obj_parent_enemy/obj_parent_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,15 +31,17 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"fall_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"4","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"grav","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.5","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"despawn_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"60","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"despawn_countdown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"despawn_time","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_damage_frame","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_exploding","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_cake",
-    "path": "sprites/spr_cake/spr_cake.yy",
+    "name": "spr_cake_fall",
+    "path": "sprites/spr_cake_fall/spr_cake_fall.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_cake_hitbox",
+    "path": "sprites/spr_cake_hitbox/spr_cake_hitbox.yy",
+  },
   "visible": true,
 }

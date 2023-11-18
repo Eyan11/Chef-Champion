@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_eclair",
-    "path": "sprites/spr_eclair/spr_eclair.yy",
+    "name": "spr_eclair1",
+    "path": "sprites/spr_eclair1/spr_eclair1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

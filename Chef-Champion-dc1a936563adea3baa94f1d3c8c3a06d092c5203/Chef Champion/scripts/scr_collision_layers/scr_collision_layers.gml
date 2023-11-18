@@ -2,18 +2,47 @@
 //if someone changes the objects in a layer or layer name, 
 //	then we know to update references in here
 
+
 /// @function					collision_layer();
 /// @description				Returns the layer of objects that the player collides with
 function collision_layer() {
 	
+	//assign _platform variable to the closest moving platform
+	if(instance_exists(obj_platform_move_parent))
+		var _platform = instance_nearest(obj_player_parent.x, obj_player_parent.y, obj_platform_move_parent);
+	
+	
+	
 	//TODO: add all platforms for all chefs
-	//collide with jump special platforms when above them
-	if(instance_exists(obj_eclair_platform) && obj_eclair_platform.is_collidable)
-			return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border, obj_eclair_platform, obj_grill, obj_platform_move_parent];
-	//if below a platform, pass through it
-	else
-		return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border,obj_platform_move_parent,obj_grill];
 	
-	//return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border];
+	//both jump special and moving platform is collidable
+	if(instance_exists(obj_platform_move_parent) && _platform.is_collidable
+		&& instance_exists(obj_eclair_platform) && obj_eclair_platform.is_collidable) {
+		return [obj_eclair_platform, _platform, layer_tilemap_get_id("Dessert_Tile_Set"), obj_border, obj_grill];
+	}
+		
+	//only jump special platform is collidable
+	else if(instance_exists(obj_eclair_platform) && obj_eclair_platform.is_collidable) {
+		return [obj_eclair_platform, layer_tilemap_get_id("Dessert_Tile_Set"), obj_border, obj_grill];
+	}
+			
+	//only moving platform is collidable
+	else if(instance_exists(obj_platform_move_parent) && _platform.is_collidable) {
+		return [_platform, layer_tilemap_get_id("Dessert_Tile_Set"), obj_border, obj_grill];
+	}
 	
+	//neither jump special nor moving platform is collidable (pass through the platforms)
+	else {
+		return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_border, obj_grill];
+	}
+}
+
+
+
+/// @function					special_attack_collision_layer();
+/// @description				Returns the layer of objects that special attack objects will collide with
+function special_attack_collision_layer() {
+	
+	//jump special and ground special only collides with these:
+	return [layer_tilemap_get_id("Dessert_Tile_Set"), obj_grill];
 }
