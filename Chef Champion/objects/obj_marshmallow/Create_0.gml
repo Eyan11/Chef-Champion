@@ -2,7 +2,7 @@ event_inherited()
 state = "idle";
 
 // Health
-max_health = 300;
+max_health = 50;
 current_health = max_health
 
 attack_distance = 100; // Adjust as per requirement
