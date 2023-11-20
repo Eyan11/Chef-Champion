@@ -5,9 +5,9 @@ state = "idle";
 max_health = 200;
 current_health = max_health
 
-max_speed = 2
+max_speed = 3
 current_speed = max_speed
-max_hspeed = 2
+hspeed = 2
 
 attack_distance = 100; // Adjust as per requirement
 attack_timer = 0;

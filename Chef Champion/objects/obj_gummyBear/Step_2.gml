@@ -1,5 +1,5 @@
 // ** Check Health **
-if (max_health <= 0) {
+if (current_health <= 0) {
     state = "death";
     instance_destroy();
 }
