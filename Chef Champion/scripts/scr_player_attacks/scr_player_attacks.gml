@@ -25,9 +25,9 @@ function player_normal_attack_pastry(_projectile_spawner, _player) {
 				}
 		}
 		
-		add_xp(_player, 50)
-		_player.current_xp_ui = (100 * _player.current_xp) / _player.level_up_threshold
-		_player.level_up_threshold_ui = 100 - _player.current_xp_ui
+		//add_xp(_player, 50)
+		//_player.current_xp_ui = (100 * _player.current_xp) / _player.level_up_threshold
+		//_player.level_up_threshold_ui = 100 - _player.current_xp_ui
 		
 		_player.can_attack = false
 		_player.alarm[4] = room_speed * .33 //3 projectiles a second
