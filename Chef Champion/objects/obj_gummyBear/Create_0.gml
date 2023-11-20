@@ -1,5 +1,6 @@
 // Movement and states
-speed = 2;
+max_speed = 2;
+current_speed = max_speed
 target_x = x;
 target_y = y;
 state = "idle";

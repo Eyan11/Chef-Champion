@@ -2,8 +2,12 @@ event_inherited()
 state = "idle";
 
 // Health
-max_health = 50;
+max_health = 200;
 current_health = max_health
+
+max_speed = 2
+current_speed = max_speed
+max_hspeed = 2
 
 attack_distance = 100; // Adjust as per requirement
 attack_timer = 0;

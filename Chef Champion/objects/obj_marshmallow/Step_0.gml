@@ -15,7 +15,7 @@ if (state == "idle"){
     }
 
     // Set the horizontal speed
-    hspeed = speed * move_direction;
+    max_hspeed = max_speed * move_direction;
 
     // Check if Marshmallow should switch to "prepareAttack" state
     if (distance_to_object(obj_player_parent) <= attack_distance && 
@@ -24,7 +24,7 @@ if (state == "idle"){
     ) {
         state = "prepareAttack"; 
         shockwave_timer = shockwave_duration;
-        hspeed = 0; // Stop movement when preparing for an attack
+        max_hspeed = 0; // Stop movement when preparing for an attack
     }
 }
 else if (state == "prepareAttack") {
@@ -33,7 +33,7 @@ else if (state == "prepareAttack") {
         state = "attack";
 		var shockwave = instance_create_layer(obj_marshmallow.x - 200, obj_marshmallow.y - 90, "Instances", obj_shockwave);
         attack_timer = attack_cooldown;
-        hspeed = 0; // Stop movement during the attack
+        max_hspeed = 0; // Stop movement during the attack
     }
 }
 else if (state == "attack") {
@@ -56,7 +56,7 @@ else if (state == "attack") {
 
     if (attack_timer <= 0) {
         state = "idle";
-        hspeed = speed * move_direction;
+        max_hspeed = max_speed * move_direction;
     }
 }
 
@@ -88,20 +88,5 @@ switch (state) {
 		break;
 }
 
-// ** Debuff Mechanics **
 
-if (burn) {
-    health -= 0.05;
-}
-
-if (frosted) {
-    speed = 0.25; // Even slower movement due to frost
-} else {
-    speed = 0.5;
-}
-
-if (grease) {
-    hspeed *= 0.9;
-    vspeed *= 0.9;
-}
 

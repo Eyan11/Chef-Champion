@@ -39,8 +39,8 @@ if (state == "hop") {
     }
 } else {
     direction = point_direction(x, y, target_x, target_y);
-    x += lengthdir_x(speed, direction);
-    y += lengthdir_y(speed, direction);
+    x += lengthdir_x(max_speed, direction);
+    y += lengthdir_y(max_speed, direction);
 }
 
 // ** State-based Animation **
@@ -59,21 +59,5 @@ switch (state) {
         break;
 }
 
-
-// ** Debuff Mechanics **
-if (burn) {
-    health -= 0.05; 
-}
-
-if (frosted) {
-    speed = 0.5;
-} else {
-    speed = 2;
-}
-
-if (grease) {
-    hspeed *= 0.9;
-    vspeed *= 0.9;
-}
 
 

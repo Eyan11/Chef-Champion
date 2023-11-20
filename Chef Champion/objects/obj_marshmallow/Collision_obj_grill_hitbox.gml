@@ -3,7 +3,7 @@
 
 //take damage when hit with hitbox
 if(other.creator == obj_player_pastry.id) {
-	health -= other.damage
+	current_health -= other.damage
 	//take damage script can replace above if needed
 	//burn script
 }

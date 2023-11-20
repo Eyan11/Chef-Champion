@@ -18,7 +18,8 @@ attack_prep_duration = 30; // Time the Candy Cane spends preparing to attack
 attack_cooldown = 120; // Cooldown time between attacks
 
 // Movement Variables
-hspeed = 2; // Horizontal speed of the Candy Cane
+max_speed = 2; // Horizontal speed of the Candy Cane
+current_speed = max_speed
 move_direction = 1; // Initial movement direction; 1 for right, -1 for left
 start_x = x; // Remember the starting x position for boundary checking
 movement_range = 100; // How far from the start_x the Candy Cane can move

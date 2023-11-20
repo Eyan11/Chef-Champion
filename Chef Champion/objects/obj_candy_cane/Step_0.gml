@@ -5,7 +5,7 @@ var certified_range = 100; // adjust this value as needed
 
 // Horizontal Movement Logic
 if (state != "attack") {
-    x += hspeed * move_direction;
+    x += max_speed * move_direction;
     // Check boundaries within the certified range and reverse direction if necessary
     if (x < start_x - certified_range) {
         x = start_x - certified_range;

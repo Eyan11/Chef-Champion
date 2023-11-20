@@ -1,10 +1,10 @@
 /// @description Jump Special Damage (TEMPORARY)
 
 if(!other.has_damaged_enemy) {
-	if(health <= other.damage)
-		health = 0;
+	if(current_health <= other.damage)
+		current_health = 0;
 	else
-		health -= other.damage;
+		current_health -= other.damage;
 		
 	other.has_damaged_enemy = true;
 	
