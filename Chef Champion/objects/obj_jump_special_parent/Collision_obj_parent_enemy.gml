@@ -1,9 +1,20 @@
 /// @description damage player and despawn
 
-//TODO: change damage when you change chefs
-//should probably add the variable to the eclair when its spawned
-//enemy_damage(other, obj_player_pastry.jump_special_damage);
+//only damage enemy once
+if(!has_damaged_enemy) {
+	
+	if(other.current_health <= damage)
+		other.current_health = 0;
+	else  {
+		other.isSlowed = true;
+		other.current_health -= damage;
+	}
+		
+	has_damaged_enemy = true;
+	
+	//REMOVE: for testing
+	show_debug_message("Enemy Health: ");
+	show_debug_message(other.current_health);
 
-//instance_destroy(self);
-
+}
 

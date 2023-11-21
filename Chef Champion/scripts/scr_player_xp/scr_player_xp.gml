@@ -61,7 +61,7 @@ function level_up(_player) {
 		//level up stats
 		_player.max_health += 1;
 		gain_health(_player, 1);
-		_player.additional_weapon_damage += 1;
+		_player.additional_weapon_damage += 0.1;
 		_player.max_special_meter += 1;
 	}
 	//gain attribute token if under max upgrade level (45 total attribute upgrades)

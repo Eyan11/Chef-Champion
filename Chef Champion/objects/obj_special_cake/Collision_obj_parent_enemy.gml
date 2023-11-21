@@ -1,22 +1,22 @@
 /// @description damage enemies (Once enemy parent is fully implemented)
 
+//Will use this code once enemy health is working
 
-/* (Use once enemy parent is fully implemented)
-if(is_damage_frame) {
-	//TODO: update damage depending on current chef
-	enemy_damage(other, obj_player_pastry.ground_special_damage);
-	self.is_damage_frame = false;
+if(is_exploding) {
+	
+	if(other.current_health <= damage)
+		other.current_health = 0;
+	else {
+		other.isSlowed = true;
+		other.current_health -= damage;
+	}
+
+	is_exploding = false;
+	
+	//REMOVE: for testing
+	show_debug_message("Enemy Health: ");
+	show_debug_message(other.current_health);
 }
-
-*/
-
-
-
-
-
-
-
-
 
 
 

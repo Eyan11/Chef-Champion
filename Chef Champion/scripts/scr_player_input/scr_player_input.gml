@@ -122,6 +122,10 @@ function special_input() {
 	return _is_special_attacking;
 }
 
+
+
+/// @function					norm_attack_input();
+/// @description				Returns true when HOLDING X (controller) or F
 function norm_attack_input() {
 	var _is_norm_attacking;
 	
@@ -137,6 +141,28 @@ function norm_attack_input() {
 	
 	return _is_norm_attacking;
 }
+
+
+
+/// @function					norm_attack_input();
+/// @description				Returns true when PRESSING X (controller) or F
+function norm_attack_down_input() {
+	var _is_norm_attacking;
+	
+	//collects normal attack input from controller
+	if(gamepad_is_connected(0)) {
+		_is_norm_attacking = gamepad_button_check_pressed(0, gp_face3); //X button
+	}
+	//collects normal attack input from keybpard
+	else {
+		_is_norm_attacking = keyboard_check_pressed(ord("F"));
+	}
+	
+	
+	return _is_norm_attacking;
+}
+
+
 
 //function charge_attack_input() {
 	
@@ -154,3 +180,25 @@ function norm_attack_input() {
 //	return _is_charging
 	
 //}
+
+
+
+/// @function					swap_inventory_input();
+/// @description				Returns true when pressing a bumper or X
+function swap_inventory_input() {
+	var _is_swapping_inventory;
+	
+	//collects swap inventory input from controller
+	if(gamepad_is_connected(0)) {
+		_is_swapping_inventory = max(gamepad_button_check_pressed(0, gp_shoulderl), 
+			gamepad_button_check_pressed(0, gp_shoulderr)); //right and left bumper
+	}
+	//collects swap inventory input from keybpard
+	else {
+		_is_swapping_inventory = keyboard_check_pressed(ord("X"));
+	}
+	
+	return _is_swapping_inventory;
+}
+
+

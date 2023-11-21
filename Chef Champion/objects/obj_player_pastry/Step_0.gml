@@ -4,7 +4,7 @@
 event_inherited();
 
 //ground special
-if(special_attribute_level >= 5 && special_input() && is_grounded && !is_rolling
+if(special_attribute_level >= 5 && special_input() && is_grounded && !is_rolling && !is_dead
 	&& (current_special_meter >= cake_cost) && (special_cooldown_countdown < 0)) {
 	
 	spend_special_meter(self, cake_cost);

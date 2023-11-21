@@ -26,7 +26,7 @@ function combat_attribute_upgrade(_player) {
 		spend_attribute_tokens(_player, 1)
 		_player.combat_attribute_level++;
 		
-		_player.additional_weapon_damage += 2;
+		_player.additional_weapon_damage += 0.5;
 		// +1% crit percent
 		_player.crit_percent += 0.01;
 		

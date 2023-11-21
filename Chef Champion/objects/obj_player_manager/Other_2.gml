@@ -7,12 +7,3 @@
 // instead of the last value saved in the file from last time project was ran
 save_game();
 
-
-
-
-
-
-
-
-
-

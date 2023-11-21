@@ -131,6 +131,8 @@ function buy_weapon(_weapon, _cost) {
 
 
 
+/// @function					swap_chef(_chef);
+/// @description				Changes the current chef to specified chef
 function swap_chef(_chef) {
 	
 	
@@ -149,4 +151,61 @@ function swap_chef(_chef) {
 	//TODO: Despawn current chef, and spawn in new chef
 	//set weapon
 	obj_player_manager.current_chef = _chef;
+}
+
+
+
+/// @function					use_speed_dish(_player);
+/// @description				Buffs speed by 50% of current speed for 20 seconds
+function use_speed_dish(_player) {
+	//don't let player use multiple dishes at once and don't let player use dish if they have none
+	if(_player.using_speed_dish || _player.total_speed_dishes <= 0)
+		return;
+	
+	_player.run_speed += 3;
+	_player.total_speed_dishes--;
+	
+	_player.using_speed_dish = true;
+	//Remove BUff after 20 seconds
+	_player.alarm[7] = 20 * 60;
+	
+	show_debug_message("Speed dishes left: ");
+	show_debug_message(_player.total_speed_dishes);
+}
+
+
+
+/// @function					use_damage_dish(_player);
+/// @description				Doubles current damage for normal attack weapons for 20 seconds
+function use_damage_dish(_player) {
+	//don't let player use multiple dishes at once and don't let player use dish if they have none
+	if(_player.using_damage_dish || _player.total_damage_dishes <= 0)
+		return;
+
+	_player.additional_weapon_damage += 5;
+	_player.using_damage_dish = true;
+	_player.total_damage_dishes--;
+	
+	
+	//Remove BUff after 20 seconds
+	_player.alarm[8] = 20 * 60;
+	
+	show_debug_message("damage dishes left: ");
+	show_debug_message(_player.total_damage_dishes);
+}
+
+
+
+/// @function					use_health_dish(_player);
+/// @description				Increases health by 50% of current health
+function use_health_dish(_player) {
+	//don't let player use dish if they have none
+	if(_player.total_health_dishes <= 0)
+		return;
+	
+	gain_health(_player, _player.max_health/2)
+	_player.total_health_dishes--;
+	
+	show_debug_message("health dishes left: ");
+	show_debug_message(_player.total_health_dishes);
 }

@@ -74,7 +74,7 @@ if(special_meter_regen_countdown < 0)
 	regenerate_special_meter(self);
 	
 //jump special
-if(special_input() && can_jump_special && !is_grounded && !is_rolling && 
+if(special_input() && can_jump_special && !is_grounded && !is_rolling && !is_dead &&
 	(jump_special_cost <= current_special_meter) && (special_cooldown_countdown < 0)) {
 	
 	spend_special_meter(self, jump_special_cost);
@@ -88,6 +88,37 @@ if(special_input() && can_jump_special && !is_grounded && !is_rolling &&
 if(is_grounded) {
 	can_jump_special = true;
 }
+
+
+//Swap Inventory
+if(swap_inventory_input() && !is_dead) {
+	is_holding_weapon = !is_holding_weapon; //switch to opposite slot (only 2 slots)
+	
+	//spawn in weapon
+	if(is_holding_weapon)
+		instance_create_layer(x, y, "Instances", inventory_weapon);
+	//despawn weapon
+	else
+		instance_destroy(inventory_weapon);
+	
+	show_debug_message("Swapped weapon");
+	show_debug_message(is_holding_weapon);
+}
+
+//Use Dish
+if(!is_holding_weapon && norm_attack_down_input() && !is_dead) {
+	show_debug_message("Use Dish");
+	
+	if(inventory_dish == obj_speed_dish)
+		use_speed_dish(self);
+	else if(inventory_dish == obj_damage_dish)
+		use_damage_dish(self);
+	else if(inventory_dish == obj_health_dish)
+		use_health_dish(self);
+		
+}
+
+
 
 //kill player if he leaves bottom of map
 if(self.y >= 1900) {
