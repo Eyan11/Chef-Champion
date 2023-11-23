@@ -8,8 +8,14 @@ if(place_meeting(self.x + (move_speed * hor_dir), self.y + (move_speed * vert_di
 	
 	if(can_become_platform) {
 		var _platform;
-		//WARNING: the object needs to be updated when different characters are in the game
-		_platform = instance_create_layer(self.x, self.y, "Instances", obj_eclair_platform);
+		if(obj_player_manager.current_chef == obj_player_pastry)
+			_platform = instance_create_layer(self.x, self.y, "Instances", obj_platform_eclair);
+		if(obj_player_manager.current_chef == obj_player_grill)
+			_platform = instance_create_layer(self.x, self.y, "Instances", obj_platform_kabob);
+		if(obj_player_manager.current_chef == obj_player_fry)
+			_platform = instance_create_layer(self.x, self.y, "Instances", obj_platform_fry);
+			
+		_platform.image_xscale = hor_dir;
 	}
 	self.alarm[0] = 1;
 }

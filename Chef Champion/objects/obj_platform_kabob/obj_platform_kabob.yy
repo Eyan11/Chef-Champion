@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_eclair_platform",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_platform_kabob",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Jump Special Platforms",
     "path": "folders/Objects/Jump Special Platforms.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_special_platform_parent",
+    "path": "objects/obj_special_platform_parent/obj_special_platform_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,8 +33,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_eclair1",
-    "path": "sprites/spr_eclair1/spr_eclair1.yy",
+    "name": "spr_kabob",
+    "path": "sprites/spr_kabob/spr_kabob.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -17,13 +17,13 @@ function collision_layer() {
 	
 	//both jump special and moving platform is collidable
 	if(instance_exists(obj_platform_move_parent) && _platform.is_collidable
-		&& instance_exists(obj_eclair_platform) && obj_eclair_platform.is_collidable) {
-		return [obj_eclair_platform, _platform, layer_tilemap_get_id("collision_tile_set"), obj_border, obj_grill];
+		&& instance_exists(obj_special_platform_parent) && obj_special_platform_parent.is_collidable) {
+		return [obj_special_platform_parent, _platform, layer_tilemap_get_id("collision_tile_set"), obj_border, obj_grill];
 	}
 		
 	//only jump special platform is collidable
-	else if(instance_exists(obj_eclair_platform) && obj_eclair_platform.is_collidable) {
-		return [obj_eclair_platform, layer_tilemap_get_id("collision_tile_set"), obj_border, obj_grill];
+	else if(instance_exists(obj_special_platform_parent) && obj_special_platform_parent.is_collidable) {
+		return [obj_special_platform_parent, layer_tilemap_get_id("collision_tile_set"), obj_border, obj_grill];
 	}
 			
 	//only moving platform is collidable

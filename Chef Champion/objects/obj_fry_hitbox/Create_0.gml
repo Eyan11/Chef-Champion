@@ -4,7 +4,7 @@
 
 
 //track who makes the hitbox
-creator = obj_player_pastry.id
+creator = obj_player_parent.id
 
 //destroy self after 1 frames
 alarm[0] = 1

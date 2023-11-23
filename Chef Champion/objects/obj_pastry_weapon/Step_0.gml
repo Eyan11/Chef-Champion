@@ -1,16 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-_projectile_direction = obj_player_pastry.image_xscale
+_projectile_direction = obj_player_parent.image_xscale
 
-self.x = obj_player_pastry.x
-self.y = obj_player_pastry.y
+self.x = obj_player_parent.x
+self.y = obj_player_parent.y
 
 if(norm_attack_input()) {
 	
-	if(obj_player_pastry.combat_attribute_level >= 5) {
-		if(obj_player_pastry.current_charge < obj_player_pastry.max_charge) {
-			obj_player_pastry.current_charge++
+	if(obj_player_parent.combat_attribute_level >= 5) {
+		if(obj_player_parent.current_charge < obj_player_parent.max_charge) {
+			obj_player_parent.current_charge++
 		}
 		else {
 			if(chargeSound) {
@@ -20,7 +20,7 @@ if(norm_attack_input()) {
 		}
 	}
 	else {
-		player_normal_attack_pastry(self, obj_player_pastry)
+		player_normal_attack_pastry(self, obj_player_parent)
 	}
 	
 	

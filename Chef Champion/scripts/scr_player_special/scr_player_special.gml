@@ -46,8 +46,8 @@ function regenerate_special_meter(_player) {
 function jump_special(_player, _special_obj, _special_spawn_offset) {
 	
 	//if a platform already exists, destroy it immediately
-	if(instance_exists(obj_eclair_platform))
-		obj_eclair_platform.alarm[0] = 1;
+	if(instance_exists(obj_special_platform_parent))
+		obj_special_platform_parent.alarm[0] = 1;
 	if(instance_exists(obj_jump_special_parent))
 		obj_jump_special_parent.alarm[0] = 1;
 	

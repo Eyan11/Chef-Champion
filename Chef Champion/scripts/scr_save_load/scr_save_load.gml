@@ -4,7 +4,7 @@ function save_game() {
 	//empty array to hold save data
 	var _array = [];
 	
-	with(obj_player_pastry) {
+	with(obj_player_parent) {
 		
 		var _struct = 
 		{
@@ -57,7 +57,7 @@ function load_game() {
 		//convert from json to string and store in array
 		var _array = json_parse(_json);
 		
-		instance_destroy(obj_player_pastry);
+		instance_destroy(obj_player_parent);
 		
 		//cycles through array of save data
 		for(var _i = 0; _i < array_length(_array); _i += 1) {

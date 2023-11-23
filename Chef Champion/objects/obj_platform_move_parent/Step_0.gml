@@ -7,9 +7,10 @@ hspeed = horspeed * -1;
  hspeed = horspeed;
  }
 
-
+//if((obj_player_grill.bbox_bottom - 1) <= self.bbox_top)
 //player can only collide when above the platform
-if((obj_player_parent.bbox_bottom - 1) <= self.bbox_top)
+if(instance_exists(obj_player_parent) && 
+	((obj_player_parent.bbox_bottom - 1) <= self.bbox_top))
 	self.is_collidable = true;
 else
 	self.is_collidable = false;

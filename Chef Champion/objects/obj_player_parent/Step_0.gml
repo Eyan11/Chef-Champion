@@ -78,7 +78,14 @@ if(special_input() && can_jump_special && !is_grounded && !is_rolling && !is_dea
 	(jump_special_cost <= current_special_meter) && (special_cooldown_countdown < 0)) {
 	
 	spend_special_meter(self, jump_special_cost);
-	jump_special(self, obj_special_eclair, jump_special_spawn_offset);
+	
+	if(obj_player_manager.current_chef == obj_player_pastry)
+		jump_special(self, obj_special_eclair, jump_special_spawn_offset);
+	if(obj_player_manager.current_chef == obj_player_grill)
+		jump_special(self, obj_special_kabob, jump_special_spawn_offset);
+	if(obj_player_manager.current_chef == obj_player_fry)
+		jump_special(self, obj_special_fry, jump_special_spawn_offset);
+		
 	special_cooldown_countdown = special_cooldown;
 	//can't jump special until they are grounded again
 	can_jump_special = false;
