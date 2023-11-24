@@ -22,7 +22,7 @@ max_speed = 2; // Horizontal speed of the Candy Cane
 current_speed = max_speed
 move_direction = 1; // Initial movement direction; 1 for right, -1 for left
 start_x = x; // Remember the starting x position for boundary checking
-movement_range = 100; // How far from the start_x the Candy Cane can move
+movement_range = 200; // How far from the start_x the Candy Cane can move
 
 // Projectile Variables
 shrapnel_speed = 25; // Speed of the candy shrapnel projectiles

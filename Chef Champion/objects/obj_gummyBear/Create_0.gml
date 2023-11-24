@@ -8,7 +8,7 @@ hop_timer = 0;
 hop_duration = 30; // Time it takes for the hop to complete
 gravity = 0.2;   // Controls the rate of fall
 vertical_speed = 0;  // Controls the speed of the upward jump and descent
-
+direction = 1
 
 // Health
 max_health = 15;
@@ -24,5 +24,6 @@ attack_distance = 64;
 attack_cooldown = 60;
 attack_timer = 0;
 
+dont_fall = true
 
 

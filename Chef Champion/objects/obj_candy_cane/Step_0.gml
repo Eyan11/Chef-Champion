@@ -1,6 +1,7 @@
  event_inherited()
 // ** Step Event for Candy Cane Enemy **
 
+
 var certified_range = 100; // adjust this value as needed
 
 // Horizontal Movement Logic

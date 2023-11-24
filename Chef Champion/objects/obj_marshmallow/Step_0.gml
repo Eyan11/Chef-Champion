@@ -1,4 +1,19 @@
 event_inherited()
+
+
+//horizontal collision
+if(place_meeting(x+hspeed,y,collision_layer()))
+{
+	while(!place_meeting(x+sign(hspeed),y,collision_layer()))
+	{
+		x = x + sign(hspeed)
+	}
+	move_direction = move_direction * -1
+	hspeed = 0
+
+}
+
+
 // ** AI Logic for Movement and Attack **
 
 if (state == "idle"){
