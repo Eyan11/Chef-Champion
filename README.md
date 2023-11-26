@@ -22,3 +22,5 @@ Silbido bomba cayendo - Sound Effect from Pixabay - https://pixabay.com/sound-ef
 9 Frame Fire Animation 16x 32x 64x - Foshy Takashi licensed under CC BY 3.0 - https://opengameart.org/content/9-frame-fire-animation-16x-32x-64x 
 
 Lighting a Fire - Sound Effect from Pixabay - https://pixabay.com/sound-effects/search/%20lighting%20a%20fire/ - modified by Eyan Martucci
+
+Squelch - Sound Effect from Pixabay - https://pixabay.com/sound-effects/search/squelch/ 

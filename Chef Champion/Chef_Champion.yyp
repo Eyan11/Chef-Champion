@@ -185,6 +185,7 @@
     {"id":{"name":"Dessert_fight_5","path":"rooms/Dessert_fight_5/Dessert_fight_5.yy",},},
     {"id":{"name":"obj_damage_dish","path":"objects/obj_damage_dish/obj_damage_dish.yy",},},
     {"id":{"name":"sfx_squish","path":"sounds/sfx_squish/sfx_squish.yy",},},
+    {"id":{"name":"snd_frosting","path":"sounds/snd_frosting/snd_frosting.yy",},},
     {"id":{"name":"scr_player_currency","path":"scripts/scr_player_currency/scr_player_currency.yy",},},
     {"id":{"name":"bg_dessert","path":"sprites/bg_dessert/bg_dessert.yy",},},
     {"id":{"name":"spr_checkpoint_reached","path":"sprites/spr_checkpoint_reached/spr_checkpoint_reached.yy",},},
@@ -310,7 +311,6 @@
     {"id":{"name":"spr_checkpoint_unreached","path":"sprites/spr_checkpoint_unreached/spr_checkpoint_unreached.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"alifiyas_room","path":"rooms/alifiyas_room/alifiyas_room.yy",},},
     {"roomId":{"name":"kitchen_home","path":"rooms/kitchen_home/kitchen_home.yy",},},
     {"roomId":{"name":"Breakfast_platform_1","path":"rooms/Breakfast_platform_1/Breakfast_platform_1.yy",},},
     {"roomId":{"name":"Breakfast_fight_1","path":"rooms/Breakfast_fight_1/Breakfast_fight_1.yy",},},
@@ -327,6 +327,7 @@
     {"roomId":{"name":"Boss_room","path":"rooms/Boss_room/Boss_room.yy",},},
     {"roomId":{"name":"eyans_room","path":"rooms/eyans_room/eyans_room.yy",},},
     {"roomId":{"name":"ethans_room","path":"rooms/ethans_room/ethans_room.yy",},},
+    {"roomId":{"name":"alifiyas_room","path":"rooms/alifiyas_room/alifiyas_room.yy",},},
     {"roomId":{"name":"Parent_level_room","path":"rooms/Parent_level_room/Parent_level_room.yy",},},
   ],
   "templateType": null,

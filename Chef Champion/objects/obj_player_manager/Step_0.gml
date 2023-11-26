@@ -3,7 +3,8 @@
 
 /*
 if(keyboard_check_pressed((ord("T"))))
-	burning(obj_player_parent);
+	frosted(obj_player_parent);
+
 if(keyboard_check_pressed((ord("Y"))))
 	buy_dish(obj_health_dish, 1);
 if(keyboard_check_pressed((ord("U"))))

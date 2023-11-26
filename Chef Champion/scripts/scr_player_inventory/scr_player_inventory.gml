@@ -107,7 +107,7 @@ function buy_weapon(_weapon, _cost) {
 			return;
 		}
 		
-		obj_player_parent.own_grill_weapon = true;;
+		obj_player_parent.own_grill_weapon = true;
 		show_debug_message("Purchased grill weapon");
 	}
 	else if(_weapon == obj_fry_weapon) {

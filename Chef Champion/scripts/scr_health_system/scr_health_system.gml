@@ -61,8 +61,16 @@ function gain_health(_player, _health_boost) {
 /// @function					frosted(_player);
 /// @description				Applies FROSTED effect, reduces player movement by 50% for 6 seconds
 function frosted(_player) {
-	_player.is_frosted = true;
 	
+	if(!_player.is_frosted) {
+		
+		audio_play_sound(snd_frosting, 8, true);
+		var _frosting = instance_create_layer(_player.x, _player.y, "Instances", obj_frosting);
+		_frosting.obj_to_follow = _player;
+		_frosting.following_enemy = false;
+	}
+	
+	_player.is_frosted = true;
 	_player.alarm[0] = _player.frosted_time * 60; //60 steps per seconds
 }
 
@@ -83,8 +91,12 @@ function burning(_player) {
 	else {
 		_player.is_burning = true;
 		audio_play_sound(snd_fire, 5, true);
+		
+		//spawn fire
 		var _fire = instance_create_layer(_player.x, _player.y, "Instances", obj_fire);
 		_fire.obj_to_follow = _player;
+		_fire.following_enemy = false;
+		
 		_player.alarm[1] = 60; //60 steps per second, start first burn after 1 second
 	}
 }
