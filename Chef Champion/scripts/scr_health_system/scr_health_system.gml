@@ -82,6 +82,9 @@ function burning(_player) {
 	//If not burning apply burn
 	else {
 		_player.is_burning = true;
+		audio_play_sound(snd_fire, 5, true);
+		var _fire = instance_create_layer(_player.x, _player.y, "Instances", obj_fire);
+		_fire.obj_to_follow = _player;
 		_player.alarm[1] = 60; //60 steps per second, start first burn after 1 second
 	}
 }

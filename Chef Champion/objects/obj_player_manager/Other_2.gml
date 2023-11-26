@@ -11,5 +11,6 @@ else if(instance_exists(obj_player_grill))
 	current_chef = obj_player_grill;
 else if(instance_exists(obj_player_fry))
 	current_chef = obj_player_fry;
+	
 save_game();
 

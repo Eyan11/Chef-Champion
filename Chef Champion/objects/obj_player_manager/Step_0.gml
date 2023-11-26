@@ -3,11 +3,9 @@
 
 /*
 if(keyboard_check_pressed((ord("T"))))
-	buy_dish(obj_damage_dish, 1);
-
+	burning(obj_player_parent);
 if(keyboard_check_pressed((ord("Y"))))
 	buy_dish(obj_health_dish, 1);
-
 if(keyboard_check_pressed((ord("U"))))
 	buy_dish(obj_speed_dish, 1);
 */

@@ -12,9 +12,6 @@ function collision_layer() {
 		var _platform = instance_nearest(obj_player_parent.x, obj_player_parent.y, obj_platform_move_parent);
 	
 	
-	
-	//TODO: add all platforms for all chefs
-	
 	//both jump special and moving platform is collidable
 	if(instance_exists(obj_platform_move_parent) && _platform.is_collidable
 		&& instance_exists(obj_special_platform_parent) && obj_special_platform_parent.is_collidable) {
