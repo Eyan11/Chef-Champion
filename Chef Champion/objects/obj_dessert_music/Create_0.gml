@@ -1,7 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto_next() 
-level_count = level_count + 1
+
+
+
+
+
+if(audio_is_playing(bgm_dessert)){
+}
+else{
+	audio_play_sound(bgm_dessert,1,0);
+}
 
 
 

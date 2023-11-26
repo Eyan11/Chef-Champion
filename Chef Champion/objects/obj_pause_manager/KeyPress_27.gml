@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(!paused){ //if game is paused
-	
+	audio_play_sound(bgm_pause)
 	with(instance_create_layer((camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_camera[0]) / 2) - 100), (camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) / 2)), "Instances", obj_home_kitchen_button)) {
 		image_xscale = 3
 		image_yscale = 3

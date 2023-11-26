@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto_next() 
-level_count = level_count + 1
+audio_play_sound(bgm_boss,1,0);
 
 
 
