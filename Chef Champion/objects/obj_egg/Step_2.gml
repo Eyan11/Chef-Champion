@@ -6,3 +6,4 @@ if (current_health <= 0) {
 	sprite_index = spr_egg_dead
     instance_destroy();
 }
+
