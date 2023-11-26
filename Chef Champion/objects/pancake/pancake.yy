@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_egg",
+  "name": "pancake",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Egg",
-    "path": "folders/Objects/Enemy/Egg.yy",
+    "name": "Pancake",
+    "path": "folders/Objects/Enemy/Pancake.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_egg_walk",
-    "path": "sprites/spr_egg_walk/spr_egg_walk.yy",
+    "name": "spr_pancake_walk",
+    "path": "sprites/spr_pancake_walk/spr_pancake_walk.yy",
   },
   "spriteMaskId": null,
   "visible": true,

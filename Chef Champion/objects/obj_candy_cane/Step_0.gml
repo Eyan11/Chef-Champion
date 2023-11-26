@@ -1,4 +1,4 @@
-spr event_inherited()
+event_inherited()
 // ** Step Event for Candy Cane Enemy **
 
 
