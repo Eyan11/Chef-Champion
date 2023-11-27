@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Egg",
-    "path": "folders/Objects/Enemy/Egg.yy",
+    "path": "folders/Objects/Enemy/breakfast/Egg.yy",
   },
   "parentObjectId": null,
   "persistent": false,

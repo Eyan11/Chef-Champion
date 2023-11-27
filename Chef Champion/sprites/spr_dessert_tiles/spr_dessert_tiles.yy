@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Enviroment",
-    "path": "folders/Sprites/Temporary/Enviroment.yy",
+    "name": "tile set sprites",
+    "path": "folders/Sprites/tile set sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

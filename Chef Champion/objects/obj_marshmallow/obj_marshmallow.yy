@@ -14,7 +14,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Marshmallo Man",
-    "path": "folders/Objects/Enemy/Marshmallo Man.yy",
+    "path": "folders/Objects/Enemy/dessert/Marshmallo Man.yy",
   },
   "parentObjectId": {
     "name": "obj_parent_enemy",

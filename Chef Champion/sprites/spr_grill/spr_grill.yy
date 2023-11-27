@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Obstacles",
-    "path": "folders/Sprites/Temporary/Obstacles.yy",
+    "name": "obstacles",
+    "path": "folders/Sprites/obstacles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

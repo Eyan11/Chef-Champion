@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Candy Cane",
-    "path": "folders/Objects/Enemy/Candy Cane.yy",
+    "path": "folders/Objects/Enemy/dessert/Candy Cane.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Burnt Toast",
-    "path": "folders/Objects/Enemy/Burnt Toast.yy",
+    "path": "folders/Objects/Enemy/breakfast/Burnt Toast.yy",
   },
   "parentObjectId": null,
   "persistent": false,

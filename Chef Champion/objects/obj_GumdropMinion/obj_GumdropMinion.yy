@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Candy Queen",
-    "path": "folders/Objects/Enemy/Candy Queen.yy",
+    "path": "folders/Objects/Enemy/boss/Candy Queen.yy",
   },
   "parentObjectId": null,
   "persistent": false,
