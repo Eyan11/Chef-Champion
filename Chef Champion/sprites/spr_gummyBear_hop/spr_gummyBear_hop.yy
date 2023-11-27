@@ -43,7 +43,7 @@
   "origin": 0,
   "parent": {
     "name": "GummyBear",
-    "path": "folders/Sprites/Enemies/GummyBear.yy",
+    "path": "folders/Sprites/Enemies/Dessert/GummyBear.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

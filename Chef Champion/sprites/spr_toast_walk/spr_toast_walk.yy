@@ -23,10 +23,10 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9c8a5a5a-4d51-4653-9b36-17936c1e7ac4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 4,
   "parent": {
     "name": "Burnt Toast",
-    "path": "folders/Sprites/Enemies/Burnt Toast.yy",
+    "path": "folders/Sprites/Enemies/Breakfast/Burnt Toast.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -59,8 +59,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 48,
+    "yorigin": 50,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

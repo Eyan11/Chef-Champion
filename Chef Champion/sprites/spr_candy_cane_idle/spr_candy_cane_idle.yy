@@ -31,7 +31,7 @@
   "origin": 0,
   "parent": {
     "name": "Candy Cane",
-    "path": "folders/Sprites/Enemies/Candy Cane.yy",
+    "path": "folders/Sprites/Enemies/Dessert/Candy Cane.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

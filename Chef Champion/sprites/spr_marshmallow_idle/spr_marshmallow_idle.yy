@@ -44,7 +44,7 @@
   "origin": 0,
   "parent": {
     "name": "marshmallow_man",
-    "path": "folders/Sprites/Enemies/marshmallow_man.yy",
+    "path": "folders/Sprites/Enemies/Dessert/marshmallow_man.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

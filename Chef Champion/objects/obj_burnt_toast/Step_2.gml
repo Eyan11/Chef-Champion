@@ -3,7 +3,7 @@
 
 // Health Check
 if (current_health <= 0) {
-	sprite_index = spr_toast_walk_dead
+	sprite_index = spr_toast_dead
     instance_destroy();
 }
 
