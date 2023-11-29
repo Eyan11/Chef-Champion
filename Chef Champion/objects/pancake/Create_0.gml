@@ -1,15 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-dir = -1
-spd = 3
+dir = 1
+spd = 1
 grv = 0.2
 vspd = 0
 hspd = 0;
 dont_fall = true
 
+current_speed = spd
 
-max_health = 100
+max_health = 120
 current_health = max_health
 
 // Initialize attack variables
@@ -24,3 +25,6 @@ attackCooldown = 60; // Cooldown time between attacks in frames
 isAttacking = false; // State of the enemy's attack
 facingDirection = 1
 
+isDying = false
+
+dropChance = irandom(2);

@@ -1,66 +1,62 @@
- //collision Logic
-//TODO
+// Step Event
+timeSinceLastAttack--;
 
- // ** AI Logic for Movement and Attack **
-if (state == "idle") {
-    if (distance_to_object(obj_player_parent) <= attack_distance && attack_timer <= 0) {
-        state = "hop";
-        hop_timer = hop_duration;
-        target_x = obj_player_parent.x;
-        vertical_speed = -5;
-        
-        // Attack the player when conditions are met
-        //obj_player.playerhealth -= 20; // Assuming 20 is the amount of damage inflicted
-		take_damage(obj_player_parent, 20);
+// Collision Logic
+hspd = dir * spd;
+vspd = vspd + grv;
+
+// Horizontal Collision
+if (place_meeting(x + hspd, y, collision_layer())) {
+    while (!place_meeting(x + sign(hspd), y, collision_layer())) {
+        x = x + sign(hspd);
     }
-	else if (point_distance(x, y, target_x, target_y) < 5) {
-        target_x = x + random_range(-100, 100);  // Random movement when idle
-    }
+    dir = dir * -1; // Change direction upon collision
+    hspd = 0;
 }
-else if (state == "hop") {
-    hop_timer--;
-    if (hop_timer <= 0) {
-        state = "attack";
-        attack_timer = attack_cooldown;
+x = x + hspd;
+
+// Vertical Collision
+if (place_meeting(x, y + vspd, collision_layer())) {
+    while (!place_meeting(x, y + sign(vspd), collision_layer())) {
+        y = y + sign(vspd);
     }
-}
-else if (state == "attack") {
-    attack_timer--; // Decrement attack timer continuously in attack state
-    if (attack_timer <= 0) {
-        state = "idle"; // revert back to idle after attack cooldown finishes
+    vspd = 0;
+
+    if (dont_fall && !position_meeting(x + (sprite_width / 2) * dir, y + (sprite_height / 2) + 7, collision_layer())) {
+        dir = dir * -1; // Change direction upon vertical collision edge condition
     }
 }
+y = y + vspd;
 
-// ** Movement Mechanic **
-if (state == "hop") {
-    y += vertical_speed;
-    vertical_speed += gravity;
-    // Check if Gummy Bear is back on the ground
-    if (vertical_speed > 0 && point_distance(x, y, target_x, target_y) < 5) {
-        state = "idle";
-        vertical_speed = 0;
+// Finding the nearest player
+var player = instance_nearest(x, y, obj_player_parent);
+var playerDistance = point_distance(x, y, player.x, player.y);
+
+
+// Update sprite facing based on direction and buffer zone logic
+if (!isAttacking) {
+    image_xscale = dir;
+}
+
+// Attack Logic
+if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
+    isAttacking = true;
+    hspd = 0;
+    vspd = 0;
+    sprite_index = spr_gummyBear_attack;
+    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
+
+    if (playerDistance < attackRange) {
+        take_damage(obj_player_parent, damage);
+        timeSinceLastAttack = attackCooldown;
     }
-} else {
-    direction = point_direction(x, y, target_x, target_y);
-    x += lengthdir_x(max_speed, direction);
-    y += lengthdir_y(max_speed, direction);
+} else if (playerDistance >= attackRange && isAttacking) {
+    isAttacking = false;
 }
 
-// ** State-based Animation **
-switch (state) {
-    case "idle":
-        sprite_index = spr_gummyBear_idle;
-        break;
-    case "hop":
-        sprite_index = spr_gummyBear_hop;
-        break;
-    case "attack":
-        sprite_index = spr_gummyBear_attack;
-        break;
-    case "death":
-        sprite_index = spr_gummyBear_death;
-        break;
+// Resetting Movement and Sprite
+if (!isAttacking) {
+    sprite_index = spr_gummyBear_idle;
+    image_xscale = dir; // Ensure sprite direction is reset after attack phase
 }
-
-
 

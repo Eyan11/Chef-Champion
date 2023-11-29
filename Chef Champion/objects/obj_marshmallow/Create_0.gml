@@ -21,3 +21,5 @@ grease = false;
 move_direction = 1;  // Start moving to the right
 start_x = x;  // Save the initial x position
 move_distance = 200;  // Distance to move in both directions. Adjust as needed.
+
+dropChance = irandom(2);

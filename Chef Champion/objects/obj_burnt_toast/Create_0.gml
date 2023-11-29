@@ -1,13 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-dir = -1
+dir = 1
 spd = 3
 grv = 0.2
 vspd = 0
 hspd = 0;
 dont_fall = true
 
+current_speed = spd
 
 max_health = 100
 current_health = max_health
@@ -28,3 +29,5 @@ facingDirection = 1
 
 jumpSpeed = -4; // Jump speed for attacking
 isInAir = false; // Flag to check if the enemy is in the air
+
+dropChance = irandom(2);

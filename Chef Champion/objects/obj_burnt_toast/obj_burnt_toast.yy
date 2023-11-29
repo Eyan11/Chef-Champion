@@ -10,10 +10,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Burnt Toast",
-    "path": "folders/Objects/Enemy/breakfast/Burnt Toast.yy",
+    "name": "breakfast",
+    "path": "folders/Objects/Enemy/breakfast.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parent_enemy",
+    "path": "objects/obj_parent_enemy/obj_parent_enemy.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -1,29 +1,32 @@
-// Movement and states
-max_speed = 2;
-current_speed = max_speed
-target_x = x;
-target_y = y;
-state = "idle";
-hop_timer = 0;
-hop_duration = 30; // Time it takes for the hop to complete
-gravity = 0.2;   // Controls the rate of fall
-vertical_speed = 0;  // Controls the speed of the upward jump and descent
-direction = 1
+/// @description Insert description here
+// You can write your code in this editor
 
-// Health
-max_health = 15;
-current_health = max_health
-
-// Debuffs
-burn = false;
-frosted = false;
-grease = false;
-
-// Attack Variables
-attack_distance = 64;
-attack_cooldown = 60;
-attack_timer = 0;
-
+dir = 1
+spd = 4
+grv = 0.3
+vspd = 0
+hspd = 0;
 dont_fall = true
 
+current_speed = spd
 
+
+max_health = 50
+current_health = max_health
+
+
+// Initialize attack variables
+
+is_attacking = false; // State of the enemy's attack
+damage = 10; // Damage dealt to the player
+
+// Create Event for Pancake Enemy
+attackRange = 100; // Range within which the enemy will attack
+timeSinceLastAttack = 0; // Timer for managing attacks
+attackCooldown = 60; // Cooldown time between attacks in frames
+isAttacking = false; // State of the enemy's attack
+facingDirection = 1
+
+
+gummyBearDead = false
+dropChance = irandom(2);

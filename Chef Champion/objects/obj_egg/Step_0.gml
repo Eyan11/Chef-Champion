@@ -1,4 +1,3 @@
-
 // Step Event
 timeSinceLastAttack--;
 
@@ -11,7 +10,7 @@ if (place_meeting(x + hspd, y, collision_layer())) {
     while (!place_meeting(x + sign(hspd), y, collision_layer())) {
         x = x + sign(hspd);
     }
-    dir = dir * -1;
+    dir = dir * -1; // Change direction upon collision
     hspd = 0;
 }
 x = x + hspd;
@@ -22,71 +21,46 @@ if (place_meeting(x, y + vspd, collision_layer())) {
         y = y + sign(vspd);
     }
     vspd = 0;
-    
+
     if (dont_fall && !position_meeting(x + (sprite_width / 2) * dir, y + (sprite_height / 2) + 7, collision_layer())) {
-        dir = dir * -1;
+        dir = dir * -1; // Change direction upon vertical collision edge condition
     }
 }
 y = y + vspd;
 
 // Finding the nearest player
-var player = instance_nearest(x, y, obj_player_parent); // Replace 'obj_player_parent' with your player object
+var player = instance_nearest(x, y, obj_player_parent);
 var playerDistance = point_distance(x, y, player.x, player.y);
 
-// Determine player's relative horizontal position
-if (player.x < x) {
-    facingDirection = -1; // Player is to the left
-} else {
-    facingDirection = 1; // Player is to the right
-}
+// Determine player's relative horizontal position for sprite facing
+/*var bufferZone = sprite_width; // Buffer zone to avoid rapid flipping near player
+if ((player.x < x - bufferZone && dir == 1) || (player.x > x + bufferZone && dir == -1)) {
+    dir = -dir; // Change direction when player crosses buffer zone
+}*/
 
-// Flip sprite based on facing direction
-if (facingDirection != 0) {
-    image_xscale = facingDirection;
+// Update sprite facing based on direction and buffer zone logic
+if (!isAttacking) {
+    image_xscale = dir;
 }
 
 // Attack Logic
 if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
-    isAttacking = true; // Set attacking state
-    hspd = 0; // Stop horizontal movement
-    vspd = 0; // Stop vertical movement
-    sprite_index = spr_egg_attack; // Attack sprite
-    image_xscale = facingDirection; // Face towards the player
+    isAttacking = true;
+    hspd = 0;
+    vspd = 0;
+    sprite_index = spr_egg_attack;
+    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
 
-    if (place_meeting(x+30, y+30, obj_player_parent)) {
+    if (playerDistance < attackRange) {
         take_damage(obj_player_parent, damage);
-        timeSinceLastAttack = attackCooldown; // Reset attack timer
+        timeSinceLastAttack = attackCooldown;
     }
 } else if (playerDistance >= attackRange && isAttacking) {
-    isAttacking = false; // Reset attacking state
+    isAttacking = false;
 }
 
 // Resetting Movement and Sprite
 if (!isAttacking) {
-    sprite_index = spr_egg_walk; // Normal sprite
-    image_xscale = facingDirection; // Continue to face towards the player
+    sprite_index = spr_egg_walk;
+    image_xscale = dir; // Ensure sprite direction is reset after attack phase
 }
-if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
-    isAttacking = true; // Set attacking state
-	audio_play_sound(sfx_egg, 5, false)
-    hspd = 0; // Stop horizontal movement
-    vspd = 0; // Stop vertical movement
-    sprite_index = spr_egg_attack; // Attack sprite
-
-    if (place_meeting(x+30, y+30, obj_player_parent)) {
-        // Apply damage to the player
-        // Assuming you have a function like 'take_damage' for the player
-		
-        take_damage(obj_player_parent, damage);
-        timeSinceLastAttack = attackCooldown; // Reset attack timer
-    }
-} else if (playerDistance >= attackRange && isAttacking) {
-    isAttacking = false; // Reset attacking state
-}
-
-// Resetting Movement and Sprite
-if (!isAttacking) {
-    // Reset to normal sprite and movement behavior
-    sprite_index = spr_egg_walk; // Normal sprite
-}
-

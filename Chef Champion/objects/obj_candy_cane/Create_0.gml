@@ -5,7 +5,7 @@ event_inherited()
 state = "idle"; // The initial state of the Candy Cane
 
 // Health
-max_health = 25;
+max_health = 100;
 current_health = max_health
 
 // Visibility and Attack Variables
@@ -27,7 +27,7 @@ movement_range = 200; // How far from the start_x the Candy Cane can move
 // Projectile Variables
 shrapnel_speed = 25; // Speed of the candy shrapnel projectiles
 
-
+dropChance = irandom(2);
 
 
 
