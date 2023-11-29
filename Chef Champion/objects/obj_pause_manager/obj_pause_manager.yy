@@ -30,8 +30,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_placeholder_01",
-    "path": "sprites/spr_placeholder_01/spr_placeholder_01.yy",
+    "name": "spr_placeholder_03",
+    "path": "sprites/spr_placeholder_03/spr_placeholder_03.yy",
   },
   "spriteMaskId": null,
   "visible": true,

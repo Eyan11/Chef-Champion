@@ -23,7 +23,15 @@ function save_game() {
 			crit_percent: crit_percent,
 			max_special_meter: max_special_meter,
 			jump_special_damage: jump_special_damage,
-			ground_special_damage: ground_special_damage
+			ground_special_damage: ground_special_damage,
+			inventory_dish: inventory_dish,
+			inventory_weapon: inventory_weapon,
+			total_speed_dishes: total_speed_dishes,
+			total_damage_dishes: total_damage_dishes,
+			total_health_dishes: total_health_dishes,
+			own_pastry_weapon: own_pastry_weapon,
+			own_grill_weapon: own_grill_weapon,
+			own_fry_weapon: own_fry_weapon
 		};
 		
 		array_push(_array, _struct);

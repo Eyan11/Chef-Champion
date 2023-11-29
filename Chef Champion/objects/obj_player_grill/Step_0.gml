@@ -1,4 +1,4 @@
-/// @description Adds Ground Special
+/// @description Adds Burger Special
 
 // Inherit the parent event
 event_inherited();
