@@ -1,4 +1,4 @@
- /// @description adds special attacks
+ /// @description Adds Cake Special
 
 // Inherit the parent event
 event_inherited();

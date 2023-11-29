@@ -31,8 +31,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_placeholder_01",
-    "path": "sprites/spr_placeholder_01/spr_placeholder_01.yy",
+    "name": "spr_placeholder_02",
+    "path": "sprites/spr_placeholder_02/spr_placeholder_02.yy",
   },
   "spriteMaskId": null,
   "visible": true,

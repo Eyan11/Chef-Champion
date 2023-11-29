@@ -33,6 +33,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"grav","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.5","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_exploding","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawned_in_wall","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
   ],
   "solid": false,
   "spriteId": {

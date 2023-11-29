@@ -149,8 +149,10 @@ function swap_chef(_chef) {
 	}
 	
 	//TODO: Despawn current chef, and spawn in new chef
-	//set weapon
+	//set chef
 	obj_player_manager.current_chef = _chef;
+	save_game();
+	load_game();
 }
 
 
@@ -199,8 +201,8 @@ function use_damage_dish(_player) {
 /// @function					use_health_dish(_player);
 /// @description				Increases health by 50% of current health
 function use_health_dish(_player) {
-	//don't let player use dish if they have none
-	if(_player.total_health_dishes <= 0)
+	//don't let player use dish if they have none or are already at max health
+	if(_player.total_health_dishes <= 0 || get_health(_player) >= _player.max_health)
 		return;
 	
 	gain_health(_player, _player.max_health/2)

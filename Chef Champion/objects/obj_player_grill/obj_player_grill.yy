@@ -49,7 +49,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"level_up_threshold_ui","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_xp_ui","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"burger_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"60","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"burger_cost","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"70","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"burger_cost","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"60","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"burger_spawn_height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_height","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"burger_spawn_width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_width * 10","varType":0,},
   ],
