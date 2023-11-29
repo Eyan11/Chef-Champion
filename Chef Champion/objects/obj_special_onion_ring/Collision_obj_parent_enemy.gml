@@ -1,7 +1,7 @@
 /// @description damage player and despawn
 
-//if enemy hasn't been damaged yet
-if(ds_list_find_index(damaged_targets, other.id) == -1) {
+//if enemy hasn't been damaged yet, and is not despawning
+if(ds_list_find_index(damaged_targets, other.id) == -1 && sprite_index != spr_onion_ring_despawn) {
 	
 	//damage enemy and add them to list
 	enemy_damage(other, damage);

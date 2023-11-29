@@ -18,6 +18,7 @@ if(special_attribute_level >= 5 && special_input() && is_grounded && !is_rolling
 	_obj = instance_create_layer(self.x - (onion_ring_spawn_width * self.image_xscale), self.y - onion_ring_spawn_height, "Instances", obj_special_onion_ring);
 	_obj.damage = self.onion_ring_damage;
 	_obj.dir = self.image_xscale;
+	_obj.image_xscale = self.image_xscale;
 	
 	//reset cooldown timer
 	special_cooldown_countdown = special_cooldown;

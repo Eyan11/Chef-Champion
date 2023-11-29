@@ -26,7 +26,7 @@ function player_death(_player) {
 /// @description				Respawns player at last checkpoint
 function player_respawn(_player) {
 
-	instance_create_layer(get_checkpoint().x, get_checkpoint().y - 10, "Instances", _player);
+	instance_create_layer(get_checkpoint().x, get_checkpoint().y - 5, "Instances", _player);
 	
 	//add weapon into room if not aready in there (when player dies with dish selected)
 	if(!instance_exists(_player.inventory_weapon))

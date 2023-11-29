@@ -149,8 +149,10 @@ function swap_chef(_chef) {
 	}
 	
 	//TODO: Despawn current chef, and spawn in new chef
-	//set weapon
+	//set chef
 	obj_player_manager.current_chef = _chef;
+	save_game();
+	load_game();
 }
 
 
