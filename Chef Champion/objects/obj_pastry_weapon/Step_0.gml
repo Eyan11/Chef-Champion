@@ -27,7 +27,7 @@ if(norm_attack_input()) {
 	
 }
 else if(keyboard_check_released(ord("F"))) {
-	player_normal_attack_pastry(self, obj_player_pastry)
+	player_normal_attack_pastry(self, obj_player_parent)
 }
 
 //player_normal_attack(self, obj_player_pastry)
