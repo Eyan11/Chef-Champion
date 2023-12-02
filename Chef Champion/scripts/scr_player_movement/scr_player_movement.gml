@@ -143,7 +143,7 @@ function player_collision_and_move(_player) {
 		_player.x += _player.hor_speed * _player.frosted_multiplier;
 	
 	else if(_player.is_slowed) //slowed effect for slowing pool
-		_player.x += _player.hor_speed * .4;
+		_player.x += _player.hor_speed * .5;
 	
 	else
 		_player.x += _player.hor_speed;
