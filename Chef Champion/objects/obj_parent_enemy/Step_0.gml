@@ -1,4 +1,4 @@
-// Handle slow debuff
+ // Handle slow debuff
 if (isSlowed) {
     current_speed *= 0.5; // Example: reduce speed
     slowTimer--;

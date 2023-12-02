@@ -8,7 +8,7 @@
 if(audio_is_playing(bgm_dessert)){
 }
 else{
-	audio_play_sound(bgm_dessert,1,0);
+	audio_play_sound(bgm_dessert,1,true);
 }
 
 
