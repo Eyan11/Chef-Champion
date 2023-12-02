@@ -1,5 +1,6 @@
 event_inherited()
-
+// Step Event
+timeSinceLastAttack--;
 
 // Collision Logic
 hspd = dir * spd;
@@ -27,3 +28,109 @@ if (place_meeting(x, y + vspd, collision_layer())) {
     }
 }
 y = y + vspd;
+
+// Finding the nearest player
+var player = instance_nearest(x, y, obj_player_parent);
+var playerDistance = point_distance(x, y, player.x, player.y);
+
+
+// Update sprite facing based on direction and buffer zone logic
+if (!isAttacking) {
+    image_xscale = dir;
+}
+
+//Phase 1
+if(current_health >= 50)
+{
+		// Attack Logic
+	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
+	    isAttacking = true;
+	    hspd = 0;
+	    vspd = 0;
+	    sprite_index = spr_candy_queen_phase_1;
+	    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
+
+	    if (playerDistance < attackRange) {
+			if audio_is_playing(sfx_candyCane){
+			}
+			else {
+			audio_play_sound(sfx_candyCane,5,false)
+			}
+	        take_damage(obj_player_parent, damage);
+	        timeSinceLastAttack = attackCooldown;
+	    }
+	} else if (playerDistance >= attackRange && isAttacking) {
+	    isAttacking = false;
+	}
+
+	// Resetting Movement and Sprite
+	if (!isAttacking) {
+	    sprite_index = spr_candy_queen_walk;
+	    image_xscale = dir; // Ensure sprite direction is reset after attack phase
+	}
+
+}
+
+//Phase 2
+if(current_health <= 30)
+{
+		// Attack Logic
+	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
+	    isAttacking = true;
+	    hspd = 0;
+	    vspd = 0;
+	    sprite_index = spr_candy_queen_phase_2;
+	    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
+
+	    if (playerDistance < attackRange) {
+			if audio_is_playing(sfx_candyCane){
+			}
+			else {
+			audio_play_sound(sfx_candyCane,5,false)
+			}
+	        take_damage(obj_player_parent, damage);
+	        timeSinceLastAttack = attackCooldown;
+	    }
+	} else if (playerDistance >= attackRange && isAttacking) {
+	    isAttacking = false;
+	}
+
+	// Resetting Movement and Sprite
+	if (!isAttacking) {
+	    sprite_index = spr_candy_queen_walk;
+	    image_xscale = dir; // Ensure sprite direction is reset after attack phase
+	}
+
+}
+
+//Phase 3
+if(current_health <= 10)
+{
+		// Attack Logic
+	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
+	    isAttacking = true;
+	    hspd = 0;
+	    vspd = 0;
+	    sprite_index = spr_candy_queen_phase_3;
+	    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
+
+	    if (playerDistance < attackRange) {
+			if audio_is_playing(sfx_candyCane){
+			}
+			else {
+			audio_play_sound(sfx_candyCane,5,false)
+			}
+	        take_damage(obj_player_parent, damage);
+	        timeSinceLastAttack = attackCooldown;
+	    }
+	} else if (playerDistance >= attackRange && isAttacking) {
+	    isAttacking = false;
+	}
+
+	// Resetting Movement and Sprite
+	if (!isAttacking) {
+	    sprite_index = spr_candy_queen_walk;
+	    image_xscale = dir; // Ensure sprite direction is reset after attack phase
+	}
+
+}
