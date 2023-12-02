@@ -76,3 +76,11 @@ function level_up(_player) {
 	show_debug_message("Current Level: ");
 	show_debug_message(_player.current_level);
 }
+
+function update_level_ui(_player) {
+	
+	//update level ui
+	_player.current_xp_ui = (100 * _player.current_xp) / _player.level_up_threshold
+	_player.level_up_threshold_ui = 100 - _player.current_xp_ui
+	
+}
