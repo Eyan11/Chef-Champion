@@ -12,7 +12,10 @@
     "name": "Candy Queen",
     "path": "folders/Objects/Enemy/boss/Candy Queen.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parent_enemy",
+    "path": "objects/obj_parent_enemy/obj_parent_enemy.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_candy_queen_walk",
+    "path": "sprites/spr_candy_queen_walk/spr_candy_queen_walk.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

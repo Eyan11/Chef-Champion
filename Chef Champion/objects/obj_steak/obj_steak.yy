@@ -32,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_steak_walk",
+    "path": "sprites/spr_steak_walk/spr_steak_walk.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -32,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_carrot_walk",
+    "path": "sprites/spr_carrot_walk/spr_carrot_walk.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
