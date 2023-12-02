@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Gummy Bear",
-    "path": "folders/Objects/Enemy/dessert/Marshmallo Man/Gummy Bear.yy",
+    "path": "folders/Objects/Enemy/dessert/Gummy Bear.yy",
   },
   "parentObjectId": {
     "name": "obj_parent_enemy",

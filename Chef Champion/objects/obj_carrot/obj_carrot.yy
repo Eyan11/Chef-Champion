@@ -32,10 +32,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_carrot_attack",
-    "path": "sprites/spr_carrot_attack/spr_carrot_attack.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

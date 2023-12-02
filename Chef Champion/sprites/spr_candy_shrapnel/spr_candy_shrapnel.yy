@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_candy_shrapnel",
-  "bbox_bottom": 29,
-  "bbox_left": 2,
-  "bbox_right": 29,
-  "bbox_top": 2,
+  "bbox_bottom": 729,
+  "bbox_left": 0,
+  "bbox_right": 506,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04bd5c1f-9aa8-40ad-a07e-972735b1d014",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23e99a7b-6e61-41aa-baa3-ad7d82313f6c",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 730,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0f0856c6-9566-48bd-a10e-12bc8dc5e1a5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1817ae16-e33b-406a-b034-363401674909","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"04bd5c1f-9aa8-40ad-a07e-972735b1d014","path":"sprites/spr_candy_shrapnel/spr_candy_shrapnel.yy",},},},"Disabled":false,"id":"84ae3b2f-c85e-4e7e-82c2-550b6ce94323","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"23e99a7b-6e61-41aa-baa3-ad7d82313f6c","path":"sprites/spr_candy_shrapnel/spr_candy_shrapnel.yy",},},},"Disabled":false,"id":"d43858b4-d713-4305-9663-a068fe0a4ce5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 32,
+  "width": 507,
 }
