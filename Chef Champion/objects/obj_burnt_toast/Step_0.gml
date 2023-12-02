@@ -1,3 +1,4 @@
+event_inherited()
 // Step Event
 timeSinceLastAttack--;
 
@@ -48,7 +49,6 @@ if (facingDirection != 0) {
 // Attack Logic
 if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
     isAttacking = true; // Set attacking state
-	audio_play_sound(sfx_toast, 5, false)
     hspd = 0; // Stop horizontal movement
 
     // Implement jump
@@ -61,6 +61,11 @@ if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
     image_xscale = facingDirection; // Face towards the player
 
     if (place_meeting(x, y, obj_player_parent)) {
+		if audio_is_playing(sfx_gummyBear){
+		}
+		else {
+		audio_play_sound(sfx_gummyBear,5,false)
+		}
         take_damage(obj_player_parent, damage);
         timeSinceLastAttack = attackCooldown; // Reset attack timer
     }

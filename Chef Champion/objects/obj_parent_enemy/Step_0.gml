@@ -1,11 +1,3 @@
-// Handle slow debuff
-if (isSlowed) {
-    current_speed *= 0.5; // Example: reduce speed
-    slowTimer--;
-    if (slowTimer <= 0) {
-        isSlowed = false;
-    }
-}
 
 // Handle burning debuff
 if (isBurning) {
@@ -18,7 +10,7 @@ if (isBurning) {
 
 // Handle grease debuff
 if (isInGrease) {
-	current_speed *= 0.5;
+	//current_speed *= 0.5;
     current_health -= greaseDamage; // Apply grease damage
     greaseTimer--;
     if (greaseTimer <= 0) {

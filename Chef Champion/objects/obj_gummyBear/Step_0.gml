@@ -47,6 +47,11 @@ if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
     image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
 
     if (playerDistance < attackRange) {
+		if audio_is_playing(sfx_gummyBear){
+		}
+		else {
+		audio_play_sound(sfx_gummyBear,5,false)
+		}
         take_damage(obj_player_parent, damage);
         timeSinceLastAttack = attackCooldown;
     }

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+event_inherited()
 dir = 1
 spd = 3
 grv = 0.2

@@ -1,15 +1,14 @@
 // Initialize debuff states and timers
-isSlowed = false;
-slowTimer = 30;
 
 isBurning = false;
-burnTimer = 60;
+burnTimer = 300;
 
 isInGrease = false;
-greaseTimer = 30;
+greaseTimer = 300;
 
 
-
+fireDamage = 5
+greaseDamage = 10
 
 
 

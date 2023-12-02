@@ -13,7 +13,10 @@
     "name": "dinner",
     "path": "folders/Objects/Enemy/dinner.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_parent_enemy",
+    "path": "objects/obj_parent_enemy/obj_parent_enemy.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_carrot_attack",
+    "path": "sprites/spr_carrot_attack/spr_carrot_attack.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

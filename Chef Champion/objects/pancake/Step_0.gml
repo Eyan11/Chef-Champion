@@ -33,11 +33,6 @@ y = y + vspd;
 var player = instance_nearest(x, y, obj_player_parent);
 var playerDistance = point_distance(x, y, player.x, player.y);
 
-// Determine player's relative horizontal position for sprite facing
-/*var bufferZone = sprite_width; // Buffer zone to avoid rapid flipping near player
-if ((player.x < x - bufferZone && dir == 1) || (player.x > x + bufferZone && dir == -1)) {
-   // dir = -dir; // Change direction when player crosses buffer zone
-}*/
 
 // Update sprite facing based on direction and buffer zone logic
 if (!isAttacking) {
@@ -53,6 +48,11 @@ if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
     image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
 
     if (playerDistance < attackRange) {
+		if audio_is_playing(sfx_marshmallow){
+		}
+		else {
+		audio_play_sound(sfx_marshmallow,5,false)
+		}
         take_damage(obj_player_parent, damage);
         timeSinceLastAttack = attackCooldown;
     }
