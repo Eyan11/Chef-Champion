@@ -43,7 +43,7 @@ function player_roll(_player) {
 		//increase gravity so it's not "floaty"
 		_player.grav *= 4;
 	
-		_player.is_invincible = false;
+		_player.is_invincible = true;
 		_player.sprite_index = spr_pastry_roll;
 		_player.is_rolling = true;
 	}
@@ -59,8 +59,8 @@ function player_roll(_player) {
 			//return gravity to normal
 			_player.grav /= 4;
 			_player.roll_cooldown_countdown = _player.roll_cooldown_time;
-			_player.is_invincible = false;
 			_player.sprite_index = spr_pastry_idle;
+			_player.is_invincible = false;
 			_player.is_rolling = false;
 		}
 	}

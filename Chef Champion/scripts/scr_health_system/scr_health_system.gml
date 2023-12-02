@@ -21,10 +21,10 @@ function get_health(_player){
 /// @description				Reduces player health (damage should be positive num)
 function take_damage(_player, _damage){
 	
-	//don't take damage when invincible
-	if(_player.is_invincible || _player.is_dead)
+	//if dead don't take damage or invincible (unless they have a debuff) don't take damage
+	if(_player.is_dead || (_player.is_invincible && !_player.is_burning && !_player.is_greased))
 		return;
-	
+		
 	//player is dead
 	if(_damage >= _player.current_health) {
 		_player.current_health = 0;
@@ -65,7 +65,7 @@ function frosted(_player) {
 	if(!_player.is_frosted) {
 		
 		audio_play_sound(snd_frosting, 8, true);
-		var _frosting = instance_create_layer(_player.x, _player.y, "Instances", obj_frosting);
+		var _frosting = instance_create_layer(_player.x, _player.y, "Foreground_Instances", obj_frosting);
 		_frosting.obj_to_follow = _player;
 		_frosting.following_enemy = false;
 	}
@@ -93,7 +93,7 @@ function burning(_player) {
 		audio_play_sound(snd_fire, 5, true);
 		
 		//spawn fire
-		var _fire = instance_create_layer(_player.x, _player.y, "Instances", obj_fire);
+		var _fire = instance_create_layer(_player.x, _player.y, "Foreground_Instances", obj_fire);
 		_fire.obj_to_follow = _player;
 		_fire.following_enemy = false;
 		
@@ -124,6 +124,7 @@ function greased(_player) {
 
 
 function sear(_player){
+
 	if(!_player.is_seared) {
 		sear_count = 0;
 		_player.alarm[3] = 60;

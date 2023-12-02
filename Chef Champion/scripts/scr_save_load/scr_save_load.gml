@@ -31,7 +31,9 @@ function save_game() {
 			total_health_dishes: total_health_dishes,
 			own_pastry_weapon: own_pastry_weapon,
 			own_grill_weapon: own_grill_weapon,
-			own_fry_weapon: own_fry_weapon
+			own_fry_weapon: own_fry_weapon,
+			using_speed_dish: using_speed_dish,
+			using_damage_dish: using_damage_dish
 		};
 		
 		array_push(_array, _struct);

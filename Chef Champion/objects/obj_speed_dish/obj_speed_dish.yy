@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_soda",
-    "path": "sprites/spr_soda/spr_soda.yy",
+    "name": "spr_latte",
+    "path": "sprites/spr_latte/spr_latte.yy",
   },
   "spriteMaskId": null,
   "visible": true,

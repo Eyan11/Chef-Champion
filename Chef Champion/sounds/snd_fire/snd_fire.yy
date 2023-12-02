@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 19.09551,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "Buffs and Debuffs",
+    "path": "folders/Sounds/SFX/Buffs and Debuffs.yy",
   },
   "preload": false,
   "sampleRate": 44100,

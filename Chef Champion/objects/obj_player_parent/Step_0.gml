@@ -64,6 +64,22 @@ else if(abs(hor_speed) > 0) {
 else
 	self.sprite_index = spr_pastry_idle;
 
+//invincible effect
+if(is_invincible) {
+	show_debug_message("Invincible");
+	self.image_alpha *= 1 + invincibility_effect_speed;
+	
+	//if alpha reached lower bound, make alpha increase
+	if(self.image_alpha <= 0.3)
+		invincibility_effect_speed = abs(invincibility_effect_speed);
+	//if alpha reached higher bound, make alpha decrease
+	else if(self.image_alpha >= 1)
+		invincibility_effect_speed = -abs(invincibility_effect_speed);
+		
+}
+else {
+	self.image_alpha = 1;
+}
 
 //special countdowns
 special_meter_regen_countdown--;

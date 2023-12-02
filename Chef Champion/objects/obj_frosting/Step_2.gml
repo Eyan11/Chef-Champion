@@ -19,13 +19,13 @@ else {
 	self.x = obj_to_follow.x;
 	self.y = obj_to_follow.y;
 	
-	//frosting matches the size of the obj
-	self.image_xscale = (abs(obj_to_follow.sprite_width)/64) * 0.9;
+	//frosting is half the width of obj
+	self.image_xscale = (abs(obj_to_follow.sprite_width)/64) * 0.5;
 	self.image_yscale = self.image_xscale;
 }
 
 
-//Make frosting more opaque every step
+//Make frosting more opaque every step when despawning
 if(is_despawning)
 	self.image_alpha *= 0.95;
 //despawn sprite once almost invisible

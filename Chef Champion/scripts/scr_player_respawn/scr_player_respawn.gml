@@ -32,6 +32,7 @@ function player_respawn(_player) {
 	if(!instance_exists(_player.inventory_weapon))
 		instance_create_layer(_player.x, _player.y, "Instances", _player.inventory_weapon);
 	_player.is_dead = false;
+	
 }
 
 

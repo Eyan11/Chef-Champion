@@ -166,6 +166,7 @@ function use_speed_dish(_player) {
 	
 	_player.run_speed += 3;
 	_player.total_speed_dishes--;
+	audio_play_sound(snd_speed_dish, 10, false);
 	
 	_player.using_speed_dish = true;
 	//Remove BUff after 20 seconds
@@ -187,6 +188,7 @@ function use_damage_dish(_player) {
 	_player.additional_weapon_damage += 5;
 	_player.using_damage_dish = true;
 	_player.total_damage_dishes--;
+	audio_play_sound(snd_damage_dish, 10, false);
 	
 	
 	//Remove BUff after 20 seconds
@@ -207,6 +209,7 @@ function use_health_dish(_player) {
 	
 	gain_health(_player, _player.max_health/2)
 	_player.total_health_dishes--;
+	audio_play_sound(snd_health_dish, 10, false);
 	
 	show_debug_message("health dishes left: ");
 	show_debug_message(_player.total_health_dishes);

@@ -24,3 +24,7 @@ Silbido bomba cayendo - Sound Effect from Pixabay - https://pixabay.com/sound-ef
 Lighting a Fire - Sound Effect from Pixabay - https://pixabay.com/sound-effects/search/%20lighting%20a%20fire/ - modified by Eyan Martucci
 
 Squelch - Sound Effect from Pixabay - https://pixabay.com/sound-effects/search/squelch/ 
+
+8 Heals and Buffs SFX - leopahz licensed under CC BY 4.0 - https://opengameart.org/content/8-heals-and-buffs-sfx 
+
+Poof - Sound Effect rom Pixabay - https://pixabay.com/sound-effects/search/poof/ - modified by Eyan Martucci
