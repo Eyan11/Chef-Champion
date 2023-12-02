@@ -63,4 +63,19 @@ function player_normal_attack_fry(_melee_object, _player) {
 		_player.can_attack = false
 		_player.alarm[4] = room_speed * .65 //little more than 1 swing a second
 	}
+<<<<<<< Updated upstream
+=======
+}
+
+function check_crit(_player) {
+	//creat range for possibility
+	var probability = int64(1 / _player.crit_percent)
+	//roll for crit, choosing 1 because range of random function will decrease if crit chance goes up
+	if (irandom_range(1, probability) == 1) {
+		return true //if random = 1, crit
+	}
+	else {
+		return false //else no crit
+	}
+>>>>>>> Stashed changes
 }
