@@ -33,7 +33,12 @@ function save_game() {
 			own_grill_weapon: own_grill_weapon,
 			own_fry_weapon: own_fry_weapon,
 			using_speed_dish: using_speed_dish,
-			using_damage_dish: using_damage_dish
+			using_damage_dish: using_damage_dish,
+			level_1_complete: level_1_complete,
+			level_2_complete: level_2_complete,
+			level_3_complete: level_3_complete,
+			level_4_complete: level_4_complete,
+			level_5_complete: level_5_complete
 		};
 		
 		array_push(_array, _struct);
