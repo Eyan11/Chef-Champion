@@ -1,7 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-	room_goto_next();
-	instance_destroy();
+time += 1
+self.sprite_index = spr_door_open;
+if(time >= 30) {
+	alarm[0] = 1
+}
+
+ 
+
+
+
 
 
 

@@ -202,3 +202,34 @@ function swap_inventory_input() {
 }
 
 
+function buy_item_spend_point() {
+	
+	var _is_buying_spending;
+	
+	if(gamepad_is_connected(0)) {
+		_is_buying_spending = max(gamepad_button_check_pressed(0, gp_padd), 
+			gamepad_button_check_pressed(0, gp_padd)); //down dpad
+	}
+	//collects swap inventory input from keybpard
+	else {
+		_is_buying_spending = keyboard_check_pressed(ord("B"));
+	}
+	
+	return _is_buying_spending
+}
+
+function equip_dish() {
+	
+	var _is_equipping;
+	
+	if(gamepad_is_connected(0)) {
+		_is_equipping = max(gamepad_button_check_pressed(0, gp_padu), 
+			gamepad_button_check_pressed(0, gp_padu)); //up dpad
+	}
+	//collects swap inventory input from keybpard
+	else {
+		_is_equipping = keyboard_check_pressed(ord("N"));
+	}
+	
+	return _is_equipping
+}

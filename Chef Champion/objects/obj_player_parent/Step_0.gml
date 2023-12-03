@@ -147,3 +147,8 @@ if(!is_holding_weapon && norm_attack_down_input() && !is_dead) {
 if(self.y >= 1900) {
 	take_damage(self, 99999);
 }
+      
+//making sure player is in front in the kitchen
+if(room == kitchen_home) {
+	self.depth = -(abs(self.depth))
+}

@@ -1,4 +1,4 @@
-/// @description Spawn in Weapon
+ /// @description Spawn in Weapon
 
 //spawn in weapon if it's not already in the room
 if(!instance_exists(inventory_weapon))

@@ -1,4 +1,4 @@
-/// @description 
+ /// @description 
 
 if(self.sprite_index == spr_pastry_death)
 	self.image_index = -1;
