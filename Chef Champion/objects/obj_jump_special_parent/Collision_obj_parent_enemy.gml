@@ -7,7 +7,7 @@ if(ds_list_find_index(damaged_targets, other.id) == -1) {
 	enemy_damage(other, damage);
 	ds_list_add(damaged_targets, other.id);
 	//add xp when doing damage
-	add_xp(obj_player_parent, damage);
+	add_xp(obj_player_parent, damage * 2);
 }
 
 //if enemy has already been damaged, do nothing

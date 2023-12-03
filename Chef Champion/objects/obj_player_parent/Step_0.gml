@@ -66,7 +66,6 @@ else
 
 //invincible effect
 if(is_invincible) {
-	show_debug_message("Invincible");
 	self.image_alpha *= 1 + invincibility_effect_speed;
 	
 	//if alpha reached lower bound, make alpha increase

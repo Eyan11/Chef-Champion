@@ -21,7 +21,7 @@ function get_health(_player){
 /// @description				Reduces player health (damage should be positive num)
 function take_damage(_player, _damage){
 	
-	//if dead don't take damage or invincible (unless they have a debuff) don't take damage
+	//if dead don't take damage or invincible (unless they have a debuff)
 	if(_player.is_dead || (_player.is_invincible && !_player.is_burning && !_player.is_greased))
 		return;
 		

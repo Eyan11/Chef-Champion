@@ -14,7 +14,7 @@ if(is_exploding) {
 	_frosting.following_enemy = true;
 
 	//add xp when doing damage
-	add_xp(obj_player_parent, damage);
+	add_xp(obj_player_parent, damage * 2);
 	is_exploding = false;
 }
 

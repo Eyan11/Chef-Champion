@@ -74,7 +74,7 @@ function load_game() {
 		
 		instance_destroy(obj_player_parent);
 		
-		//cycles through array of save data
+		//cycles through array of save data (all saved objects)
 		for(var _i = 0; _i < array_length(_array); _i += 1) {
 			
 			//retrieves every struct saved in array

@@ -11,3 +11,4 @@ if(keyboard_check_pressed((ord("U"))))
 	buy_dish(obj_speed_dish, 1);
 */
 
+

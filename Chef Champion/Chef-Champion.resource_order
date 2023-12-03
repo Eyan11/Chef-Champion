@@ -18,7 +18,6 @@
     {"name":"obj_buy_hitbox_health","order":15,"path":"objects/obj_buy_hitbox_health/obj_buy_hitbox_health.yy",},
     {"name":"obj_temp_bullet","order":5,"path":"objects/obj_temp_bullet/obj_temp_bullet.yy",},
     {"name":"spr_kebab_king_phase_2","order":3,"path":"sprites/spr_kebab_king_phase_2/spr_kebab_king_phase_2.yy",},
-    {"name":"spr_shockwave","order":4,"path":"sprites/spr_shockwave/spr_shockwave.yy",},
     {"name":"obj_special_background","order":21,"path":"objects/obj_special_background/obj_special_background.yy",},
     {"name":"spr_grill_hitbox","order":3,"path":"sprites/spr_grill_hitbox/spr_grill_hitbox.yy",},
     {"name":"Obj_flame","order":8,"path":"objects/Obj_flame/Obj_flame.yy",},

@@ -1,13 +1,13 @@
 /// @description Follow player
-	
-//despawn if player is dead or stopped frosting
+
+//despawn if player is dead or stopped being frosted (none of the enemies do frosted effect to player)
 if(!following_enemy && !is_despawning &&
 	(obj_to_follow.is_dead == true || obj_to_follow.is_frosted == false)) {
 	
 	audio_stop_sound(snd_frosting);
 	is_despawning = true;
 }
-//despawn if enemy is dead or stopped frosting
+//despawn if enemy is dead or stopped being frosted
 else if(following_enemy && !is_despawning &&
 	(obj_to_follow.current_health <= 0 || obj_to_follow.isSlowed == false)) {
 		

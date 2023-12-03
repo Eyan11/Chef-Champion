@@ -11,6 +11,7 @@ function player_death(_player) {
 	//reduces xp and recipes on death
 	death_xp_loss(_player);
 	death_recipe_loss(_player);
+	
 	//removes any dish buffs if active
 	_player.alarm[7] = 1;
 	_player.alarm[8] = 1;

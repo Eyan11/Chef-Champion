@@ -3,6 +3,16 @@
 
 if(place_meeting(self.x, self.y, obj_player_parent)){
 	
+	//buy pastry weapon (shouldn't work because you already own pastry weapon)
+	if(buy_item_spend_point())
+		buy_weapon(obj_pastry_weapon, 30);
+
+	//using equip button to equip instead of buy button
+	//equip pastry weapon to inventory
+	if(equip_dish())
+		swap_weapon(obj_pastry_weapon);
+	
+	/*
 	if(buy_item_spend_point() && (obj_player_parent.inventory_weapon != obj_pastry_weapon)) {
 		if(obj_player_parent.own_pastry_weapon) {
 			//switch weapons
@@ -21,6 +31,7 @@ if(place_meeting(self.x, self.y, obj_player_parent)){
 		}
 		
 	}
+	*/
 	
 }
 

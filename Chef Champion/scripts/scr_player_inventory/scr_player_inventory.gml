@@ -60,21 +60,52 @@ function buy_dish(_dish, _cost) {
 /// @description				Swaps inventory dish to specified dish
 function swap_weapon(_weapon) {
 	
-	//REMOVE: for debugging, doesn't actually do anything except for else statement
-	if(_weapon == obj_pastry_weapon)
+	//don't swap weapons if already equiped
+	if(_weapon == obj_player_parent.inventory_weapon) {
+		show_debug_message("Weapon already equiped");
+		return;
+	}
+	
+	//Don't equip weapon if player hasn't purchased it yet, or if weapon doesn't exist
+	if(_weapon == obj_pastry_weapon) {
+	
+		if(!obj_player_parent.own_pastry_weapon) {
+			show_debug_message("Don't own pastry weapon");
+			return;
+		}
 		show_debug_message("Set inventory weapon to pastry weapon");
-	else if (_weapon == obj_grill_weapon)
+	}
+	else if (_weapon == obj_grill_weapon) {
+		
+		if(!obj_player_parent.own_grill_weapon) {
+			show_debug_message("Don't own grill weapon");
+			return;
+		}
 		show_debug_message("Set inventory weapon to grill weapon");
-	else if(_weapon == obj_fry_weapon)
+	}
+	else if(_weapon == obj_fry_weapon) {
+		if(!obj_player_parent.own_fry_weapon) {
+			show_debug_message("Don't own fry weapon");
+			return;
+		}
 		show_debug_message("Set inventory weapon to fry weapon");
+	}
 	else {
 		show_debug_message("Weapon doesn't exist");
 		return;
 	}
 	
-	//TODO: despawn current weapon, and spawn in new weapon
+		
+	//despawn current weapon
+	if(instance_exists(obj_player_parent.inventory_weapon))
+		instance_destroy(obj_player_parent.inventory_weapon);
+		
 	//set weapon
 	obj_player_parent.inventory_weapon = _weapon;
+	//spawn weapon
+	if(!instance_exists(obj_player_parent.inventory_weapon))
+		instance_create_layer(0, 0, "Instances", obj_player_parent.inventory_weapon);
+		
 }
 
 
@@ -89,7 +120,7 @@ function buy_weapon(_weapon, _cost) {
 		return;
 	}
 	
-	//add a weapon to the player's inventory (pastry weapon will probably be default weapon)
+	//add a weapon to the player's inventory
 	if(_weapon == obj_pastry_weapon) {
 		//don't let the player buy a weapon they already own
 		if(obj_player_parent.own_pastry_weapon) {
@@ -121,7 +152,7 @@ function buy_weapon(_weapon, _cost) {
 		show_debug_message("Purchased fry weapon");
 	}
 	else {
-		show_debug_message("dish doesn't exist");
+		show_debug_message("weapon doesn't exist");
 		return;
 	}
 	
@@ -148,7 +179,6 @@ function swap_chef(_chef) {
 		return;
 	}
 	
-	//TODO: Despawn current chef, and spawn in new chef
 	//set chef
 	obj_player_manager.current_chef = _chef;
 	save_game();
