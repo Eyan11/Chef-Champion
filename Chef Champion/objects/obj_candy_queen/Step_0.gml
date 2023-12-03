@@ -1,4 +1,9 @@
 event_inherited()
+
+var minionSpawnTimer = 1200; // Timer for spawning minions in Phase 3
+var minionSpawnInterval = 60; // Interval for spawning minions
+
+
 // Step Event
 timeSinceLastAttack--;
 
@@ -40,7 +45,7 @@ if (!isAttacking) {
 }
 
 //Phase 1
-if(current_health >= 50)
+if(current_health > 600)
 {
 		// Attack Logic
 	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
@@ -51,10 +56,10 @@ if(current_health >= 50)
 	    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
 
 	    if (playerDistance < attackRange) {
-			if audio_is_playing(sfx_candyCane){
+			if audio_is_playing(sfx_candy_queen_phase1){
 			}
 			else {
-			audio_play_sound(sfx_candyCane,5,false)
+			audio_play_sound(sfx_candy_queen_phase1,5,false)
 			}
 	        take_damage(obj_player_parent, damage);
 	        timeSinceLastAttack = attackCooldown;
@@ -63,7 +68,7 @@ if(current_health >= 50)
 	    isAttacking = false;
 	}
 
-	// Resetting Movement and Sprite
+	//Resetting Movement and Sprite
 	if (!isAttacking) {
 	    sprite_index = spr_candy_queen_walk;
 	    image_xscale = dir; // Ensure sprite direction is reset after attack phase
@@ -72,40 +77,11 @@ if(current_health >= 50)
 }
 
 //Phase 2
-if(current_health <= 30)
+else if(current_health <= 600 && current_health > 400)
 {
-		// Attack Logic
-	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
-	    isAttacking = true;
-	    hspd = 0;
-	    vspd = 0;
-	    sprite_index = spr_candy_queen_phase_2;
-	    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
-
-	    if (playerDistance < attackRange) {
-			if audio_is_playing(sfx_candyCane){
-			}
-			else {
-			audio_play_sound(sfx_candyCane,5,false)
-			}
-	        take_damage(obj_player_parent, damage);
-	        timeSinceLastAttack = attackCooldown;
-	    }
-	} else if (playerDistance >= attackRange && isAttacking) {
-	    isAttacking = false;
-	}
-
-	// Resetting Movement and Sprite
-	if (!isAttacking) {
-	    sprite_index = spr_candy_queen_walk;
-	    image_xscale = dir; // Ensure sprite direction is reset after attack phase
-	}
-
-}
-
-//Phase 3
-if(current_health <= 10)
-{
+	isInvincible  = true
+		alarm[0] = invincibilityTimer
+	
 		// Attack Logic
 	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
 	    isAttacking = true;
@@ -115,10 +91,10 @@ if(current_health <= 10)
 	    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
 
 	    if (playerDistance < attackRange) {
-			if audio_is_playing(sfx_candyCane){
+			if audio_is_playing(sfx_candy_queen_phase2){
 			}
 			else {
-			audio_play_sound(sfx_candyCane,5,false)
+			audio_play_sound(sfx_candy_queen_phase2,5,false)
 			}
 	        take_damage(obj_player_parent, damage);
 	        timeSinceLastAttack = attackCooldown;
@@ -127,10 +103,38 @@ if(current_health <= 10)
 	    isAttacking = false;
 	}
 
-	// Resetting Movement and Sprite
+	//Resetting Movement and Sprite
 	if (!isAttacking) {
 	    sprite_index = spr_candy_queen_walk;
 	    image_xscale = dir; // Ensure sprite direction is reset after attack phase
+	}
+
+}
+
+//Phase 3
+else if(current_health <= 400)
+{
+	
+		// Attack Logic
+	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
+		 var minion = instance_create_layer(x, y-200, "Instances", obj_minion);
+	    isAttacking = true;
+	    hspd = 0;
+	    vspd = 0;
+	    sprite_index = spr_candy_queen_phase_2;
+	    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
+
+	    if (playerDistance < attackRange) {
+			if audio_is_playing(sfx_candy_queen_phase3){
+			}
+			else {
+			audio_play_sound(sfx_candy_queen_phase3,5,false)
+			}
+	        take_damage(obj_player_parent, damage);
+	        timeSinceLastAttack = attackCooldown;
+	    }
+	} else if (playerDistance >= attackRange && isAttacking) {
+	    isAttacking = false;
 	}
 
 }

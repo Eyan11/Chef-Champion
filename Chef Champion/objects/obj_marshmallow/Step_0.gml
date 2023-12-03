@@ -1,107 +1,67 @@
 event_inherited()
+// Step Event
+timeSinceLastAttack--;
 
+// Collision Logic
+hspd = dir * spd;
+vspd = vspd + grv;
 
-//horizontal collision
-if(place_meeting(x+hspeed,y,collision_layer()))
-{
-	while(!place_meeting(x+sign(hspeed),y,collision_layer()))
-	{
-		x = x + sign(hspeed)
-	}
-	move_direction = move_direction * -1
-	hspeed = 0
-
+// Horizontal Collision
+if (place_meeting(x + hspd, y, collision_layer())) {
+    while (!place_meeting(x + sign(hspd), y, collision_layer())) {
+        x = x + sign(hspd);
+    }
+    dir = dir * -1; // Change direction upon collision
+    hspd = 0;
 }
+x = x + hspd;
 
-
-// ** AI Logic for Movement and Attack **
-
-if (state == "idle"){
-
-    // ** Back and Forth Movement Logic **
-
-    // If at the right boundary
-    if (x >= start_x + move_distance) {
-        move_direction = -1; // Change to move left
+// Vertical Collision
+if (place_meeting(x, y + vspd, collision_layer())) {
+    while (!place_meeting(x, y + sign(vspd), collision_layer())) {
+        y = y + sign(vspd);
     }
-    // If at the left boundary
-    else if (x <= start_x - move_distance) {
-        move_direction = 1; // Change to move right
-    }
+    vspd = 0;
 
-    // Set the horizontal speed
-    hspeed = max_speed * move_direction;
-
-    // Check if Marshmallow should switch to "prepareAttack" state
-    if (distance_to_object(obj_player_parent) <= attack_distance && 
-        attack_timer <= 0 &&
-        obj_player_parent.x < x // Ensure player is behind or on the same x-coordinates
-    ) {
-        state = "prepareAttack"; 
-        shockwave_timer = shockwave_duration;
-        hspeed = 0; // Stop movement when preparing for an attack
+    if (dont_fall && !position_meeting(x + (sprite_width / 2) * dir, y + (sprite_height / 2) + 7, collision_layer())) {
+        dir = dir * -1; // Change direction upon vertical collision edge condition
     }
 }
-else if (state == "prepareAttack") {
-    shockwave_timer--;
-    if (shockwave_timer <= 0) {
-        state = "attack";
-		var shockwave = instance_create_layer(obj_marshmallow.x - 200, obj_marshmallow.y - 90, "Instances", obj_shockwave);
-        attack_timer = attack_cooldown;
-        hspeed = 0; // Stop movement during the attack
-    }
-}
-else if (state == "attack") {
-    attack_timer--;
+y = y + vspd;
 
-    // Check for collision with the player during the attack
-    // Assuming the shockwave appears centered around the marshmallow man
-    if (instance_exists(obj_shockwave)) {
-        // Define the shockwave's collision area relative to the marshmallow man
-        var shockwave_left = x - obj_shockwave.sprite_width / 2;
-        var shockwave_right = x + obj_shockwave.sprite_width / 2;
-        var shockwave_top = y - obj_shockwave.sprite_height / 2;
-        var shockwave_bottom = y + obj_shockwave.sprite_height / 2;
-        
-        // Check if the player is within the shockwave's collision area
-        if (collision_rectangle(shockwave_left, shockwave_top, shockwave_right, shockwave_bottom, obj_player_parent, false, true)) {
-            take_damage(obj_player_parent, 1);
-        }
-	}
+// Finding the nearest player
+var player = instance_nearest(x, y, obj_player_parent);
+var playerDistance = point_distance(x, y, player.x, player.y);
 
-    if (attack_timer <= 0) {
-        state = "idle";
-        hspeed = max_speed * move_direction;
-    }
+
+// Update sprite facing based on direction and buffer zone logic
+if (!isAttacking) {
+    image_xscale = dir;
 }
 
-// ** State-based Animation **
+// Attack Logic
+if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
+    isAttacking = true;
+    hspd = 0;
+    vspd = 0;
+    sprite_index = spr_marshmallow_attack;
+    image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
 
-switch (state) {
-    case "idle":
-        sprite_index = spr_marshmallow_idle;
-        break;
-    case "prepareAttack":
-        sprite_index = spr_marshmallow_prepareAttack;
+    if (playerDistance < attackRange) {
 		if audio_is_playing(sfx_marshmallow){
 		}
 		else {
 		audio_play_sound(sfx_marshmallow,5,false)
 		}
-		break;
-    case "attack":
-        sprite_index = spr_marshmallow_attack;
-		
-        break;
-    case "death":
-        sprite_index = spr_marshmallow_dead;
-		if audio_is_playing(sfx_death) {
-		}
-		else {
-		audio_play_sound(sfx_death,5,false)
-		}
-		break;
+        take_damage(obj_player_parent, damage);
+        timeSinceLastAttack = attackCooldown;
+    }
+} else if (playerDistance >= attackRange && isAttacking) {
+    isAttacking = false;
 }
 
-
-
+// Resetting Movement and Sprite
+if (!isAttacking) {
+    sprite_index = spr_marshmallow_idle;
+    image_xscale = dir; // Ensure sprite direction is reset after attack phase
+}

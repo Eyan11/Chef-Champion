@@ -38,7 +38,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6fb4774d-3f54-4b53-aba2-7bbc6b71bb71","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Kebab King",
     "path": "folders/Sprites/Enemies/Boss/Kebab King.yy",
@@ -90,7 +90,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 300,
-    "yorigin": 300,
+    "yorigin": 600,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

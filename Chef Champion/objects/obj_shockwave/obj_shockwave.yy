@@ -28,13 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_shockwave",
-    "path": "sprites/spr_shockwave/spr_shockwave.yy",
-  },
-  "spriteMaskId": {
-    "name": "spr_shockwave",
-    "path": "sprites/spr_shockwave/spr_shockwave.yy",
-  },
+  "spriteId": null,
+  "spriteMaskId": null,
   "visible": true,
 }

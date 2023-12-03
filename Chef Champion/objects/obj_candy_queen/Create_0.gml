@@ -10,7 +10,7 @@ dont_fall = true
 
 current_speed = spd
 
-max_health = 50
+max_health = 800
 current_health = max_health
 
 // Initialize attack variables
@@ -26,3 +26,5 @@ isAttacking = false; // State of the enemy's attack
 facingDirection = 1
 
 dropChance = irandom(2);
+
+invincibilityTimer = 600;

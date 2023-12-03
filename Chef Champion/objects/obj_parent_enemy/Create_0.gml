@@ -11,7 +11,7 @@ fireDamage = 5
 greaseDamage = 10
 
 
-
+isInvincible = false
 
 
 

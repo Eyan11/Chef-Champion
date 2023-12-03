@@ -43,8 +43,8 @@ if (!isAttacking) {
 // Attack Logic
 if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
     isAttacking = true;
-    hspd = 0;
-    vspd = 0;
+    hspd = 5;
+    vspd = 5;
     sprite_index = spr_steak_attack;
     image_xscale = (player.x < x) ? -1 : 1; // Correctly face towards the player while attacking
 

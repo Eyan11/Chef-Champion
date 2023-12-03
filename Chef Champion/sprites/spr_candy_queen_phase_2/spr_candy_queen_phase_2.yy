@@ -37,7 +37,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"835d9741-e358-452c-87fe-a01bdba8b7c2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Candy Queen",
     "path": "folders/Sprites/Enemies/Boss/Candy Queen.yy",
@@ -88,7 +88,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 200,
-    "yorigin": 300,
+    "yorigin": 600,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

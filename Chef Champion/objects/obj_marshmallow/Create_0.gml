@@ -1,25 +1,29 @@
+/// @description Insert description here
+// You can write your code in this editor
 event_inherited()
-state = "idle";
+dir = 1
+spd = 1
+grv = 0.2
+vspd = 0
+hspd = 0;
+dont_fall = true
 
-// Health
-max_health = 200;
+
+current_speed = spd
+
+max_health = 200
 current_health = max_health
 
-max_speed = 3
-current_speed = max_speed
-hspeed = 2
+// Initialize attack variables
 
-attack_distance = 100; // Adjust as per requirement
-attack_timer = 0;
-attack_cooldown = 120; // Cooldown of 2 seconds 
-shockwave_timer = 0; 
-shockwave_duration = 60; // Duration of 1 second 
+is_attacking = false; // State of the enemy's attack
+damage = 20; // Damage dealt to the player
 
-burn = false;
-frosted = false;
-grease = false;
-move_direction = 1;  // Start moving to the right
-start_x = x;  // Save the initial x position
-move_distance = 200;  // Distance to move in both directions. Adjust as needed.
+// Create Event for Pancake Enemy
+attackRange = 150; // Range within which the enemy will attack
+timeSinceLastAttack = 0; // Timer for managing attacks
+attackCooldown = 60; // Cooldown time between attacks in frames
+isAttacking = false; // State of the enemy's attack
+facingDirection = 1
 
 dropChance = irandom(2);
