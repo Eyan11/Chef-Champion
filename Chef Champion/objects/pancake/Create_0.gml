@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 dir = 1
-max_speed = 1
+max_speed = 4
 spd = max_speed
 grv = 0.2
 vspd = 0
