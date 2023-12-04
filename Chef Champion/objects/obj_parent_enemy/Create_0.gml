@@ -1,7 +1,7 @@
 // Initialize debuff states and timers
 
 isFrosted = false
-frostedTimer = 300
+frostedTimer = 60
 isBurning = false;
 burnTimer = 300;
 

@@ -6,9 +6,9 @@
     {"name":"Obstacles","order":1,"path":"folders/Sounds/SFX/Obstacles.yy",},
     {"name":"Minion","order":7,"path":"folders/Sprites/Enemies/Boss/Candy Queen/Minion.yy",},
     {"name":"Fire Ball","order":5,"path":"folders/Sprites/Enemies/Boss/Kebab King/Fire Ball.yy",},
-    {"name":"Pastry","order":7,"path":"folders/Sprites/Player/Pastry.yy",},
     {"name":"Fry","order":8,"path":"folders/Sprites/Player/Fry.yy",},
     {"name":"Grill","order":9,"path":"folders/Sprites/Player/Grill.yy",},
+    {"name":"Pastry","order":7,"path":"folders/Sprites/Player/Pastry.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"bg_breakfast","order":1,"path":"sprites/bg_breakfast/bg_breakfast.yy",},

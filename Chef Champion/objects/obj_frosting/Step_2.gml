@@ -13,7 +13,7 @@ else if(following_enemy && !is_despawning &&
 		
 	audio_stop_sound(snd_frosting);
 	//return speed to normal
-	//obj_to_follow.spd = max_speed;
+	obj_to_follow.spd = obj_to_follow.max_speed;
 	is_despawning = true;
 }
 //follow frosted obj

@@ -1,12 +1,12 @@
 //frosted effect
 if(isFrosted)
 {	
-	//spd = spd * 0.5;
+	spd = spd * 0.5;
 	frostedTimer--
 	if(frostedTimer <= 0)
 	{	
 		isFrosted = false
-		frostedTimer = 300;
+		frostedTimer = 60;
 	}
 }
 
