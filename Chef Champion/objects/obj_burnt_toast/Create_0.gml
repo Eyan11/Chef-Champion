@@ -31,3 +31,4 @@ jumpSpeed = -4; // Jump speed for attacking
 isInAir = false; // Flag to check if the enemy is in the air
 
 dropChance = irandom(2);
+
