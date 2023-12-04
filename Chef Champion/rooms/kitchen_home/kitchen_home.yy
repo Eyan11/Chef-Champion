@@ -46,7 +46,6 @@
     {"name":"inst_4B5E99F4","path":"rooms/kitchen_home/kitchen_home.yy",},
     {"name":"inst_37027F07","path":"rooms/kitchen_home/kitchen_home.yy",},
     {"name":"inst_20D98493","path":"rooms/kitchen_home/kitchen_home.yy",},
-    {"name":"inst_67BC7C9","path":"rooms/kitchen_home/kitchen_home.yy",},
     {"name":"inst_20D98493","path":"rooms/kitchen_home/kitchen_home.yy",},
     {"name":"inst_E7019CF","path":"rooms/kitchen_home/kitchen_home.yy",},
     {"name":"inst_751F1F9B","path":"rooms/kitchen_home/kitchen_home.yy",},
