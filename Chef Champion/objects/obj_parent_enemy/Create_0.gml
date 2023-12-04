@@ -9,8 +9,8 @@ isInGrease = false;
 greaseTimer = 300;
 
 
-fireDamage = 5
-greaseDamage = 10
+fireDamage = 15
+greaseDamage = 30
 
 
 isInvincible = false

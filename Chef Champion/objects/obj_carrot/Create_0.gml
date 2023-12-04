@@ -2,7 +2,8 @@
 // You can write your code in this editor
 event_inherited()
 dir = 1
-spd = 4
+max_speed = 4
+spd = max_speed
 grv = 0.2
 vspd = 0
 hspd = 0;

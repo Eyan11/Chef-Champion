@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Marshmallo Man",
-    "path": "folders/Objects/Enemy/dessert/Marshmallo Man.yy",
+    "name": "dessert",
+    "path": "folders/Objects/Enemy/dessert.yy",
   },
   "parentObjectId": {
     "name": "obj_parent_enemy",
