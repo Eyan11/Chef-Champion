@@ -12,7 +12,13 @@ if(place_meeting(self.x, self.y, obj_player_parent)){
 	}
 	
 	if(equip_dish()) {
+<<<<<<< Updated upstream
 		obj_player_parent.inventory_dish = obj_damage_dish
+=======
+		
+ 		swap_dish(obj_damage_dish);
+		//obj_player_parent.inventory_dish = obj_damage_dish
+>>>>>>> Stashed changes
 	}
 	
 }
