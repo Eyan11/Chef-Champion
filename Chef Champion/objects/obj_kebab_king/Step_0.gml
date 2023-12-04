@@ -45,7 +45,7 @@ if (!isAttacking) {
 }
 
 //Phase 1
-if(current_health >= 150)
+if(current_health >= 900)
 {
 		// Attack Logic
 	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
@@ -77,7 +77,7 @@ if(current_health >= 150)
 }
 
 //Phase 2
-else if(current_health <= 100 && current_health > 50)
+else if(current_health <= 900 && current_health > 400)
 {	
 			// Attack Logic
 	if (timeSinceLastAttack <= 0 && playerDistance < attackRange) {
@@ -110,7 +110,7 @@ else if(current_health <= 100 && current_health > 50)
 
 
 //Phase 3
-else if(current_health <= 50)
+else if(current_health <= 400)
 {
 	
 	// Attack Logic

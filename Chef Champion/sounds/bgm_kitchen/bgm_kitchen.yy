@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sfx_candy_queen_phase2",
+  "name": "bgm_kitchen",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 4.460839,
+  "duration": 49.777508,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Sounds/Enemy.yy",
+    "name": "background music",
+    "path": "folders/Sounds/background music.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sfx_candy_queen_phase2.wav",
+  "soundFile": "bgm_kitchen.ogg",
   "type": 0,
   "volume": 1.0,
 }

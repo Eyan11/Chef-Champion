@@ -26,3 +26,4 @@ isAttacking = false; // State of the enemy's attack
 facingDirection = 1
 
 dropChance = irandom(2);
+

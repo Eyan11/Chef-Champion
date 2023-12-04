@@ -1,7 +1,22 @@
+//frosted effect
+if(isFrosted)
+{	
+	spd = 0.5 * spd
+	frostedTimer--
+	if(frostedTimer <= 0)
+	{	
+		isFrosted = false
+	}
+}
 
 // Handle burning debuff
 if (isBurning) {
-    current_health -= fireDamage; // Apply fire damage
+    burn_counter++;
+    if (burn_counter >= room_speed) {
+        current_health -= fireDamage; // Apply fire damage once per second
+        burn_counter = 0; // Reset counter
+    }
+    
     burnTimer--;
     if (burnTimer <= 0) {
         isBurning = false;
@@ -10,8 +25,12 @@ if (isBurning) {
 
 // Handle grease debuff
 if (isInGrease) {
-	//current_speed *= 0.5;
-    current_health -= greaseDamage; // Apply grease damage
+    grease_counter++;
+    if (grease_counter >= room_speed) {
+        current_health -= greaseDamage; // Apply grease damage once per second
+        grease_counter = 0; // Reset counter
+    }
+    
     greaseTimer--;
     if (greaseTimer <= 0) {
         isInGrease = false;
@@ -24,4 +43,9 @@ if (isInGrease) {
 
 
 
+<<<<<<< HEAD
+=======
 
+
+
+>>>>>>> b64111c9d6cebca3dc4c5513d0e5fa80f72f09c9

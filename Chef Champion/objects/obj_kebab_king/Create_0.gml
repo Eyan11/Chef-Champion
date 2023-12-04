@@ -10,7 +10,7 @@ dont_fall = true
 
 current_speed = spd
 
-max_health = 150
+max_health = 1200
 current_health = max_health
 
 // Initialize attack variables
