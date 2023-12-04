@@ -9,4 +9,5 @@ if (current_health <= 0) {
     instance_create_layer(x, y, "Instances", obj_recipe);
 }
    instance_destroy()
+   instance_create_layer(1984,1424,"Instances",obj_end_boss_door)
 }
