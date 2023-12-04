@@ -50,6 +50,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"onion_ring_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"40","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"onion_ring_spawn_height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_width * 2","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"onion_ring_spawn_width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"self.sprite_width","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"max_health_ui_fry","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"max_special_ui_fry","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_health_ui_fry","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"current_special_ui_fry","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
   "spriteId": {

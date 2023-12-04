@@ -140,3 +140,40 @@ function sear(_player){
 }
 	
 
+function update_health_ui(_player) {
+	
+	//update health ui
+	if(instance_exists(obj_player_pastry)) {
+		_player.current_health_ui_pastry = (100 * _player.current_health) / _player.max_health
+		_player.max_health_ui_pastry = 0 + _player.current_health_ui_pastry
+	}
+	if(instance_exists(obj_player_fry)) {
+		_player.current_health_ui_fry = (100 * _player.current_health) / _player.max_health
+		_player.max_health_ui_fry = 0 + _player.current_health_ui_fry
+	}
+	if(instance_exists(obj_player_grill)) {
+		_player.current_health_ui_grill = (100 * _player.current_health) / _player.max_health
+		_player.max_health_ui_grill = 0 + _player.current_health_ui_grill
+	}
+	
+	
+	
+	
+}
+function update_special_ui(_player) {
+	
+	//update special ui
+	if(instance_exists(obj_player_pastry)) {
+		_player.current_special_ui_pastry = (100 * _player.current_special_meter) / _player.max_special_meter
+		_player.max_special_ui_pastry = 0 + _player.current_special_ui_pastry
+	}
+	if(instance_exists(obj_player_fry)) {
+		_player.current_special_ui_fry = (100 * _player.current_special_meter) / _player.max_special_meter
+		_player.max_special_ui_fry = 0 + _player.current_special_ui_fry
+	}
+	if(instance_exists(obj_player_grill)) {
+		_player.current_special_ui_grill = (100 * _player.current_special_meter) / _player.max_special_meter
+		_player.max_special_ui_grill = 0 + _player.current_special_ui_grill
+	}
+	
+}

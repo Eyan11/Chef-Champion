@@ -7,6 +7,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"bg_breakfast","order":1,"path":"sprites/bg_breakfast/bg_breakfast.yy",},
+<<<<<<< Updated upstream
     {"name":"spr_candy_queen_death_1","order":4,"path":"sprites/spr_candy_queen_death_1/spr_candy_queen_death_1.yy",},
 =======
     {"name":"Kebab King","order":2,"path":"folders/Objects/Enemy/boss/Kebab King.yy",},
@@ -20,6 +21,8 @@
   ],
   "ResourceOrderSettings": [
     {"name":"bg_breakfast","order":1,"path":"sprites/bg_breakfast/bg_breakfast.yy",},
+=======
+>>>>>>> Stashed changes
     {"name":"spr_candy_queen_dead","order":4,"path":"sprites/spr_candy_queen_dead/spr_candy_queen_dead.yy",},
     {"name":"spr_chicken_ui","order":7,"path":"sprites/spr_chicken_ui/spr_chicken_ui.yy",},
 >>>>>>> Stashed changes
@@ -65,7 +68,6 @@
     {"name":"obj_damage_shot_controller_vert","order":1,"path":"objects/obj_damage_shot_controller_vert/obj_damage_shot_controller_vert.yy",},
     {"name":"sfx_sludge","order":3,"path":"sounds/sfx_sludge/sfx_sludge.yy",},
     {"name":"spr_pastry_weapon","order":4,"path":"sprites/spr_pastry_weapon/spr_pastry_weapon.yy",},
-    {"name":"obj_shockwave","order":1,"path":"objects/obj_shockwave/obj_shockwave.yy",},
     {"name":"obj_buy_hitbox_chef1","order":25,"path":"objects/obj_buy_hitbox_chef1/obj_buy_hitbox_chef1.yy",},
     {"name":"snd_health_dish","order":4,"path":"sounds/snd_health_dish/snd_health_dish.yy",},
     {"name":"spr_marshmallow_idle","order":2,"path":"sprites/spr_marshmallow_idle/spr_marshmallow_idle.yy",},
