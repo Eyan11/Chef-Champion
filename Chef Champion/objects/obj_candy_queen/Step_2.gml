@@ -9,9 +9,5 @@ if (current_health <= 0) {
     instance_create_layer(x, y, "Instances", obj_recipe);
 }
    instance_destroy()
-<<<<<<< Updated upstream
-   instance_create_layer(1984,1424,"Instances",obj_end_boss_door)
-=======
-   instance_create_layer(1984,1456,"Instances",obj_end_boss_door)
->>>>>>> Stashed changes
+   instance_create_layer(1984, 1216,"Instances",obj_end_boss_door)
 }

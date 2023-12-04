@@ -17,7 +17,7 @@
 	break;
 	
 	case Dinner_platform_4:
-	room_goto(Boss_room_dinner)
+	room_goto(boss_room_dinner)
 	break;
 	
 	case Dessert_platform_5:
@@ -25,12 +25,8 @@
 	room_goto(kitchen_home)
 	break;
 	
-	case Dessert_platform_5:
-	room_goto(Boss_room_dessert)
-	break;
-	
 	case Dessert_platform_6:
-	room_goto(Boss_room_dessert)
+	room_goto(boss_room_dessert)
 	break;
 	
 	default:
@@ -38,11 +34,6 @@
 	break;
 	
 	}
-	
-<<<<<<< Updated upstream
-=======
-	
->>>>>>> Stashed changes
 	
 	self.sprite_index = spr_door;
 

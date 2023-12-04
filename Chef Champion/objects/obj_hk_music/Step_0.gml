@@ -9,6 +9,9 @@ if audio_is_playing(bgm_dessert) {
 if audio_is_playing(bgm_dinner) {
 	audio_stop_sound(bgm_dinner)
 }
+if audio_is_playing(bgm_boss) {
+	audio_stop_sound(bgm_boss)
+}
 
 
 
