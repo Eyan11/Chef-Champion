@@ -19,9 +19,11 @@ function save_game() {
 			special_attribute_level: special_attribute_level,
 			run_speed: run_speed,
 			max_health: max_health,
+			current_health: current_health,
 			additional_weapon_damage: additional_weapon_damage,
 			crit_percent: crit_percent,
 			max_special_meter: max_special_meter,
+			current_special_meter: current_special_meter,
 			jump_special_damage: jump_special_damage,
 			ground_special_damage: ground_special_damage,
 			inventory_dish: inventory_dish,
@@ -38,7 +40,7 @@ function save_game() {
 			level_2_complete: level_2_complete,
 			level_3_complete: level_3_complete,
 			level_4_complete: level_4_complete,
-			level_5_complete: level_5_complete
+			level_5_complete: level_5_complete,
 		};
 		
 		array_push(_array, _struct);
@@ -72,6 +74,7 @@ function load_game() {
 		//convert from json to string and store in array
 		var _array = json_parse(_json);
 		
+		//destroy old player
 		instance_destroy(obj_player_parent);
 		
 		//cycles through array of save data (all saved objects)
@@ -81,9 +84,10 @@ function load_game() {
 			var _struct = _array[_i];
 			
 			//creates instance object and assigns values in struct to the object
-			//Old respawn: instance_create_layer(get_checkpoint().x, get_checkpoint().y, "Instances", asset_get_index(_struct.object), _struct);
-			instance_create_layer(get_checkpoint().x, get_checkpoint().y - 5, "Instances", obj_player_manager.current_chef, _struct);
+			//Old: instance_create_layer(get_checkpoint().x, get_checkpoint().y, "Instances", asset_get_index(_struct.object), _struct);
+			instance_create_layer(get_checkpoint().x, get_checkpoint().y - 5, "Instances", global.current_chef, _struct);
 		}
+		
 		
 		//closes file
 		file_text_close(_file);

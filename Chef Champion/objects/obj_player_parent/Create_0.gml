@@ -1,7 +1,4 @@
- /// @description set current health and special meter
-
-reset_special_meter(self);
-reset_health(self);
+ /// @description Respawn weapon
 
 audio_listener_orientation(0,1,0,0,0,1);
 
@@ -20,4 +17,3 @@ if(!instance_exists(inventory_weapon)) {
 	instance_create_layer(0, 0, "Instances", inventory_weapon);
 	show_debug_message("Spawned in inventory weapon");
 }
-

@@ -182,6 +182,7 @@ function swap_chef(_chef) {
 	}
 	
 	//set chef
+	global.current_chef = _chef
 	obj_player_manager.current_chef = _chef;
 	save_game();
 	load_game();

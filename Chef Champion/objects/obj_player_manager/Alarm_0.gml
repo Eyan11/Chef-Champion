@@ -19,7 +19,10 @@ player_respawn(current_chef);
 
 load_game();
 
+//reset player health and special
+reset_special_meter(current_chef);
+reset_health(current_chef);
+
 //player is invincible for 5 seconds when respawning
 current_chef.is_invincible = true;
 current_chef.alarm[9] = 5 * 60;
-

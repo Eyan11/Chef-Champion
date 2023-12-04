@@ -9,9 +9,11 @@ if(!following_enemy && !is_despawning &&
 }
 //despawn if enemy is dead or stopped being frosted
 else if(following_enemy && !is_despawning &&
-	(obj_to_follow.current_health <= 0 || obj_to_follow.isSlowed == false)) {
+	(obj_to_follow.current_health <= 0 || obj_to_follow.isFrosted == false)) {
 		
 	audio_stop_sound(snd_frosting);
+	//return speed to normal
+	//obj_to_follow.spd = max_speed;
 	is_despawning = true;
 }
 //follow frosted obj
