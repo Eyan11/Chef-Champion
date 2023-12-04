@@ -3,8 +3,14 @@
 if(!collision_rectangle(self.x, self.y, self.x + 64, self.y + 96, obj_player_parent, false, true)){
 	self.sprite_index = spr_door
 	time = 0
+<<<<<<< Updated upstream
 	show_debug_message("time restarted on door in step event")
 }
 
 
 
+=======
+}
+
+
+>>>>>>> Stashed changes

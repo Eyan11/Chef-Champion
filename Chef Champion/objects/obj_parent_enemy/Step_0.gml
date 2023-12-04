@@ -39,14 +39,3 @@ if (isInGrease) {
 		greaseTimer = 300;
     }
 }
-<<<<<<< Updated upstream
-
-
-
-
-
-
-
-
-=======
->>>>>>> Stashed changes

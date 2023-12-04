@@ -30,6 +30,7 @@
 	break;
 	
 	case Dessert_platform_6:
+	room_goto(Boss_room_dessert)
 	break;
 	
 	default:
@@ -38,6 +39,10 @@
 	
 	}
 	
+<<<<<<< Updated upstream
+=======
+	
+>>>>>>> Stashed changes
 	
 	self.sprite_index = spr_door;
 
