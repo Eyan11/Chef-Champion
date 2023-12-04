@@ -21,6 +21,9 @@
 	obj_player_parent.level_5_complete = true
 	break;
 	
+	case Dessert_platform_6:
+	break;
+	
 	default:
 	game_end()
 	break;

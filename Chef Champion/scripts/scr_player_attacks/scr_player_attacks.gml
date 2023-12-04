@@ -87,10 +87,10 @@ function player_normal_attack_grill_hitbox(_melee_object, _player, isChargedAtta
 	}
 	if(whichBox == 0) {
 		_player.alarm[5] = room_speed * .15 //time between both hitboxes
+		_player.can_attack = false
 	}
 	
 	if(whichBox == 1) {
-		_player.can_attack = false
 		_player.alarm[4] = room_speed * .50 // 2 swings a second
 		_melee_object.chargeSound = true
 		_player.current_charge = 0
