@@ -6,7 +6,7 @@ if(is_exploding) {
 	enemy_damage(other, damage);
 	
 	//apply frosted effect
-	other.isSlowed = true;
+	other.isFrosted = true;
 	if(!audio_is_playing(snd_frosting))
 		audio_play_sound(snd_frosting, 8, true);
 	var _frosting = instance_create_layer(other.x, other.y, "Foreground_Instances", obj_frosting);

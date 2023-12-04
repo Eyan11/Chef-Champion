@@ -44,7 +44,16 @@ function player_roll(_player) {
 		_player.grav *= 4;
 	
 		_player.is_invincible = true;
-		_player.sprite_index = spr_pastry_roll;
+			
+		//set sprite
+		if(instance_exists(obj_player_pastry))
+			_player.sprite_index = spr_pastry_roll;
+		else if(instance_exists(obj_player_fry))
+			_player.sprite_index = spr_fry_roll;
+		//update with grill sprite
+		else if(instance_exists(obj_player_grill))
+			_player.sprite_index = spr_pastry_roll;
+		
 		_player.is_rolling = true;
 	}
 
@@ -59,7 +68,16 @@ function player_roll(_player) {
 			//return gravity to normal
 			_player.grav /= 4;
 			_player.roll_cooldown_countdown = _player.roll_cooldown_time;
-			_player.sprite_index = spr_pastry_idle;
+			
+			//set sprite
+			if(instance_exists(obj_player_pastry))
+				_player.sprite_index = spr_pastry_idle;
+			else if(instance_exists(obj_player_fry))
+				_player.sprite_index = spr_fry_idle;
+			//update with grill sprite
+			else if(instance_exists(obj_player_grill))
+				_player.sprite_index = spr_pastry_idle;
+			
 			_player.is_invincible = false;
 			_player.is_rolling = false;
 		}

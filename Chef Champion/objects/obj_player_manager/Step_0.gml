@@ -11,4 +11,6 @@ if(keyboard_check_pressed((ord("U"))))
 	buy_dish(obj_speed_dish, 1);
 */
 
+current_chef = global.current_chef;
 
+show_debug_message(object_get_name(current_chef));

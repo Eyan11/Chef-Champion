@@ -8,3 +8,4 @@
 	
 save_game();
 
+global.current_chef = obj_player_pastry;
