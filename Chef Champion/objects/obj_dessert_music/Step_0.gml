@@ -13,5 +13,8 @@ if audio_is_playing(bgm_boss) {
 	audio_stop_sound(bgm_boss)
 }
 
+if audio_is_playing(bgm_hk) {
+	audio_stop_sound(bgm_hk)
+}
 
 

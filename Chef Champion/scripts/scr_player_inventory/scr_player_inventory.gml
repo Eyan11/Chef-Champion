@@ -1,5 +1,6 @@
 
 
+
 /// @function					swap_dish(_dish);
 /// @description				Swaps inventory dish to specified dish
 function swap_dish(_dish) {
@@ -29,28 +30,29 @@ function buy_dish(_dish, _cost) {
 	//if cost is too large, don't let player buy the dish
 	if(_cost > get_recipes(obj_player_parent)) {
 		show_debug_message("insufficient funds");
-		return;
-	}
-	
-	//add a dish to the player's inventory
-	if(_dish == obj_speed_dish) {
-		obj_player_parent.total_speed_dishes++;
-		show_debug_message("Purchased speed dish");
-	}
-	else if (_dish == obj_damage_dish) {
-		obj_player_parent.total_damage_dishes++;
-		show_debug_message("Purchased damage dish");
-	}
-	else if(_dish == obj_health_dish) {
-		obj_player_parent.total_health_dishes++;
-		show_debug_message("Purchased health dish");
 	}
 	else {
-		show_debug_message("dish doesn't exist");
-		return;
-	}
+	//add a dish to the player's inventory
+		if(_dish == obj_speed_dish) {
+			obj_player_parent.total_speed_dishes++;
+			show_debug_message("Purchased speed dish");
+		}
+		else if (_dish == obj_damage_dish) {
+			obj_player_parent.total_damage_dishes++;
+			show_debug_message("Purchased damage dish");
+		}
+		else if(_dish == obj_health_dish) {
+			obj_player_parent.total_health_dishes++;
+			show_debug_message("Purchased health dish");
+		}
+		else {
+			show_debug_message("dish doesn't exist");
+			return;
+		}
 	
+	}
 	//spend the players money
+	show_debug_message("moving to spending")
 	spend_recipes(obj_player_parent, _cost);
 }
 

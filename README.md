@@ -28,3 +28,9 @@ Squelch - Sound Effect from Pixabay - https://pixabay.com/sound-effects/search/s
 8 Heals and Buffs SFX - leopahz licensed under CC BY 4.0 - https://opengameart.org/content/8-heals-and-buffs-sfx 
 
 Poof - Sound Effect rom Pixabay - https://pixabay.com/sound-effects/search/poof/ - modified by Eyan Martucci
+
+Error - EZduzziteh licensed under OGA BY 3.0 - https://opengameart.org/content/error
+
+Calm BGM - syncopika licensed under CC By 3.0 - https://opengameart.org/content/calm-bgm
+
+Paper Crumble Sfx Sound Effect - Nicole Marie T licensed under CC BY 4.0 - https://opengameart.org/content/paper-crumple-sfx-sound-effect

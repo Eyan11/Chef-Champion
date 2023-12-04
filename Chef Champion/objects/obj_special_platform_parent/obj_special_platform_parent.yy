@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Jump Special Platforms",
-    "path": "folders/Objects/Jump Special Platforms.yy",
+    "path": "folders/Objects/Items/Jump Special Platforms.yy",
   },
   "parentObjectId": null,
   "persistent": false,

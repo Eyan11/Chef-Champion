@@ -24,10 +24,12 @@
 		break;
 		
 		case Dessert_fight_6:
+		show_debug_message("going to platform now please")
 		room_goto(Dessert_platform_6)
 		break;
 		
 		default:
+		show_debug_message("am i somehow defaulting")
 		break;
 	}
 	

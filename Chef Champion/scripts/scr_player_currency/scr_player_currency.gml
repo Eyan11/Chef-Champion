@@ -34,11 +34,15 @@ function get_recipes(_player) {
 /// @function			spend_recipes(_player, _cost)		
 /// @description		Reduces players recipes by specified cost
 function spend_recipes(_player, _cost) {
-	if(_player.current_recipes > _cost)
+	if(_player.current_recipes >= _cost){
 		_player.current_recipes -= _cost;
-	else
-		_player.current_recipes = 0;
-		
+		audio_play_sound(sfx_crumble,1,false)
+		show_debug_message("bought")
+	}
+	else {
+		show_debug_message("not bought")
+		audio_play_sound(sfx_error,1,false)
+	}
 	show_debug_message("Current Recipes: ");
 	show_debug_message(_player.current_recipes);
 }
