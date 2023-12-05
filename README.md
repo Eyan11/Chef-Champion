@@ -3,6 +3,10 @@
 
 Credits: 
 
+Xbox Series Button Icons and Controls - Zacksly Licensed under CC BY 3.0 - https://zacksly.itch.io modified by Eyan Martucci
+
+Gerald’s Keys - Gerald Burke Licensed under CC0 - https://gerald-burke.itch.io/geralds-keys modified by Eyan Martucci
+
 12 Player Movement SFX - leopahz licensed under CC BY 3.0 and CC BY 4.0 - https://opengameart.org/content/12-player-movement-sfx - modified by Eyan Martucci
 
 Ghost Breath - qubodup licensed under CC0 - https://opengameart.org/content/ghost-breath

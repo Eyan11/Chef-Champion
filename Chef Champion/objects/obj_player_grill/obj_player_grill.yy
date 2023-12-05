@@ -57,8 +57,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_pastry",
-    "path": "sprites/spr_player_pastry/spr_player_pastry.yy",
+    "name": "spr_grill_idle",
+    "path": "sprites/spr_grill_idle/spr_grill_idle.yy",
   },
   "spriteMaskId": {
     "name": "spr_player_collision_box",

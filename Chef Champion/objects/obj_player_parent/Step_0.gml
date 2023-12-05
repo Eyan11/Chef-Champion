@@ -1,13 +1,4 @@
- audio_listener_position(x,y,0)//spatial sound connector
- 
-if(instance_exists(obj_player_pastry))
-	show_debug_message("Pastry");
-else if(instance_exists(obj_player_pastry))
-	show_debug_message("Fry");
-//update with grill sprite
-else if(instance_exists(obj_player_pastry))
-	show_debug_message("Grill");
- 
+ audio_listener_position(x,y,0)//spatial sound connector 
  
 //movement
 if(!is_dead) {
@@ -35,9 +26,8 @@ if(is_dead) {
 		self.sprite_index = spr_pastry_death;
 	else if(instance_exists(obj_player_fry))
 		self.sprite_index = spr_fry_death;
-	//update with grill sprite
 	else if(instance_exists(obj_player_grill))
-		self.sprite_index = spr_pastry_death;
+		self.sprite_index = spr_grill_death;
 
 	if(!audio_is_playing(snd_player_death))
 		audio_play_sound(snd_player_death, 5, false);
@@ -51,9 +41,8 @@ else if(is_rolling) {
 		self.sprite_index = spr_pastry_roll;
 	else if(instance_exists(obj_player_fry))
 		self.sprite_index = spr_fry_roll;
-	//update with grill sprite
 	else if(instance_exists(obj_player_grill))
-		self.sprite_index = spr_pastry_roll;	
+		self.sprite_index = spr_grill_roll;	
 
 	if(!audio_is_playing(snd_player_roll))
 		audio_play_sound(snd_player_roll, 5, false);
@@ -67,9 +56,8 @@ else if(!is_grounded) {
 		self.sprite_index = spr_pastry_jump;
 	else if(instance_exists(obj_player_fry))
 		self.sprite_index = spr_fry_jump;
-	//update with grill sprite
 	else if(instance_exists(obj_player_grill))
-		self.sprite_index = spr_pastry_jump;
+		self.sprite_index = spr_grill_jump;
 	
 	if(!audio_is_playing(snd_player_jump) && vert_speed <= jump_speed)
 		audio_play_sound(snd_player_jump, 5, false);
@@ -85,9 +73,8 @@ else if(self.sprite_index == spr_pastry_jump || self.sprite_index == spr_fry_jum
 		self.sprite_index = spr_pastry_land;
 	else if(instance_exists(obj_player_fry))
 		self.sprite_index = spr_fry_land;
-	//update with grill sprite
 	else if(instance_exists(obj_player_grill))
-		self.sprite_index = spr_pastry_land;
+		self.sprite_index = spr_grill_land;
 	
 	if(!audio_is_playing(snd_player_land))
 		audio_play_sound(snd_player_land, 5, false);
@@ -101,9 +88,8 @@ else if(on_moving_platform && (hor_speed == instance_nearest(x, y, obj_platform_
 		self.sprite_index = spr_pastry_idle;
 	else if(instance_exists(obj_player_fry))
 		self.sprite_index = spr_fry_idle;
-	//update with grill sprite
 	else if(instance_exists(obj_player_grill))
-		self.sprite_index = spr_pastry_idle;
+		self.sprite_index = spr_grill_idle;
 	
 }
 
@@ -115,9 +101,8 @@ else if(abs(hor_speed) > 0) {
 		self.sprite_index = spr_pastry_move;
 	else if(instance_exists(obj_player_fry))
 		self.sprite_index = spr_fry_move;
-	//update with grill sprite
 	else if(instance_exists(obj_player_grill))
-		self.sprite_index = spr_pastry_move;
+		self.sprite_index = spr_grill_move;
 
 	if(!audio_is_playing(snd_player_walk))
 		audio_play_sound(snd_player_walk, 5, false);
@@ -131,9 +116,8 @@ else {
 		self.sprite_index = spr_pastry_idle;
 	else if(instance_exists(obj_player_fry))
 		self.sprite_index = spr_fry_idle;
-	//update with grill sprite
 	else if(instance_exists(obj_player_grill))
-		self.sprite_index = spr_pastry_idle;
+		self.sprite_index = spr_grill_idle;
 	
 }
 

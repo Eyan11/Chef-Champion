@@ -50,9 +50,8 @@ function player_roll(_player) {
 			_player.sprite_index = spr_pastry_roll;
 		else if(instance_exists(obj_player_fry))
 			_player.sprite_index = spr_fry_roll;
-		//update with grill sprite
 		else if(instance_exists(obj_player_grill))
-			_player.sprite_index = spr_pastry_roll;
+			_player.sprite_index = spr_grill_roll;
 		
 		_player.is_rolling = true;
 	}
@@ -74,9 +73,8 @@ function player_roll(_player) {
 				_player.sprite_index = spr_pastry_idle;
 			else if(instance_exists(obj_player_fry))
 				_player.sprite_index = spr_fry_idle;
-			//update with grill sprite
 			else if(instance_exists(obj_player_grill))
-				_player.sprite_index = spr_pastry_idle;
+				_player.sprite_index = spr_grill_idle;
 			
 			_player.is_invincible = false;
 			_player.is_rolling = false;
