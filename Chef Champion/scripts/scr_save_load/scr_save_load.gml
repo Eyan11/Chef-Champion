@@ -46,8 +46,6 @@ function save_game() {
 		array_push(_array, _struct);
 	}
 	
-	//TODO: add other players
-	
 	//converts array from json to string format
 	var _string = json_stringify(_array);
 	

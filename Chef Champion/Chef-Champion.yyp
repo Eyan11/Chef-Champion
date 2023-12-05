@@ -443,8 +443,6 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"kitchen_home","path":"rooms/kitchen_home/kitchen_home.yy",},},
-    {"roomId":{"name":"alifiyas_room","path":"rooms/alifiyas_room/alifiyas_room.yy",},},
-    {"roomId":{"name":"eyans_room","path":"rooms/eyans_room/eyans_room.yy",},},
     {"children":[
         {"roomId":{"name":"Breakfast_platform_1","path":"rooms/Breakfast_platform_1/Breakfast_platform_1.yy",},},
         {"roomId":{"name":"Breakfast_fight_1","path":"rooms/Breakfast_fight_1/Breakfast_fight_1.yy",},},
@@ -464,6 +462,8 @@
         {"roomId":{"name":"Dessert_fight_6","path":"rooms/Dessert_fight_6/Dessert_fight_6.yy",},},
       ],"groupName":"dessert",},
     {"roomId":{"name":"Boss_room","path":"rooms/Boss_room/Boss_room.yy",},},
+    {"roomId":{"name":"eyans_room","path":"rooms/eyans_room/eyans_room.yy",},},
+    {"roomId":{"name":"alifiyas_room","path":"rooms/alifiyas_room/alifiyas_room.yy",},},
     {"roomId":{"name":"ethans_room","path":"rooms/ethans_room/ethans_room.yy",},},
     {"roomId":{"name":"alifiyas_room","path":"rooms/alifiyas_room/alifiyas_room.yy",},},
     {"roomId":{"name":"Parent_level_room","path":"rooms/Parent_level_room/Parent_level_room.yy",},},

@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "bgm_kitchen.ogg",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.6,
 }
